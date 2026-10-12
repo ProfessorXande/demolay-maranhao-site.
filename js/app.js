@@ -20,7 +20,7 @@
     amdl: WIX + 'ea5fa80c833f4cdd8460f08da8746dc0~mv2.png',
     parceiros: [['Grande Loja Maçônica do Estado do Maranhão', 'e5278e69df43470aac83457c451cca4f'], ['Grande Oriente do Brasil — Maranhão', '8585d98c881b4619b87ae0eea083f416'], ['Supremo Conselho do Grau 33', 'e108147d4b7f4306b293fe81c0b8feee']],
   };
-  const RECORTE = { c: [24, 17, 132], a: [40, 44, 142], b: [40, 228, 142] };
+  const RECORTE = { c: [35, 28, 110], a: [47, 52, 128], b: [47, 235, 128] }; // recorte só da pessoa, sem o anel das artes antigas
   function urlFoto(f) {
     const [id, r] = f; const [x, y, s] = RECORTE[r] || RECORTE.c;
     return `${WIX}${id}~mv2.png/v1/crop/x_${x},y_${y},w_${s},h_${s}/fill/w_280,h_280,al_c,q_85/foto.png`;
@@ -136,7 +136,7 @@
         ${cartao('#galeria-mce', 'Galeria', 'Mestres Conselheiros Estaduais e Adjuntos', 'Todos os líderes juvenis do Estado, de 1998 até hoje.', 'Ver a galeria →')}
         ${cartao('#galeria-gme', 'Galeria', 'Grandes Mestres Estaduais e Adjuntos', 'Das Oficialarias de 1991 ao Grande Conselho Estadual nº 17.', 'Ver a galeria →')}
         ${cartao('#regionais', 'Galeria', 'Mestres Conselheiros Regionais', 'As lideranças juvenis de cada Oficialaria Executiva.', 'Ver a galeria →')}
-        ${cartao('#historia', 'Linha do tempo', 'Nossa história no Maranhão', 'Os marcos e as curiosidades da Ordem DeMolay maranhense.', 'Ler →')}
+        ${cartao('#historia', 'Linha do tempo', 'Nossa história no Maranhão', 'Os marcos da Ordem DeMolay maranhense, de 1919 até hoje.', 'Ler →')}
       </div>`)}
     ${secao(`${cabeca('Galeria de Honra', 'Reconhecimento a quem serve a Ordem', '')}
       <div class="cartoes">
@@ -187,9 +187,8 @@
     </div><aside class="lateral">${img(IMG.escudeiros, 'Emblema da Ordem dos Escudeiros')}<p>Ordem dos Escudeiros</p></aside></div>`)}`;
 
   P.historia = () => `${faixa('Nossa história', 'A Ordem DeMolay no Maranhão', 'Das primeiras Oficialarias, nos anos 1990, ao Grande Conselho Estadual nº 17.', 'A Ordem')}
-    ${secao(`<ol class="marcos">${D.historia.map(m => `<li><b>${m.ano}</b><h3>${esc(m.titulo)}</h3><p>${esc(m.texto)}</p></li>`).join('')}</ol>`)}
-    ${secao(`${cabeca('Você sabia?', 'Curiosidades da nossa história', '')}<div class="curiosidades">${D.curiosidades.map(c => `<p class="curiosidade">${esc(c)}</p>`).join('')}</div>
-      <div class="botoes"><a class="btn btn--azul" href="#galeria-gme">Galeria dos Grandes Mestres</a><a class="btn btn--linha-azul" href="#galeria-mce">Galeria dos Mestres Conselheiros</a></div>`, 'secao--cinza')}`;
+    ${secao(`<ol class="marcos">${D.historia.map(m => `<li><b>${m.ano}</b><h3>${esc(m.titulo)}</h3><p>${esc(m.texto)}</p></li>`).join('')}</ol>
+      <div class="botoes"><a class="btn btn--azul" href="#galeria-gme">Galeria dos Grandes Mestres</a><a class="btn btn--linha-azul" href="#galeria-mce">Galeria dos Mestres Conselheiros</a></div>`)}`;
 
   P['onde-estamos'] = () => {
     const ativos = D.capitulos.filter(c => c.ativo), outros = D.capitulos.filter(c => !c.ativo);
@@ -198,6 +197,9 @@
     const ordem = Object.keys(regioes).sort((a, b) => parseInt(a) - parseInt(b));
     const bloco = (olho, titulo, L) => L.length ? `<div><p class="olho">${olho}</p><h3 style="font-size:22px;margin-bottom:14px">${titulo}</h3>${listaUnid(L)}</div>` : '';
     return `${faixa('Onde estamos', 'A Ordem DeMolay pelo Maranhão', `${ativos.length} Capítulos em atividade em ${N.cidadesAtivas} cidades, organizados em Oficialarias Executivas, além de Castelos, Priorados, Cortes e Clubes.`)}
+    ${secao(`${cabeca('Mapa', 'Nossas organizações no mapa', 'Clique em uma cidade para ver os Capítulos, Castelos, Priorados, Cortes e Clubes que funcionam nela.')}
+      <div id="mapa" class="mapa" role="region" aria-label="Mapa das organizações DeMolay no Maranhão"><p class="vazio">Carregando o mapa…</p></div>
+      <p class="legenda"><span class="ponto ponto--ativo"></span> Cidade com Capítulo em atividade <span class="ponto"></span> Outras organizações</p>`)}
     ${secao(`${cabeca('Capítulos DeMolay', 'Capítulos em atividade', 'Agrupados pela Oficialaria Executiva de cada região do Estado.')}
       <div class="linha-tempo">${ordem.map(r => `<div class="gestao"><div><p class="gestao__ano" style="font-size:22px">${esc(r.split(' - ')[0].replace('/Região', ''))}</p><p class="gestao__lema" style="font-style:normal">${esc(r.split(' - ')[1] || '')}</p></div>${listaUnid(regioes[r])}</div>`).join('')}</div>`)}
     ${secao(`${cabeca('Nossa história', 'Outros Capítulos do Maranhão', 'Capítulos que também fazem parte da história da Ordem no Estado.')}${listaUnid(outros)}`, 'secao--cinza')}
@@ -212,9 +214,39 @@
       <div class="botoes"><a class="btn btn--ouro" href="https://www.google.com/maps/search/?api=1&query=R.+44,+Quadra+59,+23+Bequim%C3%A3o+S%C3%A3o+Lu%C3%ADs+MA" target="_blank" rel="noopener">Abrir no mapa</a></div>`, 'secao--escura')}`;
   };
 
+  // coordenadas aproximadas do centro de cada cidade
+  const COORD = {
+    'São Luís': [-2.53, -44.30], 'Itapecuru Mirim': [-3.39, -44.36], 'Chapadinha': [-3.74, -43.36], 'Pedreiras': [-4.57, -44.60],
+    'Lago da Pedra': [-4.57, -45.13], 'Barra do Corda': [-5.51, -45.24], 'Esperantinópolis': [-4.88, -44.69], 'Timon': [-5.09, -42.84],
+    'Coelho Neto': [-4.26, -43.01], 'Zé Doca': [-3.27, -45.66], 'Santa Inês': [-3.67, -45.38], 'São João dos Patos': [-6.50, -43.70],
+    'Barão de Grajaú': [-6.74, -43.03], 'Paraibano': [-6.43, -43.98], 'Balsas': [-7.53, -46.04], 'Imperatriz': [-5.53, -47.49],
+    'Grajaú': [-5.82, -46.14], 'Carolina': [-7.34, -47.46], 'Açailândia': [-4.95, -47.51], 'Porto Franco': [-6.34, -47.40], 'Estreito': [-6.56, -47.45],
+  };
+  function montaMapa() {
+    const el = document.getElementById('mapa');
+    if (!el) return;
+    if (!window.L) { el.innerHTML = '<p class="vazio">O mapa aparece no site publicado.</p>'; return; }
+    el.innerHTML = '';
+    const grupos = [['Capítulos', D.capitulos.filter(o => o.ativo), 'Capítulo'], ['Castelos', D.castelos.filter(o => o.ativo), 'Castelo'], ['Priorados', D.priorados.filter(o => o.situacao !== 'Inativo'), 'Priorado'],
+      ['Cortes de Chevalier', D.cortes, 'Corte'], ['Preceptorias', D.preceptorias, 'Preceptoria'], ['Clubes de Mães e Amigos', D.clubes.filter(o => o.ativo), 'Clube']];
+    const cid = {};
+    grupos.forEach(([g, L, t]) => L.forEach(o => { if (!COORD[o.cidade]) return; ((cid[o.cidade] ||= {})[g] ||= []).push(o); }));
+    const mapa = L.map(el, { scrollWheelZoom: false }).setView([-5.3, -45.3], 6);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 15, attribution: '&copy; OpenStreetMap' }).addTo(mapa);
+    const marcas = [];
+    Object.entries(cid).forEach(([c, gs]) => {
+      const ativo = !!gs['Capítulos'];
+      const icone = L.divIcon({ className: '', html: `<span class="pino ${ativo ? 'pino--ativo' : ''}"></span>`, iconSize: [22, 22], iconAnchor: [11, 11] });
+      const html = `<div class="pop"><h4>${esc(c)}/MA</h4>${Object.entries(gs).map(([g, L]) => `<p class="pop__g">${g}</p>${L.map(o => `<p><b>${esc(o.nome)} nº ${o.n}</b>${o.endereco ? `<br><small>${esc(o.endereco)}</small>` : ''}</p>`).join('')}`).join('')}</div>`;
+      marcas.push(L.marker(COORD[c], { icon: icone, title: c }).addTo(mapa).bindPopup(html, { maxWidth: 280 }));
+    });
+    if (marcas.length) mapa.fitBounds(L.featureGroup(marcas).getBounds().pad(0.15));
+  }
+
   function unidade(o, tipo) {
     return `<div class="unidade ${o.ativo ? '' : 'inativa'}"><b>${esc(o.nome)} nº ${o.n}</b>
       <span>${o.cidade ? esc(o.cidade) + '/MA' : 'Maranhão'}${o.fundacao ? ' · fundado em ' + o.fundacao : ''}</span>
+      ${o.endereco ? `<span class="end">${PINO} ${esc(o.endereco)}</span>` : ''}
       ${o.patrocinio ? `<span>Patrocínio: ${esc(o.patrocinio)}</span>` : ''}</div>`;
   }
   const listaUnid = (L, tipo) => `<div class="unidades">${L.map(o => unidade(o, tipo)).join('')}</div>`;
@@ -316,6 +348,7 @@
     $app.innerHTML = `<div class="aparece">${f()}</div>`;
     marcaMenu(r);
     ligaBusca();
+    montaMapa();
     window.scrollTo(0, 0);
     const t = $app.querySelector('h1');
     document.title = (r === 'inicio' ? '' : (t ? t.textContent + ' · ' : '')) + 'DeMolay Maranhão';

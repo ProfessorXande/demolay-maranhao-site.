@@ -11,7 +11,8 @@ window.DADOS = {
    "fundacao": "2003",
    "situacao": "Em Observação",
    "patrocinio": "AUGUSTA E RESPEITÁVEL LOJA SIMBÓLICA 31 DE MARÇO",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Travessa 15 de Novembro, Centro"
   },
   {
    "n": "312",
@@ -21,7 +22,8 @@ window.DADOS = {
    "fundacao": "1996",
    "situacao": "Regular",
    "patrocinio": "Loja Simbólica Deus, Pátria e Liberdade · Loja Simbólica Fidelitas · Grande Loja Maçônica do Estado do Maranhão",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Quarenta e Quatro, Quadra 59, Bequimão"
   },
   {
    "n": "1212",
@@ -31,7 +33,8 @@ window.DADOS = {
    "fundacao": "2022",
    "situacao": "Regular",
    "patrocinio": "Marco Aurélio",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Vieira de Melo, 300, Centro"
   },
   {
    "n": "870",
@@ -41,7 +44,8 @@ window.DADOS = {
    "fundacao": "2014",
    "situacao": "Em Observação",
    "patrocinio": "Gonçalves Lêdo",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Av Zeca Branco, 741, Centro"
   },
   {
    "n": "1188",
@@ -51,7 +55,8 @@ window.DADOS = {
    "fundacao": "2021",
    "situacao": "Em Observação",
    "patrocinio": "Amor e Regeneração",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Tomé de Sousa, Centro"
   },
   {
    "n": "1225",
@@ -61,7 +66,8 @@ window.DADOS = {
    "fundacao": "2023",
    "situacao": "Regular",
    "patrocinio": "União e Fraternidade de Paraibano",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua São Francisco, 978, Centro"
   },
   {
    "n": "919",
@@ -71,7 +77,8 @@ window.DADOS = {
    "fundacao": "2015",
    "situacao": "Regular",
    "patrocinio": "São João Batista",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rodovia Ma-034, Conjunto do Ipem, 114, Olaria"
   },
   {
    "n": "647",
@@ -81,7 +88,8 @@ window.DADOS = {
    "fundacao": "2003",
    "situacao": "Regular",
    "patrocinio": "Juscelino Kubitschek",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Bandeirante 06, 1310, Bandeirantes"
   },
   {
    "n": "239",
@@ -91,7 +99,8 @@ window.DADOS = {
    "fundacao": "1994",
    "situacao": "Regular",
    "patrocinio": "União e Fraternidade",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Alagoas, 240, Juçara"
   },
   {
    "n": "534",
@@ -101,7 +110,8 @@ window.DADOS = {
    "fundacao": "2002",
    "situacao": "Regular",
    "patrocinio": "Tiradentes",
-   "ativo": true
+   "ativo": true,
+   "endereco": "R. Teixeira de Freitas, 118, Centro"
   },
   {
    "n": "818",
@@ -111,7 +121,8 @@ window.DADOS = {
    "fundacao": "2012",
    "situacao": "Regular",
    "patrocinio": "Educação e Moral",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Avenida Dez, 26, Cohab Anil III"
   },
   {
    "n": "1231",
@@ -121,7 +132,8 @@ window.DADOS = {
    "fundacao": "2024",
    "situacao": "Em Observação",
    "patrocinio": "Beckman",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Travessa São João, 22, Centro"
   },
   {
    "n": "921",
@@ -131,7 +143,8 @@ window.DADOS = {
    "fundacao": "2015",
    "situacao": "Regular",
    "patrocinio": "Amor e Justiça",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Chácara Salgadinho, Bacaba"
   },
   {
    "n": "1192",
@@ -141,7 +154,8 @@ window.DADOS = {
    "fundacao": "2021",
    "situacao": "Inativo",
    "patrocinio": "Duque de Caxias I",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Rua Mariana Luz, s/n, Centro"
   },
   {
    "n": "144",
@@ -151,7 +165,8 @@ window.DADOS = {
    "fundacao": "1991",
    "situacao": "Inativo",
    "patrocinio": "Defensores da Ordem",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Rua Hemetério, 166, São Francisco"
   },
   {
    "n": "1035",
@@ -161,7 +176,8 @@ window.DADOS = {
    "fundacao": "2015",
    "situacao": "Suspenso",
    "patrocinio": "Visconde de Vieira da Silva",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Rua Rio Branco, Trizidela"
   },
   {
    "n": "920",
@@ -171,7 +187,8 @@ window.DADOS = {
    "fundacao": "2015",
    "situacao": "Inativo",
    "patrocinio": "Cristo Redentor",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Rua Marcos Machado, 95-149, Centro"
   },
   {
    "n": "1191",
@@ -181,7 +198,8 @@ window.DADOS = {
    "fundacao": "2021",
    "situacao": "Irregular",
    "patrocinio": "Obreiros do Silêncio",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Rua Genésio Carvalho, s/n, Centro"
   },
   {
    "n": "841",
@@ -191,7 +209,8 @@ window.DADOS = {
    "fundacao": "2013",
    "situacao": "Inativo",
    "patrocinio": "Higino Cunha",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Avenida Piauí, 56, Parque Piauí"
   },
   {
    "n": "623",
@@ -201,7 +220,8 @@ window.DADOS = {
    "fundacao": "2003",
    "situacao": "Irregular",
    "patrocinio": "Sétima Luz",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Rua Barreirinha, 1414, Centro"
   },
   {
    "n": "1148",
@@ -211,7 +231,8 @@ window.DADOS = {
    "fundacao": "2016",
    "situacao": "Inativo",
    "patrocinio": "Raymundo Fabrico da Costa Silva",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Rua do Sol, 1225"
   },
   {
    "n": "949",
@@ -221,7 +242,8 @@ window.DADOS = {
    "fundacao": "2016",
    "situacao": "Inativo",
    "patrocinio": "Liberdade e Justiça Baronense",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Br 230, Km 02"
   },
   {
    "n": "238",
@@ -231,7 +253,8 @@ window.DADOS = {
    "fundacao": "1994",
    "situacao": "Inativo",
    "patrocinio": "Heitor Corrêa de Melo",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Avenida Juvino Oliveira, Bairro Jardim Glória"
   },
   {
    "n": "948",
@@ -241,7 +264,8 @@ window.DADOS = {
    "fundacao": "2016",
    "situacao": "Inativo",
    "patrocinio": "União e Fraternidade Grajauense",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Rua Projetada 2, s/n, Joana Batista"
   },
   {
    "n": "720",
@@ -251,7 +275,8 @@ window.DADOS = {
    "fundacao": "2007",
    "situacao": "Inativo",
    "patrocinio": "Caridade de Justiça",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Rua Benedito Leite, 69, Centro"
   }
  ],
  "castelos": [
@@ -263,7 +288,8 @@ window.DADOS = {
    "fundacao": "2007",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua 44, 23, Conjunto Bequimão"
   },
   {
    "n": "152",
@@ -273,7 +299,8 @@ window.DADOS = {
    "fundacao": "2019",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rodovia Ma-034, Conjunto do Ipem, 114, Olaria"
   },
   {
    "n": "74",
@@ -283,7 +310,8 @@ window.DADOS = {
    "fundacao": "2015",
    "situacao": "Inativo",
    "patrocinio": "",
-   "ativo": false
+   "ativo": false,
+   "endereco": ""
   },
   {
    "n": "82",
@@ -293,17 +321,19 @@ window.DADOS = {
    "fundacao": "2015",
    "situacao": "Inativo",
    "patrocinio": "",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Av. Sotero dos Reis, 26, Cohab Anil III"
   },
   {
    "n": "93",
    "nome": "Pequenos Semeadores",
-   "cidade": "",
+   "cidade": "Carolina",
    "regiao": "5ª Oficialaria/Região - Sul",
    "fundacao": "2015",
    "situacao": "Inativo",
    "patrocinio": "",
-   "ativo": false
+   "ativo": false,
+   "endereco": ""
   }
  ],
  "priorados": [
@@ -315,7 +345,8 @@ window.DADOS = {
    "fundacao": "1997",
    "situacao": "Regular",
    "patrocinio": "União e Fraternidade · Tiradentes",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Travessa Hermínio  Sotero, 17, Centro"
   },
   {
    "n": "100",
@@ -325,7 +356,8 @@ window.DADOS = {
    "fundacao": "2001",
    "situacao": "Regular",
    "patrocinio": "Beckman",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Avenida 16, Rua 41, Casa 04, Cohab Anil III"
   },
   {
    "n": "209",
@@ -335,7 +367,8 @@ window.DADOS = {
    "fundacao": "2018",
    "situacao": "Irregular",
    "patrocinio": "São João Batista",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Rod, MA-304, Olaria"
   },
   {
    "n": "214",
@@ -345,7 +378,8 @@ window.DADOS = {
    "fundacao": "2019",
    "situacao": "Inativo",
    "patrocinio": "Gonçalves Ledo",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Travessa Carvalhinho, 165, Prainha"
   },
   {
    "n": "264",
@@ -355,7 +389,8 @@ window.DADOS = {
    "fundacao": "2022",
    "situacao": "Inativo",
    "patrocinio": "Excelsa Loja de Perfeição \"Divino Mestre II\"",
-   "ativo": false
+   "ativo": false,
+   "endereco": "Rua Barreirinha, 1414, Centro"
   }
  ],
  "cortes": [
@@ -367,7 +402,8 @@ window.DADOS = {
    "fundacao": "2005",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Sá Sobrinho, 114, Centro"
   },
   {
    "n": "103",
@@ -377,7 +413,8 @@ window.DADOS = {
    "fundacao": "2018",
    "situacao": "Regular",
    "patrocinio": "Grande Loja Maçônica do Estado do Maranhão",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua 44, 23, Conj. Bequimão"
   }
  ],
  "clubes": [
@@ -389,7 +426,8 @@ window.DADOS = {
    "fundacao": "2017",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Av.presidente Médice, 3351, Centro"
   },
   {
    "n": "48",
@@ -399,7 +437,8 @@ window.DADOS = {
    "fundacao": "2017",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Barreirinha, 1414, Pitombeira"
   },
   {
    "n": "49",
@@ -409,7 +448,8 @@ window.DADOS = {
    "fundacao": "2017",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": ""
   },
   {
    "n": "50",
@@ -419,7 +459,8 @@ window.DADOS = {
    "fundacao": "2017",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Avenida Sotero dos Reis, 26, COHAB Anil III"
   },
   {
    "n": "51",
@@ -429,7 +470,8 @@ window.DADOS = {
    "fundacao": "2015",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Av Zeca Branco, 741, Centro"
   },
   {
    "n": "247",
@@ -439,7 +481,8 @@ window.DADOS = {
    "fundacao": "2019",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Projetada, Quadra 13, 33, Conj. Joana Batista"
   },
   {
    "n": "261",
@@ -449,7 +492,8 @@ window.DADOS = {
    "fundacao": "2019",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Teixeira de Freitas, 118, Centro"
   },
   {
    "n": "321",
@@ -459,7 +503,8 @@ window.DADOS = {
    "fundacao": "2021",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Alagoas, 240, Juçara"
   },
   {
    "n": "338",
@@ -469,17 +514,19 @@ window.DADOS = {
    "fundacao": "2022",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Costa e Silva, s/n, Centro"
   },
   {
    "n": "342",
    "nome": "Acácia Zedoquense",
-   "cidade": "",
+   "cidade": "Zé Doca",
    "regiao": "2ª Oficialaria/Região - Centro/Cocais",
    "fundacao": "2022",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": ""
   },
   {
    "n": "348",
@@ -489,7 +536,8 @@ window.DADOS = {
    "fundacao": "2021",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Hemetério Leitão, 166, São Francisco"
   },
   {
    "n": "408",
@@ -499,7 +547,8 @@ window.DADOS = {
    "fundacao": "2024",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Rua Humberto de Campos, 325, Centro"
   },
   {
    "n": "506",
@@ -509,7 +558,8 @@ window.DADOS = {
    "fundacao": "2024",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": "Avenida Vieira de Melo, s/n, Rodoviária"
   }
  ],
  "preceptorias": [
@@ -521,7 +571,8 @@ window.DADOS = {
    "fundacao": "2019",
    "situacao": "Regular",
    "patrocinio": "",
-   "ativo": true
+   "ativo": true,
+   "endereco": ""
   }
  ],
  "oficialarias": [
@@ -1983,15 +2034,15 @@ window.DADOS = {
  },
  "mcr": [
   {
-   "gestao": "Vigente",
-   "lema": null,
+   "gestao": "2026/2027",
+   "lema": "Pureza de Ideais",
    "vigente": true,
    "obs": null,
    "pessoas": [
     {
      "nome": "Arthur Sandri Tischler",
      "cap": "921",
-     "cargo": "Mestre Conselheiro Regional · 4ª Oficialaria (Sertão)"
+     "cargo": "Mestre Conselheiro Regional"
     },
     {
      "nome": "Bruno Novaes Carneiro de Albuquerque",
@@ -2011,6 +2062,39 @@ window.DADOS = {
     {
      "nome": "Vinícius Damaceno Jansen",
      "cap": "1188",
+     "cargo": "Mestre Conselheiro Regional"
+    }
+   ]
+  },
+  {
+   "gestao": "2025/2026",
+   "lema": null,
+   "vigente": false,
+   "obs": null,
+   "pessoas": [
+    {
+     "nome": "Francisco de Souza Feitoza",
+     "cap": "1225",
+     "cargo": "Mestre Conselheiro Regional"
+    },
+    {
+     "nome": "Hoberth Cintra Lopes",
+     "cap": "239",
+     "cargo": "Mestre Conselheiro Regional"
+    },
+    {
+     "nome": "Juarez Reis Silva Amaral Neto",
+     "cap": "1188",
+     "cargo": "Mestre Conselheiro Regional"
+    },
+    {
+     "nome": "Luís Felipe Lopes Rosa",
+     "cap": "1231",
+     "cargo": "Mestre Conselheiro Regional"
+    },
+    {
+     "nome": "Raimundo Nicolas Santos",
+     "cap": "1212",
      "cargo": "Mestre Conselheiro Regional"
     }
    ]

@@ -42,7 +42,7 @@ p { margin: 0; }
 
 /* ---------- Cabeçalho ---------- */
 .topo { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: var(--azul); color: #fff; box-shadow: 0 2px 14px rgba(0, 0, 0, .18); }
-.topo .miolo { display: flex; align-items: center; gap: 18px; min-height: 72px; }
+.topo .miolo { max-width: 1320px; display: flex; align-items: center; gap: 18px; min-height: 72px; }
 .marca { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
 .marca img { height: 44px; width: auto; }
 .marca span { font: 800 15px/1.05 var(--display); letter-spacing: .01em; }
@@ -51,8 +51,8 @@ p { margin: 0; }
 .menu { display: flex; align-items: stretch; list-style: none; padding: 0; margin-block: 0; }
 .menu > li { position: relative; }
 .menu > li > a, .menu > li > button {
-  display: flex; align-items: center; gap: 6px; height: 72px; padding: 0 12px; background: none; border: 0; color: #fff;
-  font: 700 12.5px/1 var(--display); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; cursor: pointer;
+  display: flex; align-items: center; gap: 5px; height: 72px; padding: 0 10px; background: none; border: 0; color: #fff; white-space: nowrap;
+  font: 700 12px/1 var(--display); letter-spacing: .05em; text-transform: uppercase; text-decoration: none; cursor: pointer;
 }
 .menu > li > a:hover, .menu > li > button:hover, .menu > li.ativo > a, .menu > li.ativo > button { color: var(--ouro); }
 .menu > li > button::after { content: ""; width: 6px; height: 6px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg) translateY(-2px); }
@@ -67,7 +67,7 @@ p { margin: 0; }
 .sub .rotulo { padding: 10px 12px 4px; font: 700 11px/1 var(--display); letter-spacing: .12em; text-transform: uppercase; color: var(--suave); }
 .hamb { display: none; margin-left: auto; width: 46px; height: 46px; border: 1px solid rgba(255, 255, 255, .35); border-radius: 10px; background: none; color: #fff; font-size: 22px; cursor: pointer; }
 
-@media (max-width: 1080px) {
+@media (max-width: 1240px) {
   .hamb { display: block; }
   .menu { display: none; position: absolute; top: 72px; left: 0; right: 0; flex-direction: column; background: var(--azul-esc); padding: 8px 12px 18px; max-height: calc(100vh - 72px); overflow: auto; }
   .menu.mostra { display: flex; }
@@ -301,3 +301,21 @@ td .cid { display: block; font-size: 13px; color: var(--suave); }
 
 .aparece { animation: aparece .5s var(--sai) both; }
 @keyframes aparece { from { opacity: .4; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+/* Endereço das organizações */
+.unidade .end { display: flex; gap: 6px; align-items: flex-start; }
+.unidade .end svg { flex: none; margin-top: 4px; color: var(--vermelho); }
+
+/* Mapa */
+.mapa { height: 520px; max-height: 70vh; border-radius: 18px; overflow: hidden; border: 1px solid var(--linha); background: var(--pedra); display: grid; place-items: center; }
+.mapa.leaflet-container { display: block; font: 400 14px/1.4 var(--corpo); }
+.legenda { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; font-size: 14.5px; color: var(--suave); }
+.ponto { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: var(--azul2); border: 2px solid #fff; box-shadow: 0 0 0 1px var(--azul2); vertical-align: -2px; margin-right: -10px; }
+.ponto--ativo { background: var(--vermelho); box-shadow: 0 0 0 1px var(--vermelho); }
+.pino { display: block; width: 22px; height: 22px; border-radius: 50%; background: var(--azul2); border: 3px solid #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, .35); }
+.pino--ativo { background: var(--vermelho); }
+.pop { color: #18223A; max-height: 260px; overflow: auto; }
+.pop h4 { font: 800 16px/1.2 var(--display); color: #0B2A61; margin-bottom: 6px; }
+.pop p { margin: 4px 0; }
+.pop .pop__g { margin-top: 10px; font: 700 11px/1 var(--display); letter-spacing: .12em; text-transform: uppercase; color: #C8102E; }
+.pop small { color: #5E6880; }
