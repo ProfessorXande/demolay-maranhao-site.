@@ -57,14 +57,14 @@ p { margin: 0; }
 .menu > li > a:hover, .menu > li > button:hover, .menu > li.ativo > a, .menu > li.ativo > button { color: var(--ouro); }
 .menu > li > button::after { content: ""; width: 6px; height: 6px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg) translateY(-2px); }
 .sub {
-  position: absolute; top: 100%; left: 0; min-width: 270px; background: var(--papel); color: var(--texto); border-radius: 0 0 12px 12px;
+  position: absolute; top: 100%; left: 0; min-width: 270px; background: #FFFFFF; color: #18223A; border: 1px solid rgba(11, 42, 97, .12); border-radius: 0 0 12px 12px;
   box-shadow: var(--sombra); padding: 10px; list-style: none; margin: 0; opacity: 0; visibility: hidden; transform: translateY(6px);
   transition: opacity .2s var(--sai), transform .2s var(--sai), visibility .2s;
 }
-.menu > li:hover .sub, .menu > li:focus-within .sub, .menu > li.aberto .sub { opacity: 1; visibility: visible; transform: none; }
+.menu > li:hover .sub, .menu > li:focus-visible .sub, .menu > li:has(:focus-visible) .sub, .menu > li.aberto .sub { opacity: 1; visibility: visible; transform: none; }
 .sub a { display: block; padding: 9px 12px; border-radius: 8px; text-decoration: none; font-size: 15px; }
-.sub a:hover { background: var(--pedra); color: var(--azul2); }
-.sub .rotulo { padding: 10px 12px 4px; font: 700 11px/1 var(--display); letter-spacing: .12em; text-transform: uppercase; color: var(--suave); }
+.sub a:hover { background: #F3F4F7; color: var(--azul2); }
+.sub .rotulo { padding: 10px 12px 4px; font: 700 11px/1 var(--display); letter-spacing: .12em; text-transform: uppercase; color: #5E6880; }
 .hamb { display: none; margin-left: auto; width: 46px; height: 46px; border: 1px solid rgba(255, 255, 255, .35); border-radius: 10px; background: none; color: #fff; font-size: 22px; cursor: pointer; }
 
 @media (max-width: 1240px) {

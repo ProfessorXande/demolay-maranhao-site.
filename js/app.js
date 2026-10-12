@@ -22,6 +22,7 @@
   };
   const RECORTE = { c: [35, 28, 110], a: [47, 52, 128], b: [47, 235, 128] }; // recorte só da pessoa, sem o anel das artes antigas
   function urlFoto(f) {
+    if (typeof f === 'string') return f;
     const [id, r] = f; const [x, y, s] = RECORTE[r] || RECORTE.c;
     return `${WIX}${id}~mv2.png/v1/crop/x_${x},y_${y},w_${s},h_${s}/fill/w_280,h_280,al_c,q_85/foto.png`;
   }
@@ -66,7 +67,7 @@
     ['A Ordem', [['ordem', 'A Ordem DeMolay'], ['cavalaria', 'A Ordem da Cavalaria'], ['escudeiros', 'A Ordem dos Escudeiros'], ['historia', 'Nossa história no Maranhão']]],
     ['onde-estamos', 'Onde estamos'],
     ['Gabinete Estadual', [['gabinete', 'Líderes Estaduais — Juvenil'], ['regionais', 'Mestres Conselheiros Regionais'], '|Galerias', ['galeria-mce', 'Mestres Conselheiros Estaduais e Adjuntos']]],
-    ['Diretoria Executiva', [['diretoria', 'Líderes Estaduais — Adulto'], ['oficiais', 'Oficiais Executivos'], ['comissoes', 'Comissões Estaduais'], '|Galerias', ['galeria-gme', 'Grandes Mestres Estaduais e Adjuntos']]],
+    ['Diretoria Executiva', [['diretoria', 'Líderes Estaduais — Adulto'], ['oficiais', 'Oficiais Executivos'], ['comissoes', 'Comissões Estaduais'], '|Galerias', ['galeria-gme', 'Grandes Mestres Estaduais']]],
     ['Galeria de Honra', [['destaques', 'DeMolay e Consultor do Ano'], ['merito', 'Mérito DeMolay Maranhão'], ['academia', 'Academia Maranhense DeMolay de Letras'], '|Honrarias', ['chevalier', 'Grau de Chevalier'], ['legiao', 'Legião de Honra'], ['cruz', 'Cruz de Honra'], ['alma', 'DeMolay de Alma'], ['honrarias-cavalaria', 'Honrarias da Cavalaria']]],
     ['alumni', 'Alumni MA'],
   ];
@@ -87,6 +88,7 @@
   function marcaMenu(rota) {
     document.querySelectorAll('#menu > li').forEach(li => li.classList.toggle('ativo', li.dataset.rota.split(' ').includes(rota)));
     document.querySelectorAll('#menu li.aberto').forEach(x => x.classList.remove('aberto'));
+    if (document.activeElement && document.activeElement.closest && document.activeElement.closest('#menu')) document.activeElement.blur();
     document.getElementById('menu').classList.remove('mostra');
   }
 
@@ -134,7 +136,7 @@
     ${secao(`${cabeca('Memória do Grande Conselho', 'Galerias históricas', 'Cada gestão termina, mas não se apaga: passa a fazer parte da história da Ordem no Maranhão.')}
       <div class="cartoes">
         ${cartao('#galeria-mce', 'Galeria', 'Mestres Conselheiros Estaduais e Adjuntos', 'Todos os líderes juvenis do Estado, de 1998 até hoje.', 'Ver a galeria →')}
-        ${cartao('#galeria-gme', 'Galeria', 'Grandes Mestres Estaduais e Adjuntos', 'Das Oficialarias de 1991 ao Grande Conselho Estadual nº 17.', 'Ver a galeria →')}
+        ${cartao('#galeria-gme', 'Galeria', 'Grandes Mestres Estaduais', 'Das Oficialarias de 1991 ao Grande Conselho Estadual nº 17.', 'Ver a galeria →')}
         ${cartao('#regionais', 'Galeria', 'Mestres Conselheiros Regionais', 'As lideranças juvenis de cada Oficialaria Executiva.', 'Ver a galeria →')}
         ${cartao('#historia', 'Linha do tempo', 'Nossa história no Maranhão', 'Os marcos da Ordem DeMolay maranhense, de 1919 até hoje.', 'Ler →')}
       </div>`)}
@@ -270,9 +272,9 @@
     ${secao(`${cabeca('Antes de 2004', 'Lideranças juvenis das Oficialarias Executivas', 'Até 2004 não havia Mestre Conselheiro Estadual Adjunto: o auxiliar direto do MCE era o Secretário do Congresso Estadual.')}
       <div class="linha-tempo">${D.oficialarias.slice().reverse().filter(o => o.jovens.length).map(o => `<div class="gestao"><div><p class="gestao__ano">${o.periodo}</p></div><div class="dupla">${o.jovens.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`, 'secao--cinza')}`;
   };
-  P['galeria-gme'] = () => `${faixa('Galeria', 'Grandes Mestres Estaduais e Adjuntos', 'A liderança adulta da Ordem DeMolay no Maranhão desde as primeiras Oficialarias.', 'Diretoria Executiva')}
-    ${secao(`${cabeca('Desde 2004', 'Grande Conselho Estadual nº 17', '')}<div class="linha-tempo">${D.gce.slice().reverse().map(g => `<div class="gestao ${g.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${g.periodo}</p>${g.lema ? `<p class="gestao__lema">“${esc(g.lema)}”</p>` : ''}${g.vigente ? '<span class="tag">Gestão vigente</span>' : ''}</div><div class="dupla">${g.adultos.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`)}
-    ${secao(`${cabeca('1991 a 2004', '1ª e 2ª Oficialarias Executivas', 'Antes do Grande Conselho, a liderança adulta do Estado eram os Oficiais Executivos, ao Norte e ao Sul.')}<div class="linha-tempo">${D.oficialarias.slice().reverse().map(o => `<div class="gestao"><div><p class="gestao__ano">${o.periodo}</p></div><div class="dupla">${o.adultos.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`, 'secao--cinza')}`;
+  P['galeria-gme'] = () => `${faixa('Galeria', 'Grandes Mestres Estaduais', 'A liderança adulta da Ordem DeMolay no Maranhão desde as primeiras Oficialarias.', 'Diretoria Executiva')}
+    ${secao(`${cabeca('Desde 2004', 'Grande Conselho Estadual nº 17', '')}<div class="linha-tempo">${D.gce.slice().reverse().map(g => `<div class="gestao ${g.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${g.periodo}</p>${g.lema ? `<p class="gestao__lema">“${esc(g.lema)}”</p>` : ''}${g.vigente ? '<span class="tag">Gestão vigente</span>' : ''}</div><div class="dupla">${pessoa(g.adultos[0])}</div></div>`).join('')}</div>`)}
+    ${secao(`${cabeca('1991 a 2004', '1ª e 2ª Oficialarias Executivas', 'Antes do Grande Conselho, a liderança adulta do Estado eram os Oficiais Executivos, ao Norte e ao Sul.')}<div class="linha-tempo">${D.oficialarias.slice().reverse().map(o => `<div class="gestao"><div><p class="gestao__ano">${o.periodo}</p></div><div class="dupla">${pessoa(o.adultos[0])}</div></div>`).join('')}</div>`, 'secao--cinza')}`;
 
   const blocoEquipe = (eq, titulo) => `<div class="gestao ${eq.vigente !== false && !eq.lema ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${esc(eq.gestao)}</p>${eq.lema ? `<p class="gestao__lema">“${esc(eq.lema)}”</p>` : ''}${titulo ? `<span class="tag">${titulo}</span>` : ''}</div><div class="dupla">${eq.pessoas.map(p => pessoa(p)).join('')}</div></div>`;
   P.diretoria = () => `${faixa('Diretoria Executiva', 'Líderes Estaduais — Adulto', `Grande Conselho Estadual · gestão ${D.diretoria.gestao} · “${D.diretoria.lema}”`, 'Diretoria Executiva')}
@@ -282,12 +284,14 @@
   P.oficiais = () => `${faixa('Diretoria Executiva', 'Oficiais Executivos', 'Os Oficiais Executivos auxiliam o Grande Conselho na gestão de cada Oficialaria do Estado.', 'Diretoria Executiva')}
     ${secao(`${cabeca('Gestão ' + D.oficiais.gestao, 'Oficiais Executivos', '')}<div class="pessoas">${D.oficiais.pessoas.map(p => pessoa(p)).join('')}</div>`)}
     ${secao(`${cabeca('Gestão anterior', 'Oficiais Executivos 2023/2025', '')}<div class="linha-tempo">${blocoEquipe(D.oficiaisAnterior)}</div>`, 'secao--cinza')}`;
-  P.comissoes = () => `${faixa('Diretoria Executiva', 'Comissões Estaduais', `Composição registrada na gestão ${D.comissoes.gestao}.`, 'Diretoria Executiva')}
-    ${secao(`<div class="linha-tempo">${D.comissoes.lista.map(c => `<div class="gestao"><div>${foto({ nome: c.nome.replace('Comissão Estadual ', ''), foto: c.icone })}<h3 style="font-size:19px">${esc(c.nome)}</h3></div><div class="dupla">${c.pessoas.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`)}`;
+  const blocoComissoes = L => `<div class="linha-tempo">${L.map(c => `<div class="gestao"><div>${foto({ nome: c.nome.replace(/^(Comissão|Coordenação) Estadual (de |da |)/, ''), foto: c.icone })}<h3 style="font-size:19px">${esc(c.nome)}</h3>${c.ato ? `<p class="gestao__lema" style="font-style:normal">${esc(c.ato)}</p>` : ''}</div><div class="dupla">${c.pessoas.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`;
+  P.comissoes = () => `${faixa('Diretoria Executiva', 'Comissões Estaduais', `Gestão ${D.comissoes.gestao} · nomeadas pelo Grande Mestre Estadual.`, 'Diretoria Executiva')}
+    ${secao(blocoComissoes(D.comissoes.lista))}
+    ${secao(`${cabeca('Gestão anterior', 'Comissões Estaduais ' + D.comissoesAnterior.gestao, '')}${blocoComissoes(D.comissoesAnterior.lista)}`, 'secao--cinza')}`;
 
   /* Honrarias */
-  function tabela(id, colunas, linhas, vazio = 'Ninguém encontrado com esse nome.') {
-    return `<div class="ferramentas"><input class="busca" id="busca-${id}" type="search" placeholder="Buscar pelo nome ou capítulo" aria-label="Buscar na lista"><span class="conta" id="conta-${id}">${linhas.length} nomes</span></div>
+  function tabela(id, colunas, linhas, vazio = 'Ninguém encontrado com esse nome.', ph = 'Buscar pelo nome ou capítulo') {
+    return `<div class="ferramentas"><input class="busca" id="busca-${id}" type="search" placeholder="${ph}" aria-label="Buscar na lista"><span class="conta" id="conta-${id}">${linhas.length} nomes</span></div>
       <div class="tabela-caixa"><table id="tab-${id}"><thead><tr>${colunas.map(c => `<th>${c}</th>`).join('')}</tr></thead><tbody>${linhas.join('')}</tbody></table><p class="vazio" id="vazio-${id}" hidden>${vazio}</p></div>`;
   }
   function ligaBusca() {
@@ -316,7 +320,9 @@
   P.alma = () => paginaHonra('alma', 'Galeria de Honra', 'DeMolay de Alma', 'Reconhecimento a quem se dedica à Ordem DeMolay com o espírito de um DeMolay.', null);
   P['honrarias-cavalaria'] = () => {
     const H = D.honrarias;
-    const bloco = (k, t) => `${cabeca('', t, '')}${tabela(k, ['Nome', 'Capítulo', 'ID', 'Data'], H[k].map(linhaHonra))}`;
+    const priCel = p => !p ? '<td>—</td>' : `<td>${esc(p.nome)} nº ${esc(p.n)}${p.cidade ? `<span class="cid">${esc(p.cidade)}/MA</span>` : (p.uf && p.uf !== 'MA' ? `<span class="cid">${esc(p.uf)}</span>` : '')}</td>`;
+    const linhaPri = r => `<tr><td><b>${esc(r[0])}</b></td>${priCel(r[2])}<td class="num">${esc(r[1] || '—')}</td><td class="num">${esc(r[3] || '—')}</td></tr>`;
+    const bloco = (k, t) => `${cabeca('', t, '')}${tabela(k, ['Nome', 'Priorado', 'ID', 'Data'], H[k].map(linhaPri), undefined, 'Buscar pelo nome ou priorado')}`;
     return `${faixa('Galeria de Honra', 'Honrarias da Cavalaria', 'Comendadores, Grã-Cruzes e Mantos Prateados da Ordem da Cavalaria no Maranhão.', 'Galeria de Honra')}
       ${secao(bloco('comendador', 'Comendador da Cavalaria'))}${secao(bloco('gracruz', 'Grã-Cruz da Cavalaria'), 'secao--cinza')}${secao(bloco('manto', 'Manto Prateado'))}`;
   };

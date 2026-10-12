@@ -7,7 +7,7 @@ window.DADOS = {
    "n": "622",
    "nome": "Chapadinha",
    "cidade": "Chapadinha",
-   "regiao": "1ª Oficialaria/Região - Norte",
+   "regiao": "1ª Oficialaria - Norte",
    "fundacao": "2003",
    "situacao": "Em Observação",
    "patrocinio": "AUGUSTA E RESPEITÁVEL LOJA SIMBÓLICA 31 DE MARÇO",
@@ -18,7 +18,7 @@ window.DADOS = {
    "n": "312",
    "nome": "Juventude Fraterna",
    "cidade": "São Luís",
-   "regiao": "1ª Oficialaria/Região - Norte",
+   "regiao": "1ª Oficialaria - Norte",
    "fundacao": "1996",
    "situacao": "Regular",
    "patrocinio": "Loja Simbólica Deus, Pátria e Liberdade · Loja Simbólica Fidelitas · Grande Loja Maçônica do Estado do Maranhão",
@@ -29,7 +29,7 @@ window.DADOS = {
    "n": "1212",
    "nome": "Dr. Miguel Moreira da Silva",
    "cidade": "Lago da Pedra",
-   "regiao": "2ª Oficialaria/Região - Centro/Cocais",
+   "regiao": "2ª Oficialaria - Centro",
    "fundacao": "2022",
    "situacao": "Regular",
    "patrocinio": "Marco Aurélio",
@@ -40,7 +40,7 @@ window.DADOS = {
    "n": "870",
    "nome": "Cavaleiros do Vale do Mearim",
    "cidade": "Pedreiras",
-   "regiao": "2ª Oficialaria/Região - Centro/Cocais",
+   "regiao": "2ª Oficialaria - Centro",
    "fundacao": "2014",
    "situacao": "Em Observação",
    "patrocinio": "Gonçalves Lêdo",
@@ -51,7 +51,7 @@ window.DADOS = {
    "n": "1188",
    "nome": "Francisco Alves de Sousa",
    "cidade": "Zé Doca",
-   "regiao": "3ª Oficialaria/Região - Vale do Pindaré",
+   "regiao": "3ª Oficialaria - Vale do Pindaré",
    "fundacao": "2021",
    "situacao": "Em Observação",
    "patrocinio": "Amor e Regeneração",
@@ -62,7 +62,7 @@ window.DADOS = {
    "n": "1225",
    "nome": "Tio Salomão Sá e Lima",
    "cidade": "Paraibano",
-   "regiao": "4ª Oficialaria/Região - Médio Sertão",
+   "regiao": "4ª Oficialaria - Médio Sertão",
    "fundacao": "2023",
    "situacao": "Regular",
    "patrocinio": "União e Fraternidade de Paraibano",
@@ -73,7 +73,7 @@ window.DADOS = {
    "n": "919",
    "nome": "Tio Raimundo Noleto de Sousa",
    "cidade": "São João dos Patos",
-   "regiao": "4ª Oficialaria/Região - Médio Sertão",
+   "regiao": "4ª Oficialaria - Médio Sertão",
    "fundacao": "2015",
    "situacao": "Regular",
    "patrocinio": "São João Batista",
@@ -84,7 +84,7 @@ window.DADOS = {
    "n": "647",
    "nome": "Sidney Aguiar Milhomem",
    "cidade": "Estreito",
-   "regiao": "5ª Oficialaria/Região - Sul",
+   "regiao": "5ª Oficialaria - Sul I",
    "fundacao": "2003",
    "situacao": "Regular",
    "patrocinio": "Juscelino Kubitschek",
@@ -95,7 +95,7 @@ window.DADOS = {
    "n": "239",
    "nome": "Vagner Benedito Ramalho Filho",
    "cidade": "Imperatriz",
-   "regiao": "5ª Oficialaria/Região - Sul",
+   "regiao": "5ª Oficialaria - Sul I",
    "fundacao": "1994",
    "situacao": "Regular",
    "patrocinio": "União e Fraternidade",
@@ -106,7 +106,7 @@ window.DADOS = {
    "n": "534",
    "nome": "Waldemar Gomes Pereira",
    "cidade": "Porto Franco",
-   "regiao": "5ª Oficialaria/Região - Sul",
+   "regiao": "5ª Oficialaria - Sul I",
    "fundacao": "2002",
    "situacao": "Regular",
    "patrocinio": "Tiradentes",
@@ -117,7 +117,7 @@ window.DADOS = {
    "n": "818",
    "nome": "Educação e Moral",
    "cidade": "São Luís",
-   "regiao": "6ª Oficialaria - GOB/MA",
+   "regiao": "6ª Oficialaria - Grande Oriente do Brasil (GOB-MA)",
    "fundacao": "2012",
    "situacao": "Regular",
    "patrocinio": "Educação e Moral",
@@ -128,7 +128,7 @@ window.DADOS = {
    "n": "1231",
    "nome": "Gonçalves Dias",
    "cidade": "São Luís",
-   "regiao": "6ª Oficialaria - GOB/MA",
+   "regiao": "6ª Oficialaria - Grande Oriente do Brasil (GOB-MA)",
    "fundacao": "2024",
    "situacao": "Em Observação",
    "patrocinio": "Beckman",
@@ -139,7 +139,7 @@ window.DADOS = {
    "n": "921",
    "nome": "Cavaleiros do Diamante Azul",
    "cidade": "Balsas",
-   "regiao": "7ª Oficialaria/Região - Sul II",
+   "regiao": "7ª Oficialaria - Sul II",
    "fundacao": "2015",
    "situacao": "Regular",
    "patrocinio": "Amor e Justiça",
@@ -150,7 +150,7 @@ window.DADOS = {
    "n": "1192",
    "nome": "Benedito Lima Mendes",
    "cidade": "Itapecuru Mirim",
-   "regiao": "1ª Oficialaria/Região - Norte",
+   "regiao": "1ª Oficialaria - Norte",
    "fundacao": "2021",
    "situacao": "Inativo",
    "patrocinio": "Duque de Caxias I",
@@ -161,7 +161,7 @@ window.DADOS = {
    "n": "144",
    "nome": "São Luís",
    "cidade": "São Luís",
-   "regiao": "1ª Oficialaria/Região - Norte",
+   "regiao": "1ª Oficialaria - Norte",
    "fundacao": "1991",
    "situacao": "Inativo",
    "patrocinio": "Defensores da Ordem",
@@ -172,7 +172,7 @@ window.DADOS = {
    "n": "1035",
    "nome": "Guardiões da Juventude Cordina",
    "cidade": "Barra do Corda",
-   "regiao": "2ª Oficialaria/Região - Centro/Cocais",
+   "regiao": "2ª Oficialaria - Centro",
    "fundacao": "2015",
    "situacao": "Suspenso",
    "patrocinio": "Visconde de Vieira da Silva",
@@ -183,7 +183,7 @@ window.DADOS = {
    "n": "920",
    "nome": "Guardiões da Fraternidade Cristo Redentor",
    "cidade": "Coelho Neto",
-   "regiao": "2ª Oficialaria/Região - Centro/Cocais",
+   "regiao": "2ª Oficialaria - Centro",
    "fundacao": "2015",
    "situacao": "Inativo",
    "patrocinio": "Cristo Redentor",
@@ -194,7 +194,7 @@ window.DADOS = {
    "n": "1191",
    "nome": "Cavaleiros da Esperança Tio José Marcos",
    "cidade": "Esperantinópolis",
-   "regiao": "2ª Oficialaria/Região - Centro/Cocais",
+   "regiao": "2ª Oficialaria - Centro",
    "fundacao": "2021",
    "situacao": "Irregular",
    "patrocinio": "Obreiros do Silêncio",
@@ -202,10 +202,21 @@ window.DADOS = {
    "endereco": "Rua Genésio Carvalho, s/n, Centro"
   },
   {
+   "n": "948",
+   "nome": "Plínio Filho",
+   "cidade": "Grajaú",
+   "regiao": "2ª Oficialaria - Centro",
+   "fundacao": "2016",
+   "situacao": "Inativo",
+   "patrocinio": "União e Fraternidade Grajauense",
+   "ativo": false,
+   "endereco": "Rua Projetada 2, s/n, Joana Batista"
+  },
+  {
    "n": "841",
    "nome": "Cavaleiros dos Cocais",
    "cidade": "Timon",
-   "regiao": "2ª Oficialaria/Região - Centro/Cocais",
+   "regiao": "2ª Oficialaria - Centro",
    "fundacao": "2013",
    "situacao": "Inativo",
    "patrocinio": "Higino Cunha",
@@ -216,7 +227,7 @@ window.DADOS = {
    "n": "623",
    "nome": "Joacy Farias Mendes",
    "cidade": "Santa Inês",
-   "regiao": "3ª Oficialaria/Região - Vale do Pindaré",
+   "regiao": "3ª Oficialaria - Vale do Pindaré",
    "fundacao": "2003",
    "situacao": "Irregular",
    "patrocinio": "Sétima Luz",
@@ -227,7 +238,7 @@ window.DADOS = {
    "n": "1148",
    "nome": "Fênix do Maranhão",
    "cidade": "Barão de Grajaú",
-   "regiao": "4ª Oficialaria/Região - Médio Sertão",
+   "regiao": "4ª Oficialaria - Médio Sertão",
    "fundacao": "2016",
    "situacao": "Inativo",
    "patrocinio": "Raymundo Fabrico da Costa Silva",
@@ -238,7 +249,7 @@ window.DADOS = {
    "n": "949",
    "nome": "Tio Raimundo Nonato Lima e Silva",
    "cidade": "Barão de Grajaú",
-   "regiao": "4ª Oficialaria/Região - Médio Sertão",
+   "regiao": "4ª Oficialaria - Médio Sertão",
    "fundacao": "2016",
    "situacao": "Inativo",
    "patrocinio": "Liberdade e Justiça Baronense",
@@ -249,7 +260,7 @@ window.DADOS = {
    "n": "238",
    "nome": "Evangelista Mota Nascimento Junior",
    "cidade": "Açailândia",
-   "regiao": "5ª Oficialaria/Região - Sul",
+   "regiao": "5ª Oficialaria - Sul I",
    "fundacao": "1994",
    "situacao": "Inativo",
    "patrocinio": "Heitor Corrêa de Melo",
@@ -257,21 +268,10 @@ window.DADOS = {
    "endereco": "Avenida Juvino Oliveira, Bairro Jardim Glória"
   },
   {
-   "n": "948",
-   "nome": "Plínio Filho",
-   "cidade": "Grajaú",
-   "regiao": "5ª Oficialaria/Região - Sul",
-   "fundacao": "2016",
-   "situacao": "Inativo",
-   "patrocinio": "União e Fraternidade Grajauense",
-   "ativo": false,
-   "endereco": "Rua Projetada 2, s/n, Joana Batista"
-  },
-  {
    "n": "720",
    "nome": "Sementes do Amanhã",
    "cidade": "Carolina",
-   "regiao": "7ª Oficialaria/Região - Sul II",
+   "regiao": "7ª Oficialaria - Sul II",
    "fundacao": "2007",
    "situacao": "Inativo",
    "patrocinio": "Caridade de Justiça",
@@ -306,7 +306,7 @@ window.DADOS = {
    "n": "74",
    "nome": "Príncipes da Fronteira",
    "cidade": "Estreito",
-   "regiao": "5ª Oficialaria/Região - Sul",
+   "regiao": "5ª Oficialaria - Sul I",
    "fundacao": "2015",
    "situacao": "Inativo",
    "patrocinio": "",
@@ -317,7 +317,7 @@ window.DADOS = {
    "n": "82",
    "nome": "Educação e Moral",
    "cidade": "São Luís",
-   "regiao": "6ª Oficialaria - GOB/MA",
+   "regiao": "6ª Oficialaria - Grande Oriente do Brasil (GOB-MA)",
    "fundacao": "2015",
    "situacao": "Inativo",
    "patrocinio": "",
@@ -328,7 +328,7 @@ window.DADOS = {
    "n": "93",
    "nome": "Pequenos Semeadores",
    "cidade": "Carolina",
-   "regiao": "5ª Oficialaria/Região - Sul",
+   "regiao": "5ª Oficialaria - Sul I",
    "fundacao": "2015",
    "situacao": "Inativo",
    "patrocinio": "",
@@ -341,7 +341,7 @@ window.DADOS = {
    "n": "32",
    "nome": "Escudeiros do Maranhão",
    "cidade": "Porto Franco",
-   "regiao": "5ª Oficialaria/Região - Sul",
+   "regiao": "5ª Oficialaria - Sul I",
    "fundacao": "1997",
    "situacao": "Regular",
    "patrocinio": "União e Fraternidade · Tiradentes",
@@ -352,7 +352,7 @@ window.DADOS = {
    "n": "100",
    "nome": "Preceptores da Ordem do Templo",
    "cidade": "São Luís",
-   "regiao": "1ª Oficialaria/Região - Norte",
+   "regiao": "1ª Oficialaria - Norte",
    "fundacao": "2001",
    "situacao": "Regular",
    "patrocinio": "Beckman",
@@ -363,7 +363,7 @@ window.DADOS = {
    "n": "209",
    "nome": "Cavaleiros do Médio Sertão",
    "cidade": "São João dos Patos",
-   "regiao": "4ª Oficialaria/Região - Médio Sertão",
+   "regiao": "4ª Oficialaria - Médio Sertão",
    "fundacao": "2018",
    "situacao": "Irregular",
    "patrocinio": "São João Batista",
@@ -374,7 +374,7 @@ window.DADOS = {
    "n": "214",
    "nome": "Cavaleiros Guardiões do Templo de Jerusalém",
    "cidade": "Pedreiras",
-   "regiao": "2ª Oficialaria/Região - Centro/Cocais",
+   "regiao": "2ª Oficialaria - Centro",
    "fundacao": "2019",
    "situacao": "Inativo",
    "patrocinio": "Gonçalves Ledo",
@@ -385,7 +385,7 @@ window.DADOS = {
    "n": "264",
    "nome": "Cavaleiros do Norte",
    "cidade": "Santa Inês",
-   "regiao": "3ª Oficialaria/Região - Vale do Pindaré",
+   "regiao": "3ª Oficialaria - Vale do Pindaré",
    "fundacao": "2022",
    "situacao": "Inativo",
    "patrocinio": "Excelsa Loja de Perfeição \"Divino Mestre II\"",
@@ -499,7 +499,7 @@ window.DADOS = {
    "n": "321",
    "nome": "Amelina de Fátima Fagundes Serra",
    "cidade": "Imperatriz",
-   "regiao": "5ª Oficialaria/Região - Sul",
+   "regiao": "5ª Oficialaria - Sul I",
    "fundacao": "2021",
    "situacao": "Regular",
    "patrocinio": "",
@@ -521,7 +521,7 @@ window.DADOS = {
    "n": "342",
    "nome": "Acácia Zedoquense",
    "cidade": "Zé Doca",
-   "regiao": "2ª Oficialaria/Região - Centro/Cocais",
+   "regiao": "2ª Oficialaria - Centro",
    "fundacao": "2022",
    "situacao": "Regular",
    "patrocinio": "",
@@ -1506,19 +1506,13 @@ window.DADOS = {
      "nome": "Cromwell de Oliveira Filho",
      "cap": "534",
      "cargo": "Grande Mestre Estadual",
-     "foto": [
-      "2f12f4ae470f45adbdf27a79016ccf28",
-      "c"
-     ]
+     "foto": "img/liderancas/cromwell-de-oliveira-filho.jpg"
     },
     {
      "nome": "Evandro Rodrigues dos Santos Junior",
      "cap": "870",
      "cargo": "Grande Mestre Estadual Adjunto",
-     "foto": [
-      "9892e28291da47c49f929e1a4ada61d8",
-      "c"
-     ],
+     "foto": "img/liderancas/evandro-rodrigues-dos-santos-junior.jpg",
      "obs": "Sênior DeMolay"
     }
    ],
@@ -1535,10 +1529,7 @@ window.DADOS = {
        "nome": "Marcos Felipe Gomes Cardoso",
        "cap": "1212",
        "cargo": "Mestre Conselheiro Estadual Adjunto",
-       "foto": [
-        "1b1fe742e9cc448aa51e2122525ac7b5",
-        "c"
-       ]
+       "foto": "img/liderancas/marcos-felipe-gomes-cardoso.jpg"
       }
      ]
     },
@@ -1615,46 +1606,31 @@ window.DADOS = {
     "nome": "Cromwell de Oliveira Filho",
     "cap": "534",
     "cargo": "Grande Mestre Estadual",
-    "foto": [
-     "2f12f4ae470f45adbdf27a79016ccf28",
-     "c"
-    ]
+    "foto": "img/liderancas/cromwell-de-oliveira-filho.jpg"
    },
    {
     "nome": "Evandro Rodrigues dos Santos Junior",
     "cap": "870",
     "cargo": "Grande Mestre Estadual Adjunto",
-    "foto": [
-     "9892e28291da47c49f929e1a4ada61d8",
-     "c"
-    ]
+    "foto": "img/liderancas/evandro-rodrigues-dos-santos-junior.jpg"
    },
    {
     "nome": "Bruno Madson de Sousa Lima",
     "cap": "870",
     "cargo": "Grande Secretário Estadual",
-    "foto": [
-     "13bfb1da6db44a3bae9fb3d7cfaab196",
-     "c"
-    ]
+    "foto": "img/liderancas/bruno-madson-de-sousa-lima.jpg"
    },
    {
     "nome": "Felipe Braga Barreto",
     "cap": "818",
     "cargo": "Grande Secretário Estadual Adjunto",
-    "foto": [
-     "211e412cc7df41f79a232fc3a46b3f7a",
-     "c"
-    ]
+    "foto": "img/liderancas/felipe-braga-barreto.jpg"
    },
    {
     "nome": "Matheus Gama Santos",
     "cap": "818",
     "cargo": "Grande Tesoureiro Estadual",
-    "foto": [
-     "dd3c78c0a3ea4df88fa71b585f0a3909",
-     "c"
-    ]
+    "foto": "img/liderancas/matheus-gama-santos.jpg"
    },
    {
     "nome": "Alexandre Alves de Azevedo Filho",
@@ -1669,10 +1645,7 @@ window.DADOS = {
     "nome": "Weslley Fagundes Serra",
     "cap": "239",
     "cargo": "Grande Orador Estadual",
-    "foto": [
-     "efbd8d86ce47455fbf69cd883a3bf05c",
-     "c"
-    ]
+    "foto": "img/liderancas/weslley-fagundes-serra.jpg"
    },
    {
     "nome": "Arlan Silvestre Franco Jansen",
@@ -1769,49 +1742,56 @@ window.DADOS = {
    {
     "nome": "Eduardo Lopes Adão",
     "cap": "312",
-    "cargo": "Oficial Executivo"
-   },
-   {
-    "nome": "Pablo Ricardo Ramalho Leite",
-    "cap": "1231",
-    "cargo": "Oficial Executivo",
-    "foto": [
-     "4b3d8d4883084a248419acd824220e1c",
-     "c"
-    ]
-   },
-   {
-    "nome": "Emerson Forte de Andrade",
-    "cap": "239",
-    "cargo": "Oficial Executivo",
-    "foto": [
-     "6a0641ce1cb74a859890e0194e04b6fc",
-     "c"
-    ]
-   },
-   {
-    "nome": "Hudson Miranda Sousa",
-    "cap": "921",
-    "cargo": "Oficial Executivo",
-    "foto": [
-     "3cd17beb40c04d2ead652553f3380e17",
-     "c"
-    ]
+    "cargo": "Oficial Executivo da 1ª Região",
+    "foto": "img/liderancas/eduardo-lopes-adao.jpg",
+    "obs": "Loja Fidelitas nº 59 · São Luís"
    },
    {
     "nome": "Frankson Mendes Carneiro Filho",
-    "cap": "1212",
-    "cargo": "Oficial Executivo"
-   },
-   {
-    "nome": "Arlan Paixão de Sousa",
-    "cap": "1225",
-    "cargo": "Oficial Executivo · 4ª Oficialaria (Sertão)"
+    "cap": "1191",
+    "cargo": "Oficial Executivo da 2ª Região",
+    "foto": "img/liderancas/frankson-mendes-carneiro-filho.jpg",
+    "obs": "Loja Obreiros do Silêncio nº 35 · Esperantinópolis"
    },
    {
     "nome": "Alisson Mendonça Batalha",
     "cap": "1188",
-    "cargo": "Oficial Executivo"
+    "cargo": "Oficial Executivo da 3ª Região",
+    "obs": "Loja Sétima Luz nº 07 · Santa Inês"
+   },
+   {
+    "nome": "Arlan Paixão de Sousa",
+    "cap": "1225",
+    "cargo": "Oficial Executivo da 4ª Região",
+    "foto": "img/liderancas/arlan-paixao-de-sousa.jpg",
+    "obs": "Loja União e Fraternidade nº 44 · Paraibano"
+   },
+   {
+    "nome": "Emerson Forte de Andrade",
+    "cap": "239",
+    "cargo": "Oficial Executivo da 5ª Região",
+    "foto": "img/liderancas/emerson-forte-de-andrade.jpg",
+    "obs": "Loja União e Fraternidade de Imperatriz nº 10 · Imperatriz"
+   },
+   {
+    "nome": "Pablo Ricardo Ramalho Leite",
+    "cap": "1231",
+    "cargo": "Oficial Executivo da 6ª Região (GOB-MA)",
+    "foto": [
+     "4b3d8d4883084a248419acd824220e1c",
+     "c"
+    ],
+    "obs": "Loja José Ribamar Guimarães de Sousa nº 2.656 · São Luís"
+   },
+   {
+    "nome": "Hudson Miranda Sousa",
+    "cap": "921",
+    "cargo": "Oficial Executivo da 7ª Região",
+    "foto": [
+     "3cd17beb40c04d2ead652553f3380e17",
+     "c"
+    ],
+    "obs": "Loja Amor e Justiça nº 52 · Balsas"
    }
   ]
  },
@@ -1876,6 +1856,156 @@ window.DADOS = {
   ]
  },
  "comissoes": {
+  "gestao": "2025/2027",
+  "lista": [
+   {
+    "nome": "Comissão Estadual de Honrarias e Prêmios",
+    "ato": "Ato nº 004/2025-2027",
+    "icone": [
+     "a4996f3f55a04f1dbbd4b5a214734bb6",
+     "c"
+    ],
+    "pessoas": [
+     {
+      "nome": "Alexandre Alves de Azevedo Filho",
+      "cap": "919",
+      "cargo": "Presidente",
+      "foto": [
+       "48fc4c56cd3c427693a4f59f688aab52",
+       "c"
+      ]
+     },
+     {
+      "nome": "Gabriel Francisco Araújo",
+      "cap": "1231",
+      "cargo": "Membro",
+      "foto": [
+       "393b7e2de8e7494d92a9fd1edcdb1b6e",
+       "c"
+      ]
+     },
+     {
+      "nome": "Sergio Henrique Marques de Oliveira",
+      "cap": "534",
+      "cargo": "Membro",
+      "foto": [
+       "8d8f4a8106a04b45bbc3f13a4735b418",
+       "c"
+      ]
+     }
+    ]
+   },
+   {
+    "nome": "Coordenação Estadual da Ordem da Cavalaria",
+    "ato": "Ato nº 005/2025-2027",
+    "icone": [
+     "8a23cc665c714d3aab2af347a696204d",
+     "c"
+    ],
+    "pessoas": [
+     {
+      "nome": "Werllan Nascimento da Silva",
+      "cap": "870",
+      "cargo": "Coordenador"
+     },
+     {
+      "nome": "Alexandre Alves de Azevedo Filho",
+      "cap": "919",
+      "cargo": "Membro",
+      "foto": [
+       "48fc4c56cd3c427693a4f59f688aab52",
+       "c"
+      ]
+     },
+     {
+      "nome": "Hudson Miranda Sousa",
+      "cap": "921",
+      "cargo": "Membro",
+      "foto": [
+       "3cd17beb40c04d2ead652553f3380e17",
+       "c"
+      ]
+     },
+     {
+      "nome": "Eduardo Lopes Adão",
+      "cap": "312",
+      "cargo": "Membro",
+      "foto": "img/liderancas/eduardo-lopes-adao.jpg"
+     }
+    ]
+   },
+   {
+    "nome": "Comissão Estadual de Apelações",
+    "ato": "Ato nº 006/2025-2027",
+    "icone": [
+     "dcaabdb6714047209e08c5308a353866",
+     "c"
+    ],
+    "pessoas": [
+     {
+      "nome": "Paulo Ytallo Alves da Silva",
+      "cap": "870",
+      "cargo": "Presidente",
+      "foto": [
+       "eff7d2ee13c94e4c98aa1052266556fb",
+       "c"
+      ]
+     },
+     {
+      "nome": "Rodrigo Brandão Ferreira",
+      "cap": "312",
+      "cargo": "Membro",
+      "foto": [
+       "6a91953698104e488633295e365e4681",
+       "c"
+      ]
+     },
+     {
+      "nome": "Eduardo Sued Maciel Lima",
+      "cap": "647",
+      "cargo": "Membro"
+     }
+    ]
+   },
+   {
+    "nome": "Comissão Estadual de Eventos",
+    "ato": "Ato nº 007/2025-2027",
+    "icone": [
+     "ddc2d39725504a459eda33380a41ef92",
+     "c"
+    ],
+    "pessoas": [
+     {
+      "nome": "Hudson Miranda Sousa",
+      "cap": "921",
+      "cargo": "Presidente",
+      "foto": [
+       "3cd17beb40c04d2ead652553f3380e17",
+       "c"
+      ]
+     },
+     {
+      "nome": "Cyro José Ferreira Nascimento",
+      "cap": "312",
+      "cargo": "Membro",
+      "foto": "img/liderancas/cyro-jose-ferreira-nascimento.jpg"
+     },
+     {
+      "nome": "Matheus Gama Santos",
+      "cap": "818",
+      "cargo": "Membro",
+      "foto": "img/liderancas/matheus-gama-santos.jpg"
+     },
+     {
+      "nome": "Davyd Salomão Fonseca Marinho Brito",
+      "cap": "1191",
+      "cargo": "Membro"
+     }
+    ]
+   }
+  ]
+ },
+ "comissoesAnterior": {
   "gestao": "2023/2025",
   "lista": [
    {
@@ -2073,29 +2203,34 @@ window.DADOS = {
    "obs": null,
    "pessoas": [
     {
-     "nome": "Francisco de Souza Feitoza",
-     "cap": "1225",
-     "cargo": "Mestre Conselheiro Regional"
-    },
-    {
-     "nome": "Hoberth Cintra Lopes",
-     "cap": "239",
-     "cargo": "Mestre Conselheiro Regional"
-    },
-    {
-     "nome": "Juarez Reis Silva Amaral Neto",
-     "cap": "1188",
-     "cargo": "Mestre Conselheiro Regional"
-    },
-    {
      "nome": "Luís Felipe Lopes Rosa",
      "cap": "1231",
-     "cargo": "Mestre Conselheiro Regional"
+     "cargo": "MCR da 1ª Oficialaria",
+     "foto": "img/liderancas/luis-felipe-lopes-rosa.jpg"
     },
     {
      "nome": "Raimundo Nicolas Santos",
      "cap": "1212",
-     "cargo": "Mestre Conselheiro Regional"
+     "cargo": "MCR da 2ª Oficialaria",
+     "foto": "img/liderancas/raimundo-nicolas-santos.jpg"
+    },
+    {
+     "nome": "Juarez Reis Silva Amaral Neto",
+     "cap": "1188",
+     "cargo": "MCR da 3ª Oficialaria",
+     "foto": "img/liderancas/juarez-reis-silva-amaral-neto.jpg"
+    },
+    {
+     "nome": "Francisco de Souza Feitoza",
+     "cap": "1225",
+     "cargo": "MCR da 4ª Oficialaria",
+     "foto": "img/liderancas/francisco-de-souza-feitoza.jpg"
+    },
+    {
+     "nome": "Hoberth Cintra Lopes",
+     "cap": "239",
+     "cargo": "MCR da 5ª Oficialaria",
+     "foto": "img/liderancas/hoberth-cintra-lopes.jpg"
     }
    ]
   },
@@ -3584,91 +3719,166 @@ window.DADOS = {
    [
     "Alek Wayne de Souza Santos",
     "46654",
-    "534",
+    {
+     "nome": "Escudeiros do Maranhão",
+     "n": "32",
+     "cidade": "Porto Franco",
+     "uf": "MA"
+    },
     "09/02/2024"
    ],
    [
     "Alexandre Alves de Azevedo Filho",
     "67417",
-    "919",
+    {
+     "nome": "Cavaleiros do Médio Sertão",
+     "n": "209",
+     "cidade": "São João dos Patos",
+     "uf": "MA"
+    },
     "04/11/2022"
    ],
    [
     "Anderson Carnib Rocha Neiva",
     "71233",
-    "623",
+    {
+     "nome": "Cavaleiros do Norte",
+     "n": "264",
+     "cidade": "Santa Inês",
+     "uf": "MA"
+    },
     "12/11/2015"
    ],
    [
     "Bruno Madson de Sousa Lima",
     "44634",
-    "870",
+    {
+     "nome": "Cavaleiros Guardiões do Templo de Jerusalém",
+     "n": "214",
+     "cidade": "Pedreiras",
+     "uf": "MA"
+    },
     "05/12/2022"
    ],
    [
     "Caio Vinicius Costa Coelho",
     "20985",
-    "919",
+    {
+     "nome": "Cavaleiros do Médio Sertão",
+     "n": "209",
+     "cidade": "São João dos Patos",
+     "uf": "MA"
+    },
     "31/01/2024"
    ],
    [
     "Caio Vinícyus Teixeira Oliveira",
     "39248",
-    "818",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "27/12/2023"
    ],
    [
     "Erick Cassio Carvalho Oliveira",
     "27597",
-    "312",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "07/11/2019"
    ],
    [
     "Evandro Rodrigues dos Santos Junior",
     "42011",
-    "870",
+    {
+     "nome": "Cavaleiros Guardiões do Templo de Jerusalém",
+     "n": "214",
+     "cidade": "Pedreiras",
+     "uf": "MA"
+    },
     "18/04/2018"
    ],
    [
     "Felipe Alves de Franca",
     "15042",
-    "870",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "18/04/2018"
    ],
    [
     "Frank Lucas Gomes do Nascimento",
     "19782",
-    "312",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "02/10/2020"
    ],
    [
     "Gabriel Francisco Araújo",
     "76858",
-    "1231",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "26/11/2024"
    ],
    [
     "Hudson Miranda Sousa",
     "4862",
-    "921",
+    {
+     "nome": "Cruzadas do Tocantins",
+     "n": "17",
+     "cidade": "",
+     "uf": "TO"
+    },
     "09/04/2018"
    ],
    [
     "Lucas Fonseca Rezende",
     "44137",
-    "144",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "29/04/2021"
    ],
    [
     "Lucas Gabriel de Sousa Jatobá",
     "84144",
-    "919",
+    {
+     "nome": "Cavaleiros do Médio Sertão",
+     "n": "209",
+     "cidade": "São João dos Patos",
+     "uf": "MA"
+    },
     "06/10/2025"
    ],
    [
     "Rodrigo de Sousa da Silva",
     "49830",
-    "919",
+    {
+     "nome": "Cavaleiros do Médio Sertão",
+     "n": "209",
+     "cidade": "São João dos Patos",
+     "uf": "MA"
+    },
     "25/05/2023"
    ]
   ],
@@ -3676,61 +3886,111 @@ window.DADOS = {
    [
     "Alexandre Alves de Azevedo Filho",
     "67417",
-    "919",
+    {
+     "nome": "Cavaleiros do Médio Sertão",
+     "n": "209",
+     "cidade": "São João dos Patos",
+     "uf": "MA"
+    },
     "27/05/2024"
    ],
    [
     "Evandro Rodrigues dos Santos Junior",
     "42011",
-    "870",
+    {
+     "nome": "Cavaleiros Guardiões do Templo de Jerusalém",
+     "n": "214",
+     "cidade": "Pedreiras",
+     "uf": "MA"
+    },
     "18/04/2018"
    ],
    [
     "Felipe Alves de Franca",
     "15042",
-    "870",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "18/04/2018"
    ],
    [
     "Fernandez Nunes Milhomem",
     "53618",
-    "534",
+    {
+     "nome": "Escudeiros do Maranhão",
+     "n": "32",
+     "cidade": "Porto Franco",
+     "uf": "MA"
+    },
     "29/04/2021"
    ],
    [
     "Franco Mateus Gomes do Nascimento",
     "19781",
-    "312",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "18/04/2018"
    ],
    [
     "Frank Lucas Gomes do Nascimento",
     "19782",
-    "312",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "21/12/2023"
    ],
    [
     "Geraldo Pinto Alves Filho",
     "52719",
-    "144",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "18/04/2018"
    ],
    [
     "Hudson Miranda Sousa",
     "4862",
-    "921",
+    {
+     "nome": "Cruzadas do Tocantins",
+     "n": "17",
+     "cidade": "",
+     "uf": "TO"
+    },
     "09/04/2018"
    ],
    [
     "Ilan Kelson de Mendonça Castro",
     "1655",
-    "818",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "23/05/2015"
    ],
    [
     "Luiz Carlos de Castro Alves Junior",
     "61061",
-    "312",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "23/03/2021"
    ]
   ],
@@ -3738,19 +3998,34 @@ window.DADOS = {
    [
     "Evandro Rodrigues dos Santos Junior",
     "42011",
-    "870",
+    {
+     "nome": "Cavaleiros Guardiões do Templo de Jerusalém",
+     "n": "214",
+     "cidade": "Pedreiras",
+     "uf": "MA"
+    },
     "07/11/2019"
    ],
    [
     "Hudson Miranda Sousa",
     "4862",
-    "921",
+    {
+     "nome": "Cruzadas do Tocantins",
+     "n": "17",
+     "cidade": "",
+     "uf": "TO"
+    },
     "30/04/2018"
    ],
    [
     "Ilan Kelson de Mendonça Castro",
     "1655",
-    "818",
+    {
+     "nome": "Preceptores da Ordem do Templo",
+     "n": "100",
+     "cidade": "São Luís",
+     "uf": "MA"
+    },
     "23/05/2015"
    ]
   ],
