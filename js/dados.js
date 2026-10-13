@@ -1302,7 +1302,10 @@ window.DADOS = {
        "nome": "Matheus Gama Santos",
        "cap": "623",
        "cargo": "Mestre Conselheiro Estadual",
-       "foto": "img/liderancas/matheus-gama-santos.jpg"
+       "foto": [
+        "74e457248f8d44cab8ccfa26f1fc1fcf",
+        "a"
+       ]
       },
       {
        "nome": "Matias de Sousa Lima Neto",
@@ -2741,18 +2744,24 @@ window.DADOS = {
    "ano": "2016",
    "demolay": {
     "nome": "Lucas Fonseca Rezende",
-    "cap": "312"
+    "cap": "312",
+    "foto": [
+     "41d7e847181443499735f39a20fe118e",
+     "c"
+    ]
    },
    "consultor": {
     "nome": "Geraldo Pinto Alves Filho",
-    "cap": "818"
+    "cap": "818",
+    "foto": "img/liderancas/geraldo-pinto-alves-filho.jpg"
    }
   },
   {
    "ano": "2017",
    "demolay": {
     "nome": "Jose Marcos Figueiredo Silva",
-    "cap": "647"
+    "cap": "647",
+    "foto": "img/liderancas/jose-marcos-figueiredo-silva.jpg"
    },
    "consultor": {
     "nome": "Luiz Alberto Lopes de Sousa",
@@ -2768,11 +2777,15 @@ window.DADOS = {
    "demolay": {
     "nome": "Matheus Gama Santos",
     "cap": "623",
-    "foto": "img/liderancas/matheus-gama-santos.jpg"
+    "foto": [
+     "74e457248f8d44cab8ccfa26f1fc1fcf",
+     "a"
+    ]
    },
    "consultor": {
     "nome": "João Luiz da Silva",
-    "cap": "919"
+    "cap": "919",
+    "foto": "img/liderancas/joao-luiz-da-silva.jpg"
    }
   },
   {
@@ -2781,8 +2794,8 @@ window.DADOS = {
     "nome": "Alexandre Alves de Azevedo Filho",
     "cap": "919",
     "foto": [
-     "48fc4c56cd3c427693a4f59f688aab52",
-     "c"
+     "c8d7fd81c79742d8be7eeeebf6764369",
+     "b"
     ]
    },
    "consultor": {
@@ -2816,7 +2829,8 @@ window.DADOS = {
    },
    "consultor": {
     "nome": "Thiago Silveira Soares",
-    "cap": "144"
+    "cap": "144",
+    "foto": "img/liderancas/thiago-silveira-soares.jpg"
    }
   },
   {
