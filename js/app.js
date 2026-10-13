@@ -160,7 +160,7 @@
       <div class="caminho">
         <div class="fase"><div class="fase__n">1</div><small>7 a 11 anos</small><h3>Ordem dos Escudeiros</h3><p>Os primeiros passos, com as virtudes da verdade, da justiça e da sabedoria.</p><a href="#escudeiros">Conhecer →</a></div>
         <div class="fase"><div class="fase__n">2</div><small>12 a 21 anos</small><h3>Ordem DeMolay</h3><p>O Capítulo: liderança na prática, amizade, serviço à comunidade e os Graus Iniciático e DeMolay.</p><a href="#ordem">Conhecer →</a></div>
-        <div class="fase"><div class="fase__n">3</div><small>17 a 20 anos</small><h3>Ordem da Cavalaria</h3><p>Nos Priorados, o DeMolay aprofunda o ritual, a história e o funcionamento da Ordem.</p><a href="#cavalaria">Conhecer →</a></div>
+        <div class="fase"><div class="fase__n">3</div><small>16 a 20 anos</small><h3>Ordem da Cavalaria</h3><p>Nos Priorados, o DeMolay aprofunda o ritual, a história e o funcionamento da Ordem.</p><a href="#cavalaria">Conhecer →</a></div>
         <div class="fase"><div class="fase__n">4</div><small>Sênior DeMolay</small><h3>Alumni e Maçonaria</h3><p>Depois dos 21 anos, o Sênior DeMolay segue ligado à Ordem pela Alumni e, muitas vezes, pela Maçonaria.</p><a href="#alumni">Conhecer →</a></div>
       </div>
       <div class="botoes"><a class="btn btn--ouro" href="#onde-estamos">Ver Capítulos no Maranhão</a></div>`, 'secao--escura')}
@@ -205,10 +205,10 @@
 
   P.cavalaria = () => `${faixa('Ordem da Cavalaria', 'O que é a Ordem da Cavalaria', 'Nobres Cavaleiros da Ordem Sagrada dos Soldados Companheiros de Jacques DeMolay.', 'A Ordem')}
     ${secao(`<div class="texto"><div class="corpo">
-      <p>A Ordem da Cavalaria, cujo nome oficial é “Nobres Cavaleiros da Ordem Sagrada dos Soldados Companheiros de Jacques DeMolay”, é uma organização complementar formada por DeMolays ativos entre 17 e 20 anos de idade.</p>
+      <p>A Ordem da Cavalaria, cujo nome oficial é “Nobres Cavaleiros da Ordem Sagrada dos Soldados Companheiros de Jacques DeMolay”, é uma organização complementar formada por DeMolays ativos entre 16 e 20 anos de idade.</p>
       <p>Não é uma honraria nem um prêmio. Esta Organização Afiliada tem rituais e oficiais próprios e se organiza em unidades análogas aos Capítulos, chamadas Priorados.</p>
       <p>A principal função de um Priorado é orientar sobre os aspectos internos da Ordem DeMolay: procedimentos ritualísticos e litúrgicos, a história da Ordem e o seu funcionamento em todos os níveis.</p>
-      <p>A Ordem da Cavalaria é um direito de todo DeMolay ativo entre 17 e 20 anos que esteja regular em seu Capítulo e que conheça de memória os questionários e juramentos dos Graus Iniciático e DeMolay.</p>
+      <p>A Ordem da Cavalaria é um direito de todo DeMolay ativo entre 16 e 20 anos que esteja regular em seu Capítulo e que conheça de memória os questionários e juramentos dos Graus Iniciático e DeMolay.</p>
       <h2>Curiosidade</h2>
       <p>Os primeiros Cavaleiros eram DeMolays de 18 a 21 anos com grande posição em seus Capítulos. O primeiro Priorado nasceu no Capítulo Mãe, em Kansas City (EUA). Sua carta é de 27 de outubro de 1947, mas a primeira Investidura aconteceu em 10 de janeiro de 1948, no Ivanhoe Masonic Temple, presidida por Everett L. Davis, o primeiro Ilustre Comendador Cavaleiro. As esporas usadas naquele dia estão expostas no Frank S. Land Memorial.</p>
       <h2>Priorados no Maranhão</h2>
