@@ -1712,10 +1712,7 @@ window.DADOS = {
     "nome": "Matheus Gama Santos",
     "cap": "818",
     "cargo": "Grande Tesoureiro Estadual Adjunto",
-    "foto": [
-     "dd3c78c0a3ea4df88fa71b585f0a3909",
-     "c"
-    ]
+    "foto": "img/liderancas/matheus-gama-santos.jpg"
    },
    {
     "nome": "Weslley Fagundes Serra",
@@ -1727,13 +1724,10 @@ window.DADOS = {
     ]
    },
    {
-    "nome": "Lucas Fonseca Rezende",
-    "cap": "144",
+    "nome": "Cyro José Ferreira Nascimento",
+    "cap": "312",
     "cargo": "Grande Orador Estadual Adjunto",
-    "foto": [
-     "41d7e847181443499735f39a20fe118e",
-     "c"
-    ]
+    "foto": "img/liderancas/cyro-jose-ferreira-nascimento.jpg"
    }
   ]
  },
@@ -2517,7 +2511,8 @@ window.DADOS = {
     {
      "nome": "Alek Wayne de Souza Santos",
      "colegio": "200",
-     "cargo": "Vice-Presidente"
+     "cargo": "Vice-Presidente",
+     "foto": "img/liderancas/alek-wayne-de-souza-santos.jpg"
     }
    ]
   },
@@ -2717,7 +2712,8 @@ window.DADOS = {
    "cadeira": 18,
    "patrono": "Dagmar Desterro",
    "nome": "Alek Wayne de Souza Santos",
-   "cap": "534"
+   "cap": "534",
+   "foto": "img/liderancas/alek-wayne-de-souza-santos.jpg"
   },
   {
    "cadeira": 19,
@@ -2768,11 +2764,7 @@ window.DADOS = {
    "ano": "2016",
    "demolay": {
     "nome": "Lucas Fonseca Rezende",
-    "cap": "312",
-    "foto": [
-     "41d7e847181443499735f39a20fe118e",
-     "c"
-    ]
+    "cap": "312"
    },
    "consultor": {
     "nome": "Geraldo Pinto Alves Filho",
@@ -2851,7 +2843,8 @@ window.DADOS = {
    "ano": "2021",
    "demolay": {
     "nome": "Alek Wayne de Souza Santos",
-    "cap": "534"
+    "cap": "534",
+    "foto": "img/liderancas/alek-wayne-de-souza-santos.jpg"
    },
    "consultor": {
     "nome": "Thiago Silveira Soares",
