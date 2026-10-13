@@ -1894,10 +1894,7 @@ window.DADOS = {
    {
     "nome": "Coordenação Estadual da Ordem da Cavalaria",
     "ato": "Ato nº 005/2025-2027",
-    "icone": [
-     "8a23cc665c714d3aab2af347a696204d",
-     "c"
-    ],
+    "icone": "img/emblemas/coordenacao-cavalaria.png",
     "pessoas": [
      {
       "nome": "Werllan Nascimento da Silva",
@@ -2608,6 +2605,7 @@ window.DADOS = {
    "cadeira": 7,
    "patrono": "Beth Glabe",
    "nome": "Vítor Emanuel Oliveira Nascimento",
+   "cap": "841",
    "foto": [
     "e851899ecd8745108c5aa2aa05e22904",
     "c"
@@ -2647,6 +2645,7 @@ window.DADOS = {
    "cadeira": 11,
    "patrono": "Humberto de Campos",
    "nome": "Kevin William de Souza Santos",
+   "cap": "534",
    "foto": [
     "94028a368d814ba58599a2ce10a0ce31",
     "c"
@@ -2656,6 +2655,7 @@ window.DADOS = {
    "cadeira": 12,
    "patrono": "Francisco José Ramos da Silva",
    "nome": "Lúcio Flávio Dias Lopes Portela",
+   "cap": "312",
    "foto": [
     "7b053b3167c84fd98a1753a2e81bb578",
     "c"
@@ -3599,7 +3599,7 @@ window.DADOS = {
    [
     "Lúcio Flávio Dias Lopes Portela",
     "9986",
-    "",
+    "312",
     "04/05/2016"
    ],
    [

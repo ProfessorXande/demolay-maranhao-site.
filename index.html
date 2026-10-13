@@ -10,16 +10,18 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;700;800&family=Barlow:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link rel="stylesheet" href="css/estilo.css">
+<script>try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t==="escuro"?"dark":"light"}catch(e){}</script>
 </head>
 <body>
 <header class="topo">
   <div class="miolo">
     <a class="marca" href="#inicio" aria-label="DeMolay Maranhão — início">
-      <img src="https://static.wixstatic.com/media/0c5e23_10fb58e9dee64e32ad87cee218b15196~mv2.png/v1/fit/w_120,h_120,al_c/e.png" alt="" onerror="this.remove()">
+      <img src="img/emblemas/gce-ma.png" alt="">
       <span>DeMolay Maranhão<small>Grande Conselho Estadual</small></span>
     </a>
-    <button class="hamb" id="hamb" type="button" aria-label="Abrir menu">☰</button>
     <nav aria-label="Menu principal"><ul class="menu" id="menu"></ul></nav>
+    <button class="tema" id="tema" type="button" aria-label="Mudar para o modo escuro"><svg class="sol" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg><svg class="lua" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg></button>
+    <button class="hamb" id="hamb" type="button" aria-label="Abrir menu">☰</button>
   </div>
 </header>
 <main id="app"></main>

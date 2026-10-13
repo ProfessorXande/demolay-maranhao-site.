@@ -7,19 +7,48 @@
   /* ---------- utilidades ---------- */
   const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const WIX = 'https://static.wixstatic.com/media/0c5e23_';
+  const E = 'img/emblemas/';
   const IMG = {
-    logo: WIX + '620ba12650cd43ca8b984d8e597b6d80~mv2.png',
-    emblema: WIX + '10fb58e9dee64e32ad87cee218b15196~mv2.png/v1/fit/w_700,h_700,al_c,q_90/emblema.png',
+    emblema: E + 'gce-ma.png',
     foto: WIX + '920d42d0e64b4396b4c98671adaf09e9~mv2.jpg/v1/fill/w_1600,h_1000,al_c,q_80/foto.jpg',
-    dmma: WIX + '30012c0601dc48e1aa819184ade06da3~mv2.png',
-    ordem: WIX + '5b2ef7d4b1894f54bdb0fa46d6a9cfbe~mv2.png',
-    cavalaria: WIX + '29c61fdaa2f34266b14f5176eeced1dd~mv2.png/v1/fit/w_500,h_600,al_c/c.png',
-    escudeiros: WIX + 'ce21de222d01483b8100bcf6cfe1d681~mv2.png/v1/fit/w_600,h_600,al_c/e.png',
-    chevalier: WIX + '2c954528dc8b4ee1b4e944d641f8af40~mv2.png/v1/fit/w_500,h_600,al_c/c.png',
-    legiao: WIX + '2ea55eebfd1543cf87af9e86716ed7da~mv2.png/v1/fit/w_400,h_700,al_c/l.png',
-    amdl: WIX + 'ea5fa80c833f4cdd8460f08da8746dc0~mv2.png',
+    dmma: E + 'dmma-branco.png',
+    ordem: E + 'ordem-demolay.png',
+    cavalaria: E + 'cavalaria.png',
+    escudeiros: E + 'escudeiros.png',
+    chevalier: E + 'chevalier.png',
+    legiao: E + 'legiao-de-honra.png',
+    cruz: E + 'cruz-de-honra.png',
+    alma: E + 'demolay-de-alma.png',
+    comendador: E + 'comendador.png',
+    gracruz: E + 'gra-cruz.png',
+    manto: E + 'manto-prateado.png',
+    amdl: E + 'amdl.png',
+    alumni: E + 'alumni.png',
+    clube: E + 'clube-maes.png',
+    frank: E + 'frank-land.png',
+    jacques: E + 'jacques-demolay.png',
+    scdb: E + 'scdb.png',
     parceiros: [['Grande Loja Maçônica do Estado do Maranhão', 'e5278e69df43470aac83457c451cca4f'], ['Grande Oriente do Brasil — Maranhão', '8585d98c881b4619b87ae0eea083f416'], ['Supremo Conselho do Grau 33', 'e108147d4b7f4306b293fe81c0b8feee']],
   };
+  // selo de cada gestão (só quando gestão e lema batem)
+  const SELOS = {
+    '2025/2027|Inspirar e Servir': 'gestao-inspirar-e-servir', '2023/2025|Viver DeMolay': 'gestao-viver-demolay',
+    '2024/2025|Cativando Virtudes': 'gestao-cativando-virtudes', '2023/2024|União DeMolay': 'gestao-uniao-demolay',
+    '2022/2023|Praticar DeMolay': 'gestao-praticar-demolay', '2021/2022|Reinventar DeMolay': 'gestao-reinventar-demolay',
+    '2020/2021|Enraizando Virtudes': 'gestao-enraizando-virtudes',
+  };
+  const selo = (gestao, lema) => { const f = SELOS[gestao + '|' + lema]; return f ? `<img class="selo" src="${E}${f}.png" alt="Selo da gestão ${esc(lema)}" loading="lazy">` : ''; };
+  // revistas da AMDL, em ordem de publicação
+  const REVISTAS = [
+    ['1', 'Outubro de 2019', 'Nasce a Academia Maranhense DeMolay de Letras', 43],
+    ['2', '20 de dezembro de 2019', 'Pensamentos de outros momentos: uma recapitulação de partes da nossa história', 46],
+    ['3', 'Agosto de 2020', 'Ordem DeMolay: encantos e tolerância', 26],
+    ['4', 'Dezembro de 2020', '', 22],
+    ['5', 'Agosto de 2021', 'Ordem DeMolay: o imaginário popular', 43],
+    ['6', 'Dezembro de 2021', '', 19],
+    ['7', 'Agosto de 2022', '', 29],
+    ['8', 'Dezembro de 2022', '', 12],
+  ];
   const RECORTE = { c: [35, 28, 110], a: [47, 52, 128], b: [47, 235, 128] }; // recorte só da pessoa, sem o anel das artes antigas
   function urlFoto(f) {
     if (typeof f === 'string') return f;
@@ -41,7 +70,7 @@
   const PINO = '<svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path fill="currentColor" d="M6 0a6 6 0 0 0-6 6c0 4.4 6 8 6 8s6-3.6 6-8a6 6 0 0 0-6-6zm0 8.2A2.2 2.2 0 1 1 6 3.8a2.2 2.2 0 0 1 0 4.4z"/></svg>';
 
   function foto(p) {
-    return `<div class="foto"><div class="foto__dentro"><b>${esc(iniciais(p.nome))}</b>${p.foto ? img(urlFoto(p.foto), 'Foto de ' + p.nome, typeof p.foto === 'string' ? 'nova' : '') : ''}</div></div>`;
+    return `<div class="foto"><div class="foto__dentro"><b>${esc(iniciais(p.nome))}</b>${p.foto ? img(urlFoto(p.foto), 'Foto de ' + p.nome) : ''}</div></div>`;
   }
   function pessoa(p, cargo) {
     const c = cargo ?? p.cargo;
@@ -59,7 +88,7 @@
       ${trilha ? `<p class="trilha"><a href="#inicio">Início</a> / ${trilha}</p>` : ''}
       <p class="olho">${olho}</p><h1>${titulo}</h1>${texto ? `<p>${texto}</p>` : ''}</div></header>`;
   }
-  const cartao = (href, small, titulo, texto, mais = 'Ver →') => `<a class="cartao" href="${href}"><small>${small}</small><h3>${titulo}</h3><p>${texto}</p><span class="mais">${mais}</span></a>`;
+  const cartao = (href, small, titulo, texto, mais = 'Ver →', im) => `<a class="cartao" href="${href}">${im ? `<span class="cartao__icone">${img(im, '')}</span>` : ''}<small>${small}</small><h3>${titulo}</h3><p>${texto}</p><span class="mais">${mais}</span></a>`;
 
   /* ---------- menu ---------- */
   const MENU = [
@@ -68,7 +97,7 @@
     ['onde-estamos', 'Onde estamos'],
     ['Gabinete Estadual', [['gabinete', 'Líderes Estaduais — Juvenil'], ['regionais', 'Mestres Conselheiros Regionais'], '|Galerias', ['galeria-mce', 'Mestres Conselheiros Estaduais e Adjuntos']]],
     ['Diretoria Executiva', [['diretoria', 'Líderes Estaduais — Adulto'], ['oficiais', 'Oficiais Executivos'], ['comissoes', 'Comissões Estaduais'], '|Galerias', ['galeria-gme', 'Grandes Mestres Estaduais']]],
-    ['Galeria de Honra', [['destaques', 'DeMolay e Consultor do Ano'], ['merito', 'Mérito DeMolay Maranhão'], ['academia', 'Academia Maranhense DeMolay de Letras'], '|Honrarias', ['chevalier', 'Grau de Chevalier'], ['legiao', 'Legião de Honra'], ['cruz', 'Cruz de Honra'], ['alma', 'DeMolay de Alma'], ['honrarias-cavalaria', 'Honrarias da Cavalaria']]],
+    ['Galeria de Honra', [['destaques', 'DeMolay e Consultor do Ano'], ['merito', 'Mérito DeMolay Maranhão'], ['academia', 'Academia Maranhense DeMolay de Letras'], ['revistas', 'Revista Litteris et Virtutibus'], '|Honrarias', ['chevalier', 'Grau de Chevalier'], ['legiao', 'Legião de Honra'], ['cruz', 'Cruz de Honra'], ['alma', 'DeMolay de Alma'], ['honrarias-cavalaria', 'Honrarias da Cavalaria']]],
     ['alumni', 'Alumni MA'],
   ];
   function montaMenu() {
@@ -107,7 +136,7 @@
       <div class="hero__foto" style="background-image:url('${IMG.foto}')"></div>
       <div class="miolo">
         <div class="hero__emblema">${img(IMG.emblema, 'Emblema do Grande Conselho Estadual da Ordem DeMolay do Maranhão')}</div>
-        <p class="selo">Grande Conselho Estadual nº 17</p>
+        <p class="selo-texto">Grande Conselho Estadual nº 17</p>
         <h1>Ordem DeMolay <em>Maranhão</em></h1>
         <p>A Ordem DeMolay é uma organização para jovens de 12 a 21 anos, patrocinada pela Maçonaria desde 1919, que forma bons filhos, bons cidadãos e líderes. No Maranhão, desde 1991, de São Luís ao sertão.</p>
         <div class="botoes"><a class="btn btn--ouro" href="https://ocaminhocomecaaqui.com.br/" target="_blank" rel="noopener">Quero fazer parte</a><a class="btn btn--linha" href="#ordem">Conheça a Ordem</a></div>
@@ -142,15 +171,15 @@
       </div>`)}
     ${secao(`${cabeca('Galeria de Honra', 'Reconhecimento a quem serve a Ordem', '')}
       <div class="cartoes">
-        ${cartao('#merito', 'Honraria estadual', 'Mérito DeMolay Maranhão', 'A honraria que só a Ordem DeMolay maranhense pode conceder.')}
-        ${cartao('#academia', '16 cadeiras', 'Academia Maranhense DeMolay de Letras', 'Ocupantes e patronos das cadeiras da AMDL.')}
-        ${cartao('#chevalier', `${D.honrarias.chevalier.length} agraciados`, 'Grau de Chevalier', 'A maior honraria que um DeMolay ativo pode receber.')}
-        ${cartao('#legiao', `${D.honrarias.legiao.length} legionários`, 'Legião de Honra', 'Reconhecimento a Seniores DeMolay e amigos da Ordem.')}
+        ${cartao('#merito', 'Honraria estadual', 'Mérito DeMolay Maranhão', 'A honraria que só a Ordem DeMolay maranhense pode conceder.', undefined, IMG.emblema)}
+        ${cartao('#academia', '16 cadeiras · 8 revistas', 'Academia Maranhense DeMolay de Letras', 'Ocupantes e patronos das cadeiras e a revista Litteris et Virtutibus.', undefined, IMG.amdl)}
+        ${cartao('#chevalier', `${D.honrarias.chevalier.length} agraciados`, 'Grau de Chevalier', 'A maior honraria que um DeMolay ativo pode receber.', undefined, IMG.chevalier)}
+        ${cartao('#legiao', `${D.honrarias.legiao.length} legionários`, 'Legião de Honra', 'Reconhecimento a Seniores DeMolay e amigos da Ordem.', undefined, IMG.legiao)}
       </div>`, 'secao--cinza')}
     ${secao(`${cabeca('O caminho começa aqui', 'Pronto para dar o próximo passo?', 'Procure o Capítulo DeMolay mais perto de você e junte-se a nós.', true)}
       <div class="botoes"><a class="btn btn--ouro" href="https://ocaminhocomecaaqui.com.br/" target="_blank" rel="noopener">Quero fazer parte</a><a class="btn btn--linha" href="#onde-estamos">Onde estamos</a></div>`, 'secao--escura')}
     ${secao(`${cabeca('Parceiros e apoiadores', 'Quem caminha com a Ordem DeMolay', '', true)}
-      <div class="parceiros">${IMG.parceiros.map(([n, id]) => `<span title="${esc(n)}">${img(WIX + id + '~mv2.png/v1/fit/w_300,h_300,al_c/p.png', n)}</span>`).join('')}</div>`)}`;
+      <div class="parceiros"><span title="Supremo Conselho DeMolay Brasil">${img(IMG.scdb, 'Supremo Conselho DeMolay Brasil')}</span>${IMG.parceiros.map(([n, id]) => `<span title="${esc(n)}">${img(WIX + id + '~mv2.png/v1/fit/w_300,h_300,al_c/p.png', n)}</span>`).join('')}</div>`)}`;
   };
 
   P.ordem = () => `${faixa('Ordem DeMolay', 'O que é a Ordem DeMolay?', 'Um grupo de jovens patrocinado e apoiado pela Maçonaria desde 1919.', 'A Ordem')}
@@ -189,6 +218,7 @@
     </div><aside class="lateral">${img(IMG.escudeiros, 'Emblema da Ordem dos Escudeiros')}<p>Ordem dos Escudeiros</p></aside></div>`)}`;
 
   P.historia = () => `${faixa('Nossa história', 'A Ordem DeMolay no Maranhão', 'Das primeiras Oficialarias, nos anos 1990, ao Grande Conselho Estadual nº 17.', 'A Ordem')}
+    ${secao(`<div class="figuras"><figure>${img(IMG.jacques, 'Jacques DeMolay')}<figcaption><b>Jacques DeMolay</b>Último Grão-Mestre dos Cavaleiros Templários, que dá nome à Ordem.</figcaption></figure><figure>${img(IMG.frank, 'Frank Sherman Land')}<figcaption><b>Frank Sherman Land</b>Maçom de Kansas City que fundou a Ordem DeMolay em 1919.</figcaption></figure></div>`)}
     ${secao(`<ol class="marcos">${D.historia.map(m => `<li><b>${m.ano}</b><h3>${esc(m.titulo)}</h3><p>${esc(m.texto)}</p></li>`).join('')}</ol>
       <div class="botoes"><a class="btn btn--azul" href="#galeria-gme">Galeria dos Grandes Mestres</a><a class="btn btn--linha-azul" href="#galeria-mce">Galeria dos Mestres Conselheiros</a></div>`)}`;
 
@@ -197,7 +227,7 @@
     const regioes = {};
     ativos.forEach(c => (regioes[c.regiao || 'Outras'] ||= []).push(c));
     const ordem = Object.keys(regioes).sort((a, b) => parseInt(a) - parseInt(b));
-    const bloco = (olho, titulo, L) => L.length ? `<div><p class="olho">${olho}</p><h3 style="font-size:22px;margin-bottom:14px">${titulo}</h3>${listaUnid(L)}</div>` : '';
+    const bloco = (olho, titulo, L, im) => L.length ? `<div><div class="cabeca-icone pequeno">${im ? img(im, titulo) : ''}<div><p class="olho">${olho}</p><h3>${titulo}</h3></div></div>${listaUnid(L)}</div>` : '';
     return `${faixa('Onde estamos', 'A Ordem DeMolay pelo Maranhão', `${ativos.length} Capítulos em atividade em ${N.cidadesAtivas} cidades, organizados em Oficialarias Executivas, além de Castelos, Priorados, Cortes e Clubes.`)}
     ${secao(`${cabeca('Mapa', 'Nossas organizações no mapa', 'Clique em uma cidade para ver os Capítulos, Castelos, Priorados, Cortes e Clubes que funcionam nela.')}
       <div id="mapa" class="mapa" role="region" aria-label="Mapa das organizações DeMolay no Maranhão"><p class="vazio">Carregando o mapa…</p></div>
@@ -206,11 +236,11 @@
       <div class="linha-tempo">${ordem.map(r => `<div class="gestao"><div><p class="gestao__ano" style="font-size:22px">${esc(r.split(' - ')[0].replace('/Região', ''))}</p><p class="gestao__lema" style="font-style:normal">${esc(r.split(' - ')[1] || '')}</p></div>${listaUnid(regioes[r])}</div>`).join('')}</div>`)}
     ${secao(`${cabeca('Nossa história', 'Outros Capítulos do Maranhão', 'Capítulos que também fazem parte da história da Ordem no Estado.')}${listaUnid(outros)}`, 'secao--cinza')}
     ${secao(`<div style="display:grid;gap:56px">
-      ${bloco('Ordem dos Escudeiros · 7 a 11 anos', 'Castelos', D.castelos)}
-      ${bloco('Ordem da Cavalaria', 'Priorados', D.priorados)}
-      ${bloco('Grau de Chevalier', 'Cortes de Chevalier', D.cortes)}
-      ${bloco('Legião de Honra', 'Preceptorias', D.preceptorias)}
-      ${bloco('Família DeMolay', 'Clubes de Mães e Amigos', D.clubes)}
+      ${bloco('Ordem dos Escudeiros · 7 a 11 anos', 'Castelos', D.castelos, IMG.escudeiros)}
+      ${bloco('Ordem da Cavalaria', 'Priorados', D.priorados, IMG.cavalaria)}
+      ${bloco('Grau de Chevalier', 'Cortes de Chevalier', D.cortes, IMG.chevalier)}
+      ${bloco('Legião de Honra', 'Preceptorias', D.preceptorias, IMG.legiao)}
+      ${bloco('Família DeMolay', 'Clubes de Mães e Amigos', D.clubes, IMG.clube)}
     </div>`)}
     ${secao(`${cabeca('Sede', 'Grande Conselho Estadual', 'R. 44, Quadra 59, nº 23, Conjunto Bequimão, São Luís – MA, 65066-620')}
       <div class="botoes"><a class="btn btn--ouro" href="https://www.google.com/maps/search/?api=1&query=R.+44,+Quadra+59,+23+Bequim%C3%A3o+S%C3%A3o+Lu%C3%ADs+MA" target="_blank" rel="noopener">Abrir no mapa</a></div>`, 'secao--escura')}`;
@@ -262,21 +292,21 @@
       <div class="botoes"><a class="btn btn--azul" href="#regionais">Gestões anteriores</a><a class="btn btn--linha-azul" href="#galeria-mce">Galeria de MCE e MCEA</a></div>`, 'secao--cinza')}`;
   };
   P.regionais = () => `${faixa('Gabinete Estadual', 'Mestres Conselheiros Regionais', 'As lideranças juvenis de cada Oficialaria Executiva, gestão a gestão.', 'Gabinete Estadual')}
-    ${secao(`<div class="linha-tempo">${D.mcr.map(g => `<div class="gestao ${g.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${esc(g.gestao)}</p>${g.lema ? `<p class="gestao__lema">“${esc(g.lema)}”</p>` : ''}${g.vigente ? '<span class="tag">Gestão vigente</span>' : ''}</div><div class="dupla">${g.pessoas.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`)}`;
+    ${secao(`<div class="linha-tempo">${D.mcr.map(g => `<div class="gestao ${g.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${esc(g.gestao)}</p>${g.lema ? `<p class="gestao__lema">“${esc(g.lema)}”</p>` : ''}${selo(g.gestao || g.periodo, g.lema)}${g.vigente ? '<span class="tag">Gestão vigente</span>' : ''}</div><div class="dupla">${g.pessoas.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`)}`;
 
   P['galeria-mce'] = () => {
     const linhas = [];
     D.gce.slice().reverse().forEach(g => g.gabinetes.slice().reverse().forEach(m => linhas.push(m)));
     return `${faixa('Galeria', 'Mestres Conselheiros Estaduais e Adjuntos', 'Os líderes juvenis do Maranhão, gestão a gestão, sempre lado a lado.', 'Gabinete Estadual')}
-    ${secao(`<div class="linha-tempo">${linhas.map(m => `<div class="gestao ${m.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${m.ano}</p>${m.lema ? `<p class="gestao__lema">“${esc(m.lema)}”</p>` : ''}${m.vigente ? '<span class="tag">Gestão vigente</span>' : ''}</div><div class="dupla">${m.pessoas.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`)}
+    ${secao(`<div class="linha-tempo">${linhas.map(m => `<div class="gestao ${m.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${m.ano}</p>${m.lema ? `<p class="gestao__lema">“${esc(m.lema)}”</p>` : ''}${selo(m.ano, m.lema)}${m.vigente ? '<span class="tag">Gestão vigente</span>' : ''}</div><div class="dupla">${m.pessoas.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`)}
     ${secao(`${cabeca('Antes de 2004', 'Lideranças juvenis das Oficialarias Executivas', 'Até 2004 não havia Mestre Conselheiro Estadual Adjunto: o auxiliar direto do MCE era o Secretário do Congresso Estadual.')}
       <div class="linha-tempo">${D.oficialarias.slice().reverse().filter(o => o.jovens.length).map(o => `<div class="gestao"><div><p class="gestao__ano">${o.periodo}</p></div><div class="dupla">${o.jovens.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`, 'secao--cinza')}`;
   };
   P['galeria-gme'] = () => `${faixa('Galeria', 'Grandes Mestres Estaduais', 'A liderança adulta da Ordem DeMolay no Maranhão desde as primeiras Oficialarias.', 'Diretoria Executiva')}
-    ${secao(`${cabeca('Desde 2004', 'Grande Conselho Estadual nº 17', '')}<div class="linha-tempo">${D.gce.slice().reverse().map(g => `<div class="gestao ${g.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${g.periodo}</p>${g.lema ? `<p class="gestao__lema">“${esc(g.lema)}”</p>` : ''}${g.vigente ? '<span class="tag">Gestão vigente</span>' : ''}</div><div class="dupla">${pessoa(g.adultos[0])}</div></div>`).join('')}</div>`)}
+    ${secao(`${cabeca('Desde 2004', 'Grande Conselho Estadual nº 17', '')}<div class="linha-tempo">${D.gce.slice().reverse().map(g => `<div class="gestao ${g.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${g.periodo}</p>${g.lema ? `<p class="gestao__lema">“${esc(g.lema)}”</p>` : ''}${selo(g.gestao || g.periodo, g.lema)}${g.vigente ? '<span class="tag">Gestão vigente</span>' : ''}</div><div class="dupla">${pessoa(g.adultos[0])}</div></div>`).join('')}</div>`)}
     ${secao(`${cabeca('1991 a 2004', '1ª e 2ª Oficialarias Executivas', 'Antes do Grande Conselho, a liderança adulta do Estado eram os Oficiais Executivos, ao Norte e ao Sul.')}<div class="linha-tempo">${D.oficialarias.slice().reverse().map(o => `<div class="gestao"><div><p class="gestao__ano">${o.periodo}</p></div><div class="dupla">${o.adultos.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`, 'secao--cinza')}`;
 
-  const blocoEquipe = (eq, titulo) => `<div class="gestao ${eq.vigente !== false && !eq.lema ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${esc(eq.gestao)}</p>${eq.lema ? `<p class="gestao__lema">“${esc(eq.lema)}”</p>` : ''}${titulo ? `<span class="tag">${titulo}</span>` : ''}</div><div class="dupla">${eq.pessoas.map(p => pessoa(p)).join('')}</div></div>`;
+  const blocoEquipe = (eq, titulo) => `<div class="gestao ${eq.vigente !== false && !eq.lema ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${esc(eq.gestao)}</p>${eq.lema ? `<p class="gestao__lema">“${esc(eq.lema)}”</p>` : ''}${selo(eq.gestao, eq.lema)}${titulo ? `<span class="tag">${titulo}</span>` : ''}</div><div class="dupla">${eq.pessoas.map(p => pessoa(p)).join('')}</div></div>`;
   P.diretoria = () => `${faixa('Diretoria Executiva', 'Líderes Estaduais — Adulto', `Grande Conselho Estadual · gestão ${D.diretoria.gestao} · “${D.diretoria.lema}”`, 'Diretoria Executiva')}
     ${secao(`<div class="pessoas">${D.diretoria.pessoas.map(p => pessoa(p)).join('')}</div>`)}
     ${secao(`${cabeca('Gestão anterior', 'Diretoria Executiva 2023/2025', '')}<div class="linha-tempo">${blocoEquipe(D.diretoriaAnterior)}</div>
@@ -316,15 +346,15 @@
   }
   P.chevalier = () => paginaHonra('chevalier', 'Galeria de Honra', 'Grau de Chevalier', 'A maior honraria que um membro ativo da Ordem DeMolay pode receber.', IMG.chevalier, 'Investidura');
   P.legiao = () => paginaHonra('legiao', 'Galeria de Honra', 'Legião de Honra', 'Grau honorífico que reconhece Seniores DeMolay (Legião Ativa) e amigos da Ordem (Legião Honorária) por serviços notáveis.', IMG.legiao, 'Tipo');
-  P.cruz = () => paginaHonra('cruz', 'Galeria de Honra', 'Cruz de Honra', 'Honraria que reconhece serviços de destaque prestados à Ordem DeMolay.', null);
-  P.alma = () => paginaHonra('alma', 'Galeria de Honra', 'DeMolay de Alma', 'Reconhecimento a quem se dedica à Ordem DeMolay com o espírito de um DeMolay.', null);
+  P.cruz = () => paginaHonra('cruz', 'Galeria de Honra', 'Cruz de Honra', 'Honraria que reconhece serviços de destaque prestados à Ordem DeMolay.', IMG.cruz);
+  P.alma = () => paginaHonra('alma', 'Galeria de Honra', 'DeMolay de Alma', 'Reconhecimento a quem se dedica à Ordem DeMolay com o espírito de um DeMolay.', IMG.alma);
   P['honrarias-cavalaria'] = () => {
     const H = D.honrarias;
     const priCel = p => !p ? '<td>—</td>' : `<td>${esc(p.nome)} nº ${esc(p.n)}${p.cidade ? `<span class="cid">${esc(p.cidade)}/MA</span>` : (p.uf && p.uf !== 'MA' ? `<span class="cid">${esc(p.uf)}</span>` : '')}</td>`;
     const linhaPri = r => `<tr><td><b>${esc(r[0])}</b></td>${priCel(r[2])}<td class="num">${esc(r[1] || '—')}</td><td class="num">${esc(r[3] || '—')}</td></tr>`;
-    const bloco = (k, t) => `${cabeca('', t, '')}${tabela(k, ['Nome', 'Priorado', 'ID', 'Data'], H[k].map(linhaPri), undefined, 'Buscar pelo nome ou priorado')}`;
+    const bloco = (k, t, im) => `<div class="cabeca-icone">${img(im, t)}<h2 class="titulo">${t}</h2></div>${tabela(k, ['Nome', 'Priorado', 'ID', 'Data'], H[k].map(linhaPri), undefined, 'Buscar pelo nome ou priorado')}`;
     return `${faixa('Galeria de Honra', 'Honrarias da Cavalaria', 'Comendadores, Grã-Cruzes e Mantos Prateados da Ordem da Cavalaria no Maranhão.', 'Galeria de Honra')}
-      ${secao(bloco('comendador', 'Comendador da Cavalaria'))}${secao(bloco('gracruz', 'Grã-Cruz da Cavalaria'), 'secao--cinza')}${secao(bloco('manto', 'Manto Prateado'))}`;
+      ${secao(bloco('comendador', 'Comendador da Cavalaria', IMG.comendador))}${secao(bloco('gracruz', 'Grã-Cruz da Cavalaria', IMG.gracruz), 'secao--cinza')}${secao(bloco('manto', 'Manto Prateado', IMG.manto))}`;
   };
   P.merito = () => {
     const H = D.honrarias;
@@ -339,10 +369,19 @@
     return `${faixa('Premiação estadual', 'DeMolay do Ano e Consultor do Ano', 'Uma premiação muito digna: a cada ano, só um DeMolay e só um Consultor de todo o Maranhão recebem o título.', 'Galeria de Honra')}
       ${secao(`<div class="premios">${anos.map((a, i) => `<div class="premio ${i === 0 ? 'premio--atual' : ''}"><p class="premio__ano">${a.ano}</p>${lado(a.demolay, 'DeMolay do Ano')}${lado(a.consultor, 'Consultor do Ano')}</div>`).join('')}</div>`)}`;
   };
+  const cartaoRevista = r => `<a class="revista" href="revistas/litteris-et-virtutibus-edicao-${r[0]}.pdf" target="_blank" rel="noopener">
+      <span class="revista__capa">${img('revistas/capas/edicao-' + r[0] + '.jpg', 'Capa da ' + r[0] + 'ª edição')}</span>
+      <span class="revista__n">${r[0]}ª edição</span><b>${esc(r[1])}</b>${r[2] ? `<span class="revista__tema">${esc(r[2])}</span>` : ''}
+      <span class="revista__ler">Ler a revista · ${r[3]} páginas</span></a>`;
+  P.revistas = () => `${faixa('AMDL', 'Revista Litteris et Virtutibus', 'A revista literária da Academia Maranhense DeMolay de Letras. Todas as edições publicadas, da primeira à mais recente.', 'Galeria de Honra')}
+    ${secao(`<div class="revistas">${REVISTAS.map(cartaoRevista).join('')}</div>
+      <p class="nota">As revistas abrem em PDF numa nova aba, onde também podem ser baixadas. As edições usam o emblema antigo da Academia.</p>`)}`;
   P.academia = () => `${faixa('AMDL', 'Academia Maranhense DeMolay de Letras', 'Dezesseis cadeiras, cada uma com seu patrono, ocupadas pelos membros fundadores da Academia.', 'Galeria de Honra')}
+    ${secao(`<div class="amdl-topo">${img(IMG.amdl, 'Emblema da Academia Maranhense DeMolay de Letras')}<div><p class="olho">Verba volant, scripta manent</p><h2 class="titulo">Registrar a história da Ordem DeMolay maranhense</h2><p class="lead">A Academia reúne quem escreve sobre a vida, os fatos e as memórias da Ordem no Maranhão, e publicou a revista Litteris et Virtutibus.</p><div class="botoes"><a class="btn btn--azul" href="#revistas">Ler as revistas</a></div></div></div>`)}
     ${secao(`<div class="cadeiras">${D.amdl.map(c => `<article class="cadeira"><p class="cadeira__n">Cadeira nº ${String(c.cadeira).padStart(2, '0')}</p>${foto(c)}<h3 style="font-size:18px">${esc(c.nome)}</h3><p class="cargo">Membro fundador</p>${c.cap ? `<p class="origem">${PINO}<span>${esc(origem(c.cap))}</span></p>` : ''}<p class="patrono">Patrono<b>${esc(c.patrono)}</b></p></article>`).join('')}</div>`)}`;
 
   P.alumni = () => `${faixa('Alumni MA', 'Associação DeMolay Alumni do Maranhão', 'A ADAE reúne os Seniores DeMolay do Estado, que seguem servindo à Ordem depois dos 21 anos.')}
+    ${secao(`<div class="amdl-topo">${img(IMG.alumni, 'Logo da DeMolay Alumni')}<div><p class="olho">Sênior DeMolay</p><h2 class="titulo">A Ordem continua depois dos 21 anos</h2><p class="lead">Os Seniores DeMolay seguem apoiando os Capítulos, os jovens e a Ordem em todo o Estado.</p></div></div>`)}
     ${secao(`<div class="linha-tempo">${D.alumni.map(a => `<div class="gestao ${a.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${esc(a.gestao)}</p>${a.lema ? `<p class="gestao__lema">“${esc(a.lema)}”</p>` : ''}${a.vigente ? '<span class="tag">Diretoria atual</span>' : ''}</div><div class="dupla">${a.pessoas.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`)}`;
 
   P.naoachou = () => `${faixa('Página não encontrada', 'Não encontramos esta página', 'Use o menu acima ou volte ao início.')}${secao('<div class="botoes"><a class="btn btn--azul" href="#inicio">Voltar ao início</a></div>')}`;
@@ -363,7 +402,7 @@
   /* ---------- rodapé ---------- */
   function rodape() {
     document.getElementById('rodape').innerHTML = `<div class="miolo"><div class="grade">
-      <div><p class="nome">Grande Conselho Estadual nº 17</p><p>Grande Conselho da Ordem DeMolay para o Estado do Maranhão</p><p>R. 44, Quadra 59, nº 23, Conjunto Bequimão<br>São Luís – MA, 65066-620</p>
+      <div><img class="rodape__logo" src="${IMG.dmma}" alt="DeMolay Maranhão — Grande Conselho e Gabinete Estadual"><p class="nome">Grande Conselho Estadual nº 17</p><p>Grande Conselho da Ordem DeMolay para o Estado do Maranhão</p><p>R. 44, Quadra 59, nº 23, Conjunto Bequimão<br>São Luís – MA, 65066-620</p>
         <div class="redes"><a href="https://www.instagram.com/demolaymaranhao/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
         <a href="https://www.facebook.com/demolaymaranhao" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a></div></div>
       <div><h4>Navegação</h4><ul><li><a href="#ordem">A Ordem DeMolay</a></li><li><a href="#onde-estamos">Onde estamos</a></li><li><a href="#gabinete">Gabinete Estadual</a></li><li><a href="#diretoria">Diretoria Executiva</a></li><li><a href="#destaques">DeMolay e Consultor do Ano</a></li><li><a href="#merito">Mérito DeMolay Maranhão</a></li><li><a href="#academia">Academia de Letras</a></li></ul></div>
@@ -371,7 +410,21 @@
     </div><div class="base"><span>© ${new Date().getFullYear()} DeMolay Maranhão · Ordem DeMolay desde 1919</span><span>Gestão ${vig.periodo}</span></div></div>`;
   }
 
+  /* ---------- modo claro / escuro ---------- */
+  function tema() {
+    const bt = document.getElementById('tema'); const raiz = document.documentElement;
+    let salvo = null; try { salvo = localStorage.getItem('tema'); } catch (e) {}
+    if (salvo === 'claro' || salvo === 'escuro') raiz.dataset.theme = salvo === 'escuro' ? 'dark' : 'light';
+    const mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+    const escuroAgora = () => raiz.dataset.theme ? raiz.dataset.theme === 'dark' : !!(mq && mq.matches);
+    const mostra = () => { const e = escuroAgora(); bt.setAttribute('aria-pressed', e); bt.title = e ? 'Mudar para o modo claro' : 'Mudar para o modo escuro'; bt.setAttribute('aria-label', bt.title); bt.classList.toggle('escuro', e); };
+    bt.addEventListener('click', () => { const e = !escuroAgora(); raiz.dataset.theme = e ? 'dark' : 'light'; try { localStorage.setItem('tema', e ? 'escuro' : 'claro'); } catch (er) {} mostra(); });
+    if (mq && mq.addEventListener) mq.addEventListener('change', mostra);
+    mostra();
+  }
+
   montaMenu(); rodape();
+  try { tema(); } catch (e) { /* o site funciona mesmo sem o botão */ }
   window.addEventListener('hashchange', rota);
   rota();
 })();
