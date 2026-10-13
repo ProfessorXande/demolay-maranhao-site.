@@ -2883,7 +2883,8 @@ window.DADOS = {
    "ano": "2026",
    "demolay": {
     "nome": "Pablo Henrique Sirqueira Santos",
-    "cap": "1212"
+    "cap": "1212",
+    "foto": "img/liderancas/pablo-henrique-sirqueira-santos.jpg"
    },
    "consultor": {
     "nome": "Arlan Paixão de Sousa",
