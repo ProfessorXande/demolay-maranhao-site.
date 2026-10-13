@@ -36,6 +36,10 @@
     '2024/2025|Cativando Virtudes': 'gestao-cativando-virtudes', '2023/2024|União DeMolay': 'gestao-uniao-demolay',
     '2022/2023|Praticar DeMolay': 'gestao-praticar-demolay', '2021/2022|Reinventar DeMolay': 'gestao-reinventar-demolay',
     '2020/2021|Enraizando Virtudes': 'gestao-enraizando-virtudes',
+    '2019/2020|Viver DeMolay': 'gestao-viver-demolay-2019', '2018/2019|Sentimento DeMolay': 'gestao-sentimento-demolay',
+    '2025/2026|Elevando Virtudes': 'gestao-elevando-virtudes',
+    '2019/2020|Viver DeMolay': 'gestao-viver-demolay-2019', '2018/2019|Sentimento DeMolay': 'gestao-sentimento-demolay',
+    '2025/2026|Elevando Virtudes': 'gestao-elevando-virtudes',
   };
   const selo = (gestao, lema) => { const f = SELOS[gestao + '|' + lema]; return f ? `<img class="selo" src="${E}${f}.png" alt="Selo da gestão ${esc(lema)}" loading="lazy">` : ''; };
   // revistas da AMDL, em ordem de publicação

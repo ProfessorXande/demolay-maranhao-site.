@@ -1531,7 +1531,8 @@ window.DADOS = {
        "cargo": "Mestre Conselheiro Estadual Adjunto",
        "foto": "img/liderancas/marcos-felipe-gomes-cardoso.jpg"
       }
-     ]
+     ],
+     "lema": "Elevando Virtudes"
     },
     {
      "ano": "2026/2027",
@@ -2369,6 +2370,7 @@ window.DADOS = {
     },
     {
      "nome": "Marcus Ricardo Silva Rezende",
+     "cap": "1148",
      "cargo": "MCR da 4ª Oficialaria",
      "foto": [
       "22072ee397f7488db20aae4d11a42322",
