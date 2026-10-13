@@ -135,6 +135,7 @@
 
   /* ---------- páginas ---------- */
   const P = {};
+  const anterior = (titulo, conteudo) => `<details class="anterior"><summary><span>Ver ${titulo}</span></summary><div class="anterior__corpo">${conteudo}</div></details>`;
 
   P.inicio = () => {
     const dmAtual = D.destaques[D.destaques.length - 1];
@@ -331,8 +332,13 @@
     ${secao(`${cabeca('Oficialarias Executivas', 'Mestres Conselheiros Regionais', '')}<div class="pessoas">${mcrVig.pessoas.map(p => pessoa(p)).join('')}</div>
       <div class="botoes"><a class="btn btn--azul" href="#regionais">Gestões anteriores</a><a class="btn btn--linha-azul" href="#galeria-mce">Galeria de MCE e MCEA</a></div>`, 'secao--cinza')}`;
   };
-  P.regionais = () => `${faixa('Gabinete Estadual', 'Mestres Conselheiros Regionais', 'As lideranças juvenis de cada Oficialaria Executiva, gestão a gestão.', 'Gabinete Estadual')}
-    ${secao(`<div class="linha-tempo">${D.mcr.map(g => `<div class="gestao ${g.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${esc(g.gestao)}</p>${g.lema ? `<p class="gestao__lema">“${esc(g.lema)}”</p>` : ''}${selo(g.gestao || g.periodo, g.lema)}${g.vigente ? '<span class="tag">Gestão vigente</span>' : ''}</div><div class="dupla">${g.pessoas.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`)}`;
+  P.regionais = () => {
+    const bloco = g => `<div class="gestao ${g.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${esc(g.gestao)}</p>${g.lema ? `<p class="gestao__lema">“${esc(g.lema)}”</p>` : ''}${selo(g.gestao, g.lema)}${g.vigente ? '<span class="tag">Gestão vigente</span>' : ''}</div><div class="dupla">${g.pessoas.map(p => pessoa(p)).join('')}</div></div>`;
+    const atual = D.mcr.filter(g => g.vigente), antigas = D.mcr.filter(g => !g.vigente);
+    return `${faixa('Gabinete Estadual', 'Mestres Conselheiros Regionais', 'As lideranças juvenis de cada Oficialaria Executiva, gestão a gestão.', 'Gabinete Estadual')}
+    ${secao(`<div class="linha-tempo">${atual.map(bloco).join('')}</div>`)}
+    ${secao(anterior(`as gestões anteriores (${antigas.length})`, `<div class="linha-tempo">${antigas.map(bloco).join('')}</div>`), 'secao--cinza')}`;
+  };
 
   P['galeria-mce'] = () => {
     const linhas = [];
@@ -346,7 +352,6 @@
     ${secao(`${cabeca('Desde 2004', 'Grande Conselho Estadual nº 17', '')}<div class="linha-tempo">${D.gce.slice().reverse().map(g => `<div class="gestao ${g.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${g.periodo}</p>${g.lema ? `<p class="gestao__lema">“${esc(g.lema)}”</p>` : ''}${selo(g.gestao || g.periodo, g.lema)}${g.vigente ? '<span class="tag">Gestão vigente</span>' : ''}</div><div class="dupla">${pessoa(g.adultos[0])}</div></div>`).join('')}</div>`)}
     ${secao(`${cabeca('1991 a 2004', '1ª e 2ª Oficialarias Executivas', 'Antes do Grande Conselho, a liderança adulta do Estado eram os Oficiais Executivos, ao Norte e ao Sul.')}<div class="linha-tempo">${D.oficialarias.slice().reverse().map(o => `<div class="gestao"><div><p class="gestao__ano">${o.periodo}</p></div><div class="dupla">${o.adultos.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`, 'secao--cinza')}`;
 
-  const anterior = (titulo, conteudo) => `<details class="anterior"><summary><span>Ver ${titulo}</span></summary><div class="anterior__corpo">${conteudo}</div></details>`;
   const blocoEquipe = (eq, titulo) => `<div class="gestao"><div><p class="gestao__ano">${esc(eq.gestao)}</p>${eq.lema ? `<p class="gestao__lema">“${esc(eq.lema)}”</p>` : ''}${selo(eq.gestao, eq.lema)}${titulo ? `<span class="tag">${titulo}</span>` : ''}</div><div class="dupla">${eq.pessoas.map(p => pessoa(p)).join('')}</div></div>`;
   P.diretoria = () => `${faixa('Diretoria Executiva', 'Líderes Estaduais — Adulto', `Grande Conselho Estadual · gestão ${D.diretoria.gestao} · “${D.diretoria.lema}”`, 'Diretoria Executiva')}
     ${secao(`<div class="pessoas">${D.diretoria.pessoas.map(p => pessoa(p)).join('')}</div>`)}

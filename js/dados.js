@@ -2215,7 +2215,7 @@ window.DADOS = {
   },
   {
    "gestao": "2025/2026",
-   "lema": null,
+   "lema": "Elevando Virtudes",
    "vigente": false,
    "obs": null,
    "pessoas": [
