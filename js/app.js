@@ -71,6 +71,8 @@
     const cid = c && c.cidade ? ` · ${c.cidade}/MA` : '';
     return nome + cid;
   }
+  const COLS = Object.fromEntries((D.colegios || []).map(c => [c[0], c]));
+  const origemColegio = n => { const c = COLS[n]; return c ? `Colégio Alumni ${c[1]} nº ${c[0]} · ${c[2]}/MA` : `Colégio Alumni nº ${n}`; };
   const PINO = '<svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path fill="currentColor" d="M6 0a6 6 0 0 0-6 6c0 4.4 6 8 6 8s6-3.6 6-8a6 6 0 0 0-6-6zm0 8.2A2.2 2.2 0 1 1 6 3.8a2.2 2.2 0 0 1 0 4.4z"/></svg>';
 
   function foto(p) {
@@ -82,6 +84,7 @@
       <h3>${esc(p.nome)}</h3>
       ${c ? `<p class="cargo">${esc(c)}</p>` : ''}
       ${p.cap ? `<p class="origem">${PINO}<span>${esc(origem(p.cap))}</span></p>` : ''}
+      ${p.colegio ? `<p class="origem">${PINO}<span>${esc(origemColegio(p.colegio))}</span></p>` : ''}
       ${p.obs ? `<p class="obs">${esc(p.obs)}</p>` : ''}
     </div></article>`;
   }
@@ -176,7 +179,7 @@
     ${secao(`${cabeca('Galeria de Honra', 'Reconhecimento a quem serve a Ordem', '')}
       <div class="cartoes">
         ${cartao('#merito', 'Honraria estadual', 'Mérito DeMolay Maranhão', 'A honraria que só a Ordem DeMolay maranhense pode conceder.', undefined, IMG.emblema)}
-        ${cartao('#academia', '16 cadeiras · 8 revistas', 'Academia Maranhense DeMolay de Letras', 'Ocupantes e patronos das cadeiras e a revista Litteris et Virtutibus.', undefined, IMG.amdl)}
+        ${cartao('#academia', `${D.amdl.length} cadeiras · 8 revistas`, 'Academia Maranhense DeMolay de Letras', 'Ocupantes e patronos das cadeiras e a revista Litteris et Virtutibus.', undefined, IMG.amdl)}
         ${cartao('#chevalier', `${D.honrarias.chevalier.length} agraciados`, 'Grau de Chevalier', 'A maior honraria que um DeMolay ativo pode receber.', undefined, IMG.chevalier)}
         ${cartao('#legiao', `${D.honrarias.legiao.length} legionários`, 'Legião de Honra', 'Reconhecimento a Seniores DeMolay e amigos da Ordem.', undefined, IMG.legiao)}
       </div>`, 'secao--cinza')}
@@ -380,13 +383,14 @@
   P.revistas = () => `${faixa('AMDL', 'Revista Litteris et Virtutibus', 'A revista literária da Academia Maranhense DeMolay de Letras. Todas as edições publicadas, da primeira à mais recente.', 'Galeria de Honra')}
     ${secao(`<div class="revistas">${REVISTAS.map(cartaoRevista).join('')}</div>
       <p class="nota">As revistas abrem em PDF numa nova aba, onde também podem ser baixadas. As edições usam o emblema antigo da Academia.</p>`)}`;
-  P.academia = () => `${faixa('AMDL', 'Academia Maranhense DeMolay de Letras', 'Dezesseis cadeiras, cada uma com seu patrono, ocupadas pelos membros fundadores da Academia.', 'Galeria de Honra')}
+  P.academia = () => `${faixa('AMDL', 'Academia Maranhense DeMolay de Letras', `${D.amdl.length} cadeiras, cada uma com seu patrono e seu ocupante.`, 'Galeria de Honra')}
     ${secao(`<div class="amdl-topo">${img(IMG.amdl, 'Emblema da Academia Maranhense DeMolay de Letras')}<div><p class="olho">Verba volant, scripta manent</p><h2 class="titulo">Registrar a história da Ordem DeMolay maranhense</h2><p class="lead">A Academia reúne quem escreve sobre a vida, os fatos e as memórias da Ordem no Maranhão, e publicou a revista Litteris et Virtutibus.</p><div class="botoes"><a class="btn btn--azul" href="#revistas">Ler as revistas</a></div></div></div>`)}
-    ${secao(`<div class="cadeiras">${D.amdl.map(c => `<article class="cadeira"><p class="cadeira__n">Cadeira nº ${String(c.cadeira).padStart(2, '0')}</p>${foto(c)}<h3 style="font-size:18px">${esc(c.nome)}</h3><p class="cargo">Membro fundador</p>${c.cap ? `<p class="origem">${PINO}<span>${esc(origem(c.cap))}</span></p>` : ''}<p class="patrono">Patrono<b>${esc(c.patrono)}</b></p></article>`).join('')}</div>`)}`;
+    ${secao(`<div class="cadeiras">${D.amdl.map(c => `<article class="cadeira"><p class="cadeira__n">Cadeira nº ${String(c.cadeira).padStart(2, '0')}</p>${foto(c)}<h3 style="font-size:18px">${esc(c.nome)}</h3><p class="cargo">${c.cadeira <= 16 ? 'Membro fundador' : 'Membro'}</p>${c.cap ? `<p class="origem">${PINO}<span>${esc(origem(c.cap))}</span></p>` : ''}<p class="patrono">Patrono<b>${esc(c.patrono)}</b></p></article>`).join('')}</div>`)}`;
 
   P.alumni = () => `${faixa('Alumni MA', 'Associação DeMolay Alumni do Maranhão', 'A ADAE reúne os Seniores DeMolay do Estado, que seguem servindo à Ordem depois dos 21 anos.')}
-    ${secao(`<div class="amdl-topo">${img(IMG.alumni, 'Logo da DeMolay Alumni')}<div><p class="olho">Sênior DeMolay</p><h2 class="titulo">A Ordem continua depois dos 21 anos</h2><p class="lead">Os Seniores DeMolay seguem apoiando os Capítulos, os jovens e a Ordem em todo o Estado.</p></div></div>`)}
-    ${secao(`<div class="linha-tempo">${D.alumni.map(a => `<div class="gestao ${a.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${esc(a.gestao)}</p>${a.lema ? `<p class="gestao__lema">“${esc(a.lema)}”</p>` : ''}${a.vigente ? '<span class="tag">Diretoria atual</span>' : ''}</div><div class="dupla">${a.pessoas.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`)}`;
+    ${secao(`<div class="amdl-topo">${img(IMG.alumni, 'Logo da DeMolay Alumni')}<div><p class="olho">Sênior DeMolay</p><h2 class="titulo">A Ordem continua depois dos 21 anos</h2><p class="lead">Os Seniores DeMolay seguem apoiando os Capítulos, os jovens e a Ordem em todo o Estado, reunidos nos Colégios Alumni.</p></div></div>`)}
+    ${secao(`${cabeca('Diretoria', 'Presidentes da ADAE-MA', '')}<div class="linha-tempo">${D.alumni.map(a => `<div class="gestao ${a.vigente ? 'gestao--vigente' : ''}"><div><p class="gestao__ano">${esc(a.gestao)}</p>${a.lema ? `<p class="gestao__lema">“${esc(a.lema)}”</p>` : ''}${a.vigente ? '<span class="tag">Diretoria atual</span>' : ''}</div><div class="dupla">${a.pessoas.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`, 'secao--cinza')}
+    ${secao(`${cabeca('Onde estamos', 'Colégios Alumni do Maranhão', '')}<div class="unidades">${D.colegios.map(c => `<div class="unidade"><b>${esc(c[1])} nº ${c[0]}</b><span>${esc(c[2])}/MA</span></div>`).join('')}</div>`)}`;
 
   P.naoachou = () => `${faixa('Página não encontrada', 'Não encontramos esta página', 'Use o menu acima ou volte ao início.')}${secao('<div class="botoes"><a class="btn btn--azul" href="#inicio">Voltar ao início</a></div>')}`;
 

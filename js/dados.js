@@ -1523,7 +1523,8 @@ window.DADOS = {
       {
        "nome": "Paulo Miguel Lima da Silva",
        "cap": "534",
-       "cargo": "Mestre Conselheiro Estadual"
+       "cargo": "Mestre Conselheiro Estadual",
+       "foto": "img/liderancas/paulo-miguel-lima-da-silva.jpg"
       },
       {
        "nome": "Marcos Felipe Gomes Cardoso",
@@ -1996,6 +1997,63 @@ window.DADOS = {
    }
   ]
  },
+ "colegios": [
+  [
+   "4",
+   "Juventude Fraterna",
+   "São Luís"
+  ],
+  [
+   "249",
+   "Educação e Moral",
+   "São Luís"
+  ],
+  [
+   "428",
+   "São Luís",
+   "São Luís"
+  ],
+  [
+   "154",
+   "Sementes do Amanhã",
+   "Carolina"
+  ],
+  [
+   "200",
+   "Waldemar Gomes Pereira",
+   "Porto Franco"
+  ],
+  [
+   "248",
+   "União e Fraternidade Imperatrizense",
+   "Imperatriz"
+  ],
+  [
+   "278",
+   "Tio Antônio Lima",
+   "Pedreiras"
+  ],
+  [
+   "279",
+   "Tio Antônio Pereira da Silva",
+   "Coelho Neto"
+  ],
+  [
+   "310",
+   "Sete Virtudes",
+   "Santa Inês"
+  ],
+  [
+   "386",
+   "Tio Vitorino Pereira Miranda",
+   "Estreito"
+  ],
+  [
+   "489",
+   "Guardiões da Juventude Patoense",
+   "São João dos Patos"
+  ]
+ ],
  "comissoesAnterior": {
   "gestao": "2023/2025",
   "lista": [
@@ -2449,7 +2507,7 @@ window.DADOS = {
    "pessoas": [
     {
      "nome": "Paulo Ytallo Alves da Silva",
-     "cap": "870",
+     "colegio": "278",
      "cargo": "Presidente",
      "foto": [
       "eff7d2ee13c94e4c98aa1052266556fb",
@@ -2458,7 +2516,7 @@ window.DADOS = {
     },
     {
      "nome": "Alek Wayne de Souza Santos",
-     "cap": "534",
+     "colegio": "200",
      "cargo": "Vice-Presidente"
     }
    ]
@@ -2469,7 +2527,7 @@ window.DADOS = {
    "pessoas": [
     {
      "nome": "João Victor Lopes de Castro Lima",
-     "cap": "623",
+     "colegio": "310",
      "cargo": "Presidente",
      "foto": [
       "bf402c0766b94f8a9532f3cde8e3ded6",
@@ -2478,64 +2536,10 @@ window.DADOS = {
     },
     {
      "nome": "Gabriel Couras Pachêco",
-     "cap": "870",
+     "colegio": "278",
      "cargo": "Vice-Presidente",
      "foto": [
       "bdf3fae45b004138bc9cfe67d30a1eb4",
-      "c"
-     ]
-    },
-    {
-     "nome": "Vyctor Guilherme de Sousa Crispim Pavan",
-     "cap": "919",
-     "cargo": "Secretário Geral",
-     "foto": [
-      "bcd88a36a296459aa8e5ea5940c5d266",
-      "c"
-     ]
-    },
-    {
-     "nome": "André Guilherme Costa Ribeiro",
-     "cap": "239",
-     "cargo": "Secretário Geral Adjunto",
-     "foto": [
-      "50dad78a12f14b01b5b2c1ff75c0321b",
-      "c"
-     ]
-    },
-    {
-     "nome": "Alexandre Alves de Azevedo Filho",
-     "cap": "919",
-     "cargo": "Tesoureiro Geral",
-     "foto": [
-      "60de4931e7a741659ce1a4b32cf53982",
-      "c"
-     ]
-    },
-    {
-     "nome": "Gabriel Francisco Araújo",
-     "cap": "1231",
-     "cargo": "Tesoureiro Geral Adjunto",
-     "foto": [
-      "393b7e2de8e7494d92a9fd1edcdb1b6e",
-      "c"
-     ]
-    },
-    {
-     "nome": "Carlos Samuel Silva dos Santos",
-     "cap": "870",
-     "cargo": "Secretário de Assistência Social",
-     "foto": [
-      "2b32ac61de1c4e86ae55ab020a1a44b8",
-      "c"
-     ]
-    },
-    {
-     "nome": "Bruno Ricardo Magalhães Marques Cruz",
-     "cap": "623",
-     "cargo": "Secretário de Assistência Social Adjunto",
-     "foto": [
-      "54a268bf04e1457bb0d866e206a5d7a3",
       "c"
      ]
     }
@@ -2702,6 +2706,31 @@ window.DADOS = {
     "608f9a2795f845d8b3774197c158898a",
     "c"
    ]
+  },
+  {
+   "cadeira": 17,
+   "patrono": "Josué Montello",
+   "nome": "Álvaro Brandão Raposo",
+   "cap": "1231"
+  },
+  {
+   "cadeira": 18,
+   "patrono": "Dagmar Desterro",
+   "nome": "Alek Wayne de Souza Santos",
+   "cap": "534"
+  },
+  {
+   "cadeira": 19,
+   "patrono": "Virgulino Barbalho Neto",
+   "nome": "Pedro Victor de Sá Barbalho",
+   "cap": "919",
+   "foto": "img/liderancas/pedro-victor-de-sa-barbalho.jpg"
+  },
+  {
+   "cadeira": 20,
+   "patrono": "Ferreira Gullar",
+   "nome": "Enderson Pereira da Silva",
+   "cap": "870"
   }
  ],
  "destaques": [
