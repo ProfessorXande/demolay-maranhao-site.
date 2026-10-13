@@ -611,10 +611,7 @@ window.DADOS = {
      "nome": "Weslley Fagundes Serra",
      "cap": "239",
      "cargo": "Mestre Conselheiro Estadual",
-     "foto": [
-      "b7b6e4ecb0e04fe8a58c872d5f57451d",
-      "c"
-     ],
+     "foto": "img/liderancas/weslley-fagundes-serra.jpg",
      "obs": "Nomeado em maio de 1998"
     }
    ]
@@ -1703,10 +1700,7 @@ window.DADOS = {
     "nome": "Weslley Fagundes Serra",
     "cap": "239",
     "cargo": "Grande Orador Estadual",
-    "foto": [
-     "efbd8d86ce47455fbf69cd883a3bf05c",
-     "c"
-    ]
+    "foto": "img/liderancas/weslley-fagundes-serra.jpg"
    },
    {
     "nome": "Cyro José Ferreira Nascimento",
@@ -1737,6 +1731,7 @@ window.DADOS = {
     "nome": "Alisson Mendonça Batalha",
     "cap": "1188",
     "cargo": "Oficial Executivo da 3ª Região",
+    "foto": "img/liderancas/alisson-mendonca-batalha.jpg",
     "obs": "Loja Sétima Luz nº 07 · Santa Inês"
    },
    {
@@ -1792,10 +1787,7 @@ window.DADOS = {
     "nome": "Bruno Madson de Sousa Lima",
     "cap": "870",
     "cargo": "Oficial Executivo da 2ª Região",
-    "foto": [
-     "13bfb1da6db44a3bae9fb3d7cfaab196",
-     "c"
-    ]
+    "foto": "img/liderancas/bruno-madson-de-sousa-lima.jpg"
    },
    {
     "nome": "Arlan Silvestre Franco Jansen",
@@ -1819,10 +1811,7 @@ window.DADOS = {
     "nome": "Emerson Forte de Andrade",
     "cap": "239",
     "cargo": "Oficial Executivo da 5ª Região",
-    "foto": [
-     "6a0641ce1cb74a859890e0194e04b6fc",
-     "c"
-    ]
+    "foto": "img/liderancas/emerson-forte-de-andrade.jpg"
    },
    {
     "nome": "Pablo Ricardo Ramalho Leite",
@@ -2071,10 +2060,7 @@ window.DADOS = {
       "nome": "Weslley Fagundes Serra",
       "cap": "239",
       "cargo": "Membro",
-      "foto": [
-       "ff97ce5e54db4a28aa10066ee189fe7a",
-       "c"
-      ]
+      "foto": "img/liderancas/weslley-fagundes-serra.jpg"
      },
      {
       "nome": "Matheus Gama Santos",
@@ -2119,10 +2105,7 @@ window.DADOS = {
       "nome": "Bruno Madson de Sousa Lima",
       "cap": "870",
       "cargo": "Membro",
-      "foto": [
-       "cc55b8ace252487e9ec4806ab2ace334",
-       "c"
-      ]
+      "foto": "img/liderancas/bruno-madson-de-sousa-lima.jpg"
      }
     ]
    },
@@ -2143,10 +2126,7 @@ window.DADOS = {
       "nome": "Cyro José Ferreira Nascimento",
       "cap": "312",
       "cargo": "Secretário",
-      "foto": [
-       "8ac54ca3d23a4c56a534d54d7ac0f722",
-       "c"
-      ]
+      "foto": "img/liderancas/cyro-jose-ferreira-nascimento.jpg"
      },
      {
       "nome": "Matheus Gama Santos",
@@ -2297,10 +2277,7 @@ window.DADOS = {
      "nome": "Marcos Felipe Gomes Cardoso",
      "cap": "1212",
      "cargo": "MCR da 5ª Oficialaria",
-     "foto": [
-      "1b1fe742e9cc448aa51e2122525ac7b5",
-      "c"
-     ]
+     "foto": "img/liderancas/marcos-felipe-gomes-cardoso.jpg"
     }
    ]
   },
@@ -2795,10 +2772,7 @@ window.DADOS = {
    "consultor": {
     "nome": "Weslley Fagundes Serra",
     "cap": "239",
-    "foto": [
-     "efbd8d86ce47455fbf69cd883a3bf05c",
-     "c"
-    ]
+    "foto": "img/liderancas/weslley-fagundes-serra.jpg"
    }
   },
   {
@@ -2853,10 +2827,7 @@ window.DADOS = {
    "consultor": {
     "nome": "Emerson Forte de Andrade",
     "cap": "239",
-    "foto": [
-     "6a0641ce1cb74a859890e0194e04b6fc",
-     "c"
-    ]
+    "foto": "img/liderancas/emerson-forte-de-andrade.jpg"
    }
   },
   {
