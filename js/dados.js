@@ -1271,6 +1271,7 @@ window.DADOS = {
   },
   {
    "periodo": "2019/2021",
+   "lema": "Ser DeMolay",
    "adultos": [
     {
      "nome": "Marcos Luís Sousa Corrêa",
@@ -1343,6 +1344,7 @@ window.DADOS = {
   },
   {
    "periodo": "2021/2023",
+   "lema": "Sobre Virtudes",
    "adultos": [
     {
      "nome": "André Luis Fernandes Andrade",
@@ -1679,10 +1681,7 @@ window.DADOS = {
     "nome": "Ronildo da Silva Braga Junior",
     "cap": "623",
     "cargo": "Grande Secretário Estadual Adjunto",
-    "foto": [
-     "0774077c190c43bd971c675c5e717e7a",
-     "c"
-    ]
+    "foto": "img/liderancas/ronildo-da-silva-braga-junior.jpg"
    },
    {
     "nome": "Felipe Braga Barreto",
@@ -1869,7 +1868,8 @@ window.DADOS = {
      {
       "nome": "Werllan Nascimento da Silva",
       "cap": "870",
-      "cargo": "Coordenador"
+      "cargo": "Coordenador",
+      "foto": "img/liderancas/werllan-nascimento-da-silva.jpg"
      },
      {
       "nome": "Alexandre Alves de Azevedo Filho",
@@ -2486,6 +2486,40 @@ window.DADOS = {
      ]
     }
    ]
+  },
+  {
+   "gestao": "2021/2023",
+   "pessoas": [
+    {
+     "nome": "Guilherme Cristian Belfort Siqueira",
+     "colegio": "249",
+     "cargo": "Presidente",
+     "foto": "img/liderancas/guilherme-cristian-belfort-siqueira.jpg"
+    },
+    {
+     "nome": "Pedro Henrique Araújo Assunção Silva",
+     "colegio": "278",
+     "cargo": "Vice-Presidente",
+     "foto": "img/liderancas/pedro-henrique-araujo-assuncao-silva.jpg"
+    }
+   ]
+  },
+  {
+   "gestao": "2019/2021",
+   "pessoas": [
+    {
+     "nome": "Ronildo da Silva Braga Junior",
+     "colegio": "310",
+     "cargo": "Presidente",
+     "foto": "img/liderancas/ronildo-da-silva-braga-junior.jpg"
+    },
+    {
+     "nome": "Werisson Dias Barbosa Brandão",
+     "colegio": "154",
+     "cargo": "Vice-Presidente",
+     "foto": "img/liderancas/werisson-dias-barbosa-brandao.jpg"
+    }
+   ]
   }
  ],
  "amdl": [
@@ -2641,10 +2675,7 @@ window.DADOS = {
    "patrono": "Antônio Lima",
    "nome": "Pedro Henrique Araújo Assunção Silva",
    "cap": "870",
-   "foto": [
-    "608f9a2795f845d8b3774197c158898a",
-    "c"
-   ]
+   "foto": "img/liderancas/pedro-henrique-araujo-assuncao-silva.jpg"
   },
   {
    "cadeira": 17,
@@ -2671,7 +2702,8 @@ window.DADOS = {
    "cadeira": 20,
    "patrono": "Ferreira Gullar",
    "nome": "Enderson Pereira da Silva",
-   "cap": "870"
+   "cap": "870",
+   "foto": "img/liderancas/enderson-pereira-da-silva.jpg"
   }
  ],
  "destaques": [
@@ -2806,7 +2838,8 @@ window.DADOS = {
    "ano": "2023",
    "demolay": {
     "nome": "Guilherme Barcelos Neto",
-    "cap": "647"
+    "cap": "647",
+    "foto": "img/liderancas/guilherme-barcelos-neto.jpg"
    },
    "consultor": {
     "nome": "Arlan Silvestre Franco Jansen",
@@ -2842,7 +2875,8 @@ window.DADOS = {
    },
    "consultor": {
     "nome": "Miguel Moreira da Silva Júnior",
-    "cap": "1212"
+    "cap": "1212",
+    "foto": "img/liderancas/miguel-moreira-da-silva-junior.jpg"
    }
   },
   {
