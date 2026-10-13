@@ -1539,12 +1539,14 @@ window.DADOS = {
       {
        "nome": "Clarindo Kainã Batista Ferreira",
        "cap": "1231",
-       "cargo": "Mestre Conselheiro Estadual"
+       "cargo": "Mestre Conselheiro Estadual",
+       "foto": "img/liderancas/clarindo-kaina-batista-ferreira.jpg"
       },
       {
        "nome": "Francisco de Souza Feitoza",
        "cap": "1225",
-       "cargo": "Mestre Conselheiro Estadual Adjunto"
+       "cargo": "Mestre Conselheiro Estadual Adjunto",
+       "foto": "img/liderancas/francisco-de-souza-feitoza-mcea.jpg"
       }
      ],
      "vigente": true,
@@ -1636,10 +1638,7 @@ window.DADOS = {
     "nome": "Alexandre Alves de Azevedo Filho",
     "cap": "919",
     "cargo": "Grande Tesoureiro Estadual Adjunto",
-    "foto": [
-     "48fc4c56cd3c427693a4f59f688aab52",
-     "c"
-    ]
+    "foto": "img/liderancas/alexandre-alves-de-azevedo-filho.jpg"
    },
    {
     "nome": "Weslley Fagundes Serra",
@@ -1870,10 +1869,7 @@ window.DADOS = {
       "nome": "Alexandre Alves de Azevedo Filho",
       "cap": "919",
       "cargo": "Presidente",
-      "foto": [
-       "48fc4c56cd3c427693a4f59f688aab52",
-       "c"
-      ]
+      "foto": "img/liderancas/alexandre-alves-de-azevedo-filho.jpg"
      },
      {
       "nome": "Gabriel Francisco Araújo",
@@ -1912,10 +1908,7 @@ window.DADOS = {
       "nome": "Alexandre Alves de Azevedo Filho",
       "cap": "919",
       "cargo": "Membro",
-      "foto": [
-       "48fc4c56cd3c427693a4f59f688aab52",
-       "c"
-      ]
+      "foto": "img/liderancas/alexandre-alves-de-azevedo-filho.jpg"
      },
      {
       "nome": "Hudson Miranda Sousa",
@@ -2170,29 +2163,33 @@ window.DADOS = {
    "obs": null,
    "pessoas": [
     {
-     "nome": "Arthur Sandri Tischler",
-     "cap": "921",
-     "cargo": "Mestre Conselheiro Regional"
-    },
-    {
-     "nome": "Bruno Novaes Carneiro de Albuquerque",
-     "cap": "239",
-     "cargo": "Mestre Conselheiro Regional"
+     "nome": "Nicollas de Oliveira Cunha",
+     "cap": "818",
+     "cargo": "MCR da 1ª Oficialaria",
+     "foto": "img/liderancas/nicollas-de-oliveira-cunha.jpg"
     },
     {
      "nome": "Francisco Jovita Carneiro Neto",
      "cap": "870",
-     "cargo": "Mestre Conselheiro Regional"
-    },
-    {
-     "nome": "Nicollas de Oliveira Cunha",
-     "cap": "818",
-     "cargo": "Mestre Conselheiro Regional"
+     "cargo": "MCR da 2ª Oficialaria",
+     "foto": "img/liderancas/francisco-jovita-carneiro-neto.jpg"
     },
     {
      "nome": "Vinícius Damaceno Jansen",
      "cap": "1188",
-     "cargo": "Mestre Conselheiro Regional"
+     "cargo": "MCR da 3ª Oficialaria"
+    },
+    {
+     "nome": "Arthur Sandri Tischler",
+     "cap": "921",
+     "cargo": "MCR da 4ª Oficialaria",
+     "foto": "img/liderancas/arthur-sandri-tischler.jpg"
+    },
+    {
+     "nome": "Bruno Novaes Carneiro de Albuquerque",
+     "cap": "239",
+     "cargo": "MCR da 5ª Oficialaria",
+     "foto": "img/liderancas/bruno-novaes-carneiro-de-albuquerque.jpg"
     }
    ]
   },
@@ -2454,7 +2451,11 @@ window.DADOS = {
     {
      "nome": "Paulo Ytallo Alves da Silva",
      "cap": "870",
-     "cargo": "Presidente"
+     "cargo": "Presidente",
+     "foto": [
+      "eff7d2ee13c94e4c98aa1052266556fb",
+      "c"
+     ]
     },
     {
      "nome": "Alek Wayne de Souza Santos",
@@ -2736,7 +2737,11 @@ window.DADOS = {
    "ano": "2016",
    "demolay": {
     "nome": "Lucas Fonseca Rezende",
-    "cap": "312"
+    "cap": "312",
+    "foto": [
+     "41d7e847181443499735f39a20fe118e",
+     "c"
+    ]
    },
    "consultor": {
     "nome": "Geraldo Pinto Alves Filho",
@@ -2751,7 +2756,11 @@ window.DADOS = {
    },
    "consultor": {
     "nome": "Luiz Alberto Lopes de Sousa",
-    "cap": "919"
+    "cap": "919",
+    "foto": [
+     "23fcf0f9437d4f92b2a96f10d5ea957e",
+     "c"
+    ]
    }
   },
   {
@@ -2886,7 +2895,8 @@ window.DADOS = {
    },
    "consultor": {
     "nome": "Arlan Paixão de Sousa",
-    "cap": "1225"
+    "cap": "1225",
+    "foto": "img/liderancas/arlan-paixao-de-sousa.jpg"
    }
   }
  ],

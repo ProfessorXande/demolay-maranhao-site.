@@ -41,7 +41,7 @@
   const PINO = '<svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path fill="currentColor" d="M6 0a6 6 0 0 0-6 6c0 4.4 6 8 6 8s6-3.6 6-8a6 6 0 0 0-6-6zm0 8.2A2.2 2.2 0 1 1 6 3.8a2.2 2.2 0 0 1 0 4.4z"/></svg>';
 
   function foto(p) {
-    return `<div class="foto"><div class="foto__dentro"><b>${esc(iniciais(p.nome))}</b>${p.foto ? img(urlFoto(p.foto), 'Foto de ' + p.nome) : ''}</div></div>`;
+    return `<div class="foto"><div class="foto__dentro"><b>${esc(iniciais(p.nome))}</b>${p.foto ? img(urlFoto(p.foto), 'Foto de ' + p.nome, typeof p.foto === 'string' ? 'nova' : '') : ''}</div></div>`;
   }
   function pessoa(p, cargo) {
     const c = cargo ?? p.cargo;

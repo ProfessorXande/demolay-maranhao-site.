@@ -158,6 +158,7 @@ p { margin: 0; }
 .foto__dentro { position: relative; width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background: var(--azul); display: grid; place-items: center; border: 3px solid var(--papel); }
 .foto__dentro b { font: 800 34px/1 var(--display); color: rgba(255, 255, 255, .9); letter-spacing: .02em; }
 .foto__dentro img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #fff; }
+.foto__dentro img.nova { transform: scale(1.32); transform-origin: 50% 14%; }
 .pessoa h3 { font-size: 18.5px; color: var(--azul); }
 :root[data-theme="dark"] .pessoa h3 { color: #fff; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pessoa h3 { color: #fff; } }
