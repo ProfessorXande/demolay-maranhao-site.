@@ -368,3 +368,11 @@ td .cid { display: block; font-size: 13px; color: var(--suave); }
 
 :root[data-theme="dark"] .btn--azul { background: var(--azul2); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn--azul { background: var(--azul2); } }
+
+/* Mapa: um ponto por organização */
+.pino { display: block; width: 18px; height: 18px; border-radius: 50%; background: var(--cor, #163C80); border: 2.5px solid #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, .35); }
+.pino--inativo { opacity: .45; }
+.leg-ponto { display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: var(--cor); border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,.25); margin: 0 6px 0 4px; vertical-align: -1px; }
+.leaflet-control-layers { font: 500 13px/1.5 var(--corpo); color: #18223A; border-radius: 12px !important; }
+.leaflet-control-layers-overlays label { margin: 2px 0; }
+@media (max-width: 640px) { .leaflet-control-layers { font-size: 12px; } }

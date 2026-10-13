@@ -236,9 +236,9 @@
     const ordem = Object.keys(regioes).sort((a, b) => parseInt(a) - parseInt(b));
     const bloco = (olho, titulo, L, im) => L.length ? `<div><div class="cabeca-icone pequeno">${im ? img(im, titulo) : ''}<div><p class="olho">${olho}</p><h3>${titulo}</h3></div></div>${listaUnid(L)}</div>` : '';
     return `${faixa('Onde estamos', 'A Ordem DeMolay pelo Maranhão', `${ativos.length} Capítulos em atividade em ${N.cidadesAtivas} cidades, organizados em Oficialarias Executivas, além de Castelos, Priorados, Cortes e Clubes.`)}
-    ${secao(`${cabeca('Mapa', 'Nossas organizações no mapa', 'Clique em uma cidade para ver os Capítulos, Castelos, Priorados, Cortes e Clubes que funcionam nela.')}
+    ${secao(`${cabeca('Mapa', 'Nossas organizações no mapa', 'Todas as organizações DeMolay do Maranhão. Clique em um ponto para ver o nome, o endereço e o patrocínio.')}
       <div id="mapa" class="mapa" role="region" aria-label="Mapa das organizações DeMolay no Maranhão"><p class="vazio">Carregando o mapa…</p></div>
-      <p class="legenda"><span class="ponto ponto--ativo"></span> Cidade com Capítulo em atividade <span class="ponto"></span> Outras organizações</p>`)}
+      <p class="legenda">Cada ponto é uma organização. Pontos apagados são organizações inativas. Use as caixas no canto do mapa para mostrar ou esconder cada tipo.</p>`)}
     ${secao(`${cabeca('Capítulos DeMolay', 'Capítulos em atividade', 'Agrupados pela Oficialaria Executiva de cada região do Estado.')}
       <div class="linha-tempo">${ordem.map(r => `<div class="gestao"><div><p class="gestao__ano" style="font-size:22px">${esc(r.split(' - ')[0].replace('/Região', ''))}</p><p class="gestao__lema" style="font-style:normal">${esc(r.split(' - ')[1] || '')}</p></div>${listaUnid(regioes[r])}</div>`).join('')}</div>`)}
     ${secao(`${cabeca('Nossa história', 'Outros Capítulos do Maranhão', 'Capítulos que também fazem parte da história da Ordem no Estado.')}${listaUnid(outros)}`, 'secao--cinza')}
@@ -261,26 +261,59 @@
     'Barão de Grajaú': [-6.74, -43.03], 'Paraibano': [-6.43, -43.98], 'Balsas': [-7.53, -46.04], 'Imperatriz': [-5.53, -47.49],
     'Grajaú': [-5.82, -46.14], 'Carolina': [-7.34, -47.46], 'Açailândia': [-4.95, -47.51], 'Porto Franco': [-6.34, -47.40], 'Estreito': [-6.56, -47.45],
   };
+  // cidade não informada no SISDM: posição provável (ver LEIA-ME)
+  const CIDADE_PROVAVEL = { 'Rosa Fraterna|49': 'São Luís', 'Timbiras|16': 'São Luís' };
+  const TIPOS = [
+    ['Capítulos', 'capitulos', 'Capítulo', '#C8102E'],
+    ['Castelos', 'castelos', 'Castelo', '#E3A21A'],
+    ['Priorados', 'priorados', 'Priorado', '#2E8B57'],
+    ['Cortes de Chevalier', 'cortes', 'Corte', '#7B3FA0'],
+    ['Preceptorias', 'preceptorias', 'Preceptoria', '#0B2A61'],
+    ['Clubes de Mães e Amigos', 'clubes', 'Clube', '#D9468F'],
+    ['Colégios Alumni', 'colegios', 'Colégio Alumni', '#1597A6'],
+  ];
   function montaMapa() {
     const el = document.getElementById('mapa');
     if (!el) return;
     if (!window.L) { el.innerHTML = '<p class="vazio">O mapa aparece no site publicado.</p>'; return; }
     el.innerHTML = '';
-    const grupos = [['Capítulos', D.capitulos.filter(o => o.ativo), 'Capítulo'], ['Castelos', D.castelos.filter(o => o.ativo), 'Castelo'], ['Priorados', D.priorados.filter(o => o.situacao !== 'Inativo'), 'Priorado'],
-      ['Cortes de Chevalier', D.cortes, 'Corte'], ['Preceptorias', D.preceptorias, 'Preceptoria'], ['Clubes de Mães e Amigos', D.clubes.filter(o => o.ativo), 'Clube']];
-    const cid = {};
-    grupos.forEach(([g, L, t]) => L.forEach(o => { if (!COORD[o.cidade]) return; ((cid[o.cidade] ||= {})[g] ||= []).push(o); }));
+    // junta todas as organizações, ativas e inativas
+    const todas = [];
+    TIPOS.forEach(([grupo, chave, tipo, cor]) => {
+      (D[chave] || []).forEach(o => {
+        const org = Array.isArray(o) ? { n: o[0], nome: o[1], cidade: o[2], ativo: true } : o;
+        const cidade = org.cidade || CIDADE_PROVAVEL[org.nome + '|' + org.n] || '';
+        if (!COORD[cidade]) return;
+        todas.push({ ...org, cidade, grupo, tipo, cor });
+      });
+    });
+    // espalha os pontos de uma mesma cidade em volta do centro dela
+    const porCidade = {};
+    todas.forEach(o => (porCidade[o.cidade] ||= []).push(o));
     const mapa = L.map(el, { scrollWheelZoom: false }).setView([-5.3, -45.3], 6);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 15, attribution: '&copy; OpenStreetMap' }).addTo(mapa);
-    const marcas = [];
-    Object.entries(cid).forEach(([c, gs]) => {
-      const ativo = !!gs['Capítulos'];
-      const icone = L.divIcon({ className: '', html: `<span class="pino ${ativo ? 'pino--ativo' : ''}"></span>`, iconSize: [22, 22], iconAnchor: [11, 11] });
-      const html = `<div class="pop"><h4>${esc(c)}/MA</h4>${Object.entries(gs).map(([g, L]) => `<p class="pop__g">${g}</p>${L.map(o => `<p><b>${esc(o.nome)} nº ${o.n}</b>${o.endereco ? `<br><small>${esc(o.endereco)}</small>` : ''}</p>`).join('')}`).join('')}</div>`;
-      marcas.push(L.marker(COORD[c], { icon: icone, title: c }).addTo(mapa).bindPopup(html, { maxWidth: 280 }));
+    const camadas = {}; const marcas = [];
+    TIPOS.forEach(([grupo]) => { camadas[grupo] = L.layerGroup().addTo(mapa); });
+    Object.entries(porCidade).forEach(([cidade, L0]) => {
+      const [lat, lng] = COORD[cidade]; const n = L0.length;
+      L0.forEach((o, k) => {
+        // os pontos de uma mesma cidade formam uma espiral em pixels, que fica igual em qualquer zoom
+        const ang = k * 2.39996; const r = n === 1 ? 0 : 13 * Math.sqrt(k + 0.5);
+        const dx = Math.round(r * Math.cos(ang)), dy = Math.round(r * Math.sin(ang));
+        const pos = [lat, lng];
+        const icone = L.divIcon({ className: '', html: `<span class="pino ${o.ativo ? '' : 'pino--inativo'}" style="--cor:${o.cor}"></span>`, iconSize: [18, 18], iconAnchor: [9 - dx, 9 - dy], popupAnchor: [dx, dy - 6] });
+        const html = `<div class="pop"><p class="pop__g" style="color:${o.cor}">${o.tipo}${o.ativo ? '' : ' · inativo'}</p><h4>${esc(o.nome)} nº ${esc(o.n)}</h4><p>${esc(cidade)}/MA</p>${o.endereco ? `<p><small>${esc(o.endereco)}</small></p>` : ''}${o.patrocinio ? `<p><small>Patrocínio: ${esc(o.patrocinio)}</small></p>` : ''}</div>`;
+        const m = L.marker(pos, { icon: icone, title: `${o.tipo} ${o.nome}` }).bindPopup(html, { maxWidth: 280 });
+        camadas[o.grupo].addLayer(m); marcas.push(m);
+      });
     });
-    if (marcas.length) mapa.fitBounds(L.featureGroup(marcas).getBounds().pad(0.15));
+    const rotulos = {};
+    TIPOS.forEach(([grupo, , , cor]) => { rotulos[`<span class="leg-ponto" style="--cor:${cor}"></span>${grupo} (${todas.filter(o => o.grupo === grupo).length})`] = camadas[grupo]; });
+    L.control.layers(null, rotulos, { collapsed: false, position: 'topright' }).addTo(mapa);
+    const ajusta = () => { mapa.invalidateSize(); mapa.fitBounds(L.latLngBounds(Object.keys(porCidade).map(c => COORD[c])).pad(0.12)); };
+    ajusta(); setTimeout(ajusta, 250);
   }
+
 
   function unidade(o, tipo) {
     return `<div class="unidade ${o.ativo ? '' : 'inativa'}"><b>${esc(o.nome)} nº ${o.n}</b>
