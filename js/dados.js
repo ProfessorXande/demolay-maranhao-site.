@@ -2706,7 +2706,8 @@ window.DADOS = {
    "cadeira": 17,
    "patrono": "Josué Montello",
    "nome": "Álvaro Brandão Raposo",
-   "cap": "1231"
+   "cap": "1231",
+   "foto": "img/liderancas/alvaro-brandao-raposo.jpg"
   },
   {
    "cadeira": 18,
@@ -2885,7 +2886,8 @@ window.DADOS = {
    "ano": "2024",
    "demolay": {
     "nome": "Álvaro Brandão Raposo",
-    "cap": "1231"
+    "cap": "1231",
+    "foto": "img/liderancas/alvaro-brandao-raposo.jpg"
    },
    "consultor": {
     "nome": "Emerson Forte de Andrade",
