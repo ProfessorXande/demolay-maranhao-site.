@@ -1304,10 +1304,7 @@ window.DADOS = {
        "nome": "Matheus Gama Santos",
        "cap": "623",
        "cargo": "Mestre Conselheiro Estadual",
-       "foto": [
-        "74e457248f8d44cab8ccfa26f1fc1fcf",
-        "a"
-       ]
+       "foto": "img/liderancas/matheus-gama-santos.jpg"
       },
       {
        "nome": "Matias de Sousa Lima Neto",
@@ -1440,10 +1437,7 @@ window.DADOS = {
      "nome": "Cromwell de Oliveira Filho",
      "cap": "534",
      "cargo": "Grande Mestre Estadual Adjunto",
-     "foto": [
-      "2f12f4ae470f45adbdf27a79016ccf28",
-      "c"
-     ]
+     "foto": "img/liderancas/cromwell-de-oliveira-filho.jpg"
     }
    ],
    "gabinetes": [
@@ -1676,19 +1670,13 @@ window.DADOS = {
     "nome": "Cromwell de Oliveira Filho",
     "cap": "534",
     "cargo": "Grande Mestre Estadual Adjunto",
-    "foto": [
-     "2f12f4ae470f45adbdf27a79016ccf28",
-     "c"
-    ]
+    "foto": "img/liderancas/cromwell-de-oliveira-filho.jpg"
    },
    {
     "nome": "Evandro Rodrigues dos Santos Junior",
     "cap": "870",
     "cargo": "Grande Secretário Estadual",
-    "foto": [
-     "9892e28291da47c49f929e1a4ada61d8",
-     "c"
-    ]
+    "foto": "img/liderancas/evandro-rodrigues-dos-santos-junior.jpg"
    },
    {
     "nome": "Ronildo da Silva Braga Junior",
@@ -1703,10 +1691,7 @@ window.DADOS = {
     "nome": "Felipe Braga Barreto",
     "cap": "818",
     "cargo": "Grande Tesoureiro Estadual",
-    "foto": [
-     "211e412cc7df41f79a232fc3a46b3f7a",
-     "c"
-    ]
+    "foto": "img/liderancas/felipe-braga-barreto.jpg"
    },
    {
     "nome": "Matheus Gama Santos",
@@ -2062,10 +2047,7 @@ window.DADOS = {
       "nome": "Evandro Rodrigues dos Santos Junior",
       "cap": "870",
       "cargo": "Presidente",
-      "foto": [
-       "1d5356b59c9a44cfb08f86753f5006eb",
-       "c"
-      ]
+      "foto": "img/liderancas/evandro-rodrigues-dos-santos-junior.jpg"
      },
      {
       "nome": "Rodrigo Brandão Ferreira",
@@ -2098,10 +2080,7 @@ window.DADOS = {
       "nome": "Matheus Gama Santos",
       "cap": "818",
       "cargo": "Membro",
-      "foto": [
-       "8d00fabc3c7040ceaecd2e7dfd630c89",
-       "c"
-      ]
+      "foto": "img/liderancas/matheus-gama-santos.jpg"
      }
     ]
    },
@@ -2134,10 +2113,7 @@ window.DADOS = {
       "nome": "Evandro Rodrigues dos Santos Junior",
       "cap": "870",
       "cargo": "Membro",
-      "foto": [
-       "21457b5efca945238e07b86f999826d2",
-       "c"
-      ]
+      "foto": "img/liderancas/evandro-rodrigues-dos-santos-junior.jpg"
      },
      {
       "nome": "Bruno Madson de Sousa Lima",
@@ -2161,10 +2137,7 @@ window.DADOS = {
       "nome": "Evandro Rodrigues dos Santos Junior",
       "cap": "870",
       "cargo": "Presidente",
-      "foto": [
-       "1d5356b59c9a44cfb08f86753f5006eb",
-       "c"
-      ]
+      "foto": "img/liderancas/evandro-rodrigues-dos-santos-junior.jpg"
      },
      {
       "nome": "Cyro José Ferreira Nascimento",
@@ -2179,10 +2152,7 @@ window.DADOS = {
       "nome": "Matheus Gama Santos",
       "cap": "818",
       "cargo": "Membro",
-      "foto": [
-       "8d00fabc3c7040ceaecd2e7dfd630c89",
-       "c"
-      ]
+      "foto": "img/liderancas/matheus-gama-santos.jpg"
      }
     ]
    },
@@ -2587,10 +2557,7 @@ window.DADOS = {
    "patrono": "João do Vale, \"o poeta do povo\"",
    "nome": "Evandro Rodrigues dos Santos Júnior",
    "cap": "870",
-   "foto": [
-    "9d3490113c0244f0a05ced58622c131f",
-    "c"
-   ]
+   "foto": "img/liderancas/evandro-rodrigues-dos-santos-junior.jpg"
   },
   {
    "cadeira": 6,
@@ -2792,10 +2759,7 @@ window.DADOS = {
    "demolay": {
     "nome": "Matheus Gama Santos",
     "cap": "623",
-    "foto": [
-     "dd3c78c0a3ea4df88fa71b585f0a3909",
-     "c"
-    ]
+    "foto": "img/liderancas/matheus-gama-santos.jpg"
    },
    "consultor": {
     "nome": "João Luiz da Silva",
@@ -2815,10 +2779,7 @@ window.DADOS = {
    "consultor": {
     "nome": "Cromwell de Oliveira Filho",
     "cap": "534",
-    "foto": [
-     "2f12f4ae470f45adbdf27a79016ccf28",
-     "c"
-    ]
+    "foto": "img/liderancas/cromwell-de-oliveira-filho.jpg"
    }
   },
   {
