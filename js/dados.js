@@ -1764,10 +1764,7 @@ window.DADOS = {
     "nome": "Hudson Miranda Sousa",
     "cap": "921",
     "cargo": "Oficial Executivo da 7ª Região",
-    "foto": [
-     "3cd17beb40c04d2ead652553f3380e17",
-     "c"
-    ],
+    "foto": "img/liderancas/hudson-miranda-sousa.jpg",
     "obs": "Loja Amor e Justiça nº 52 · Balsas"
    }
   ]
@@ -1884,10 +1881,7 @@ window.DADOS = {
       "nome": "Hudson Miranda Sousa",
       "cap": "921",
       "cargo": "Membro",
-      "foto": [
-       "3cd17beb40c04d2ead652553f3380e17",
-       "c"
-      ]
+      "foto": "img/liderancas/hudson-miranda-sousa.jpg"
      },
      {
       "nome": "Eduardo Lopes Adão",
@@ -1942,10 +1936,7 @@ window.DADOS = {
       "nome": "Hudson Miranda Sousa",
       "cap": "921",
       "cargo": "Presidente",
-      "foto": [
-       "3cd17beb40c04d2ead652553f3380e17",
-       "c"
-      ]
+      "foto": "img/liderancas/hudson-miranda-sousa.jpg"
      },
      {
       "nome": "Cyro José Ferreira Nascimento",
@@ -2093,10 +2084,7 @@ window.DADOS = {
       "nome": "Hudson Miranda Sousa",
       "cap": "921",
       "cargo": "Secretário",
-      "foto": [
-       "3cd17beb40c04d2ead652553f3380e17",
-       "c"
-      ]
+      "foto": "img/liderancas/hudson-miranda-sousa.jpg"
      },
      {
       "nome": "Evandro Rodrigues dos Santos Junior",
@@ -2608,10 +2596,7 @@ window.DADOS = {
    "patrono": "Sidney Aguiar Milhomem",
    "nome": "Hudson Miranda Sousa",
    "cap": "921",
-   "foto": [
-    "bb6901067bce4704aa3d4a61be11888a",
-    "c"
-   ]
+   "foto": "img/liderancas/hudson-miranda-sousa.jpg"
   },
   {
    "cadeira": 10,
