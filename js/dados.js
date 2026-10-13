@@ -2830,7 +2830,8 @@ window.DADOS = {
    },
    "consultor": {
     "nome": "Milton Wagner de Araujo",
-    "cap": "921"
+    "cap": "921",
+    "foto": "img/liderancas/milton-wagner-de-araujo.jpg"
    }
   },
   {
