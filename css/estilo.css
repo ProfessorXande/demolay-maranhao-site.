@@ -376,3 +376,14 @@ td .cid { display: block; font-size: 13px; color: var(--suave); }
 .leaflet-control-layers { font: 500 13px/1.5 var(--corpo); color: #18223A; border-radius: 12px !important; }
 .leaflet-control-layers-overlays label { margin: 2px 0; }
 @media (max-width: 640px) { .leaflet-control-layers { font-size: 12px; } }
+
+/* Gestões anteriores escondidas: abrem ao clicar */
+.anterior { border: 1px solid var(--linha); border-radius: 18px; background: var(--papel); }
+.anterior summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 26px; font: 700 15px/1.3 var(--display); letter-spacing: .04em; color: var(--azul2); }
+.anterior summary::-webkit-details-marker { display: none; }
+.anterior summary::after { content: ""; flex: none; width: 10px; height: 10px; border-right: 2.5px solid currentColor; border-bottom: 2.5px solid currentColor; transform: rotate(45deg); transition: transform .2s; margin-top: -4px; }
+.anterior[open] summary::after { transform: rotate(-135deg); margin-top: 4px; }
+.anterior summary:hover { color: var(--vermelho); }
+.anterior__corpo { padding: 0 20px 20px; }
+:root[data-theme="dark"] .anterior summary { color: var(--ouro); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .anterior summary { color: var(--ouro); } }
