@@ -1899,64 +1899,6 @@ window.DADOS = {
      "foto": "img/liderancas/joao-lucas-guidio-de-castilho.jpg"
     }
    ]
-  },
-  {
-   "gestao": "2015/2017",
-   "pessoas": [
-    {
-     "nome": "Paulo Roberto Dias de Campos",
-     "cap": "647",
-     "cargo": "Grande Mestre Estadual",
-     "foto": [
-      "16357d653fa647e888d195df512f2c17",
-      "c"
-     ]
-    },
-    {
-     "nome": "Iub Fávero Nathasje",
-     "cap": "534",
-     "cargo": "Grande Mestre Estadual Adjunto",
-     "foto": [
-      "9c223b0505af44c6b5519573dc0d384e",
-      "c"
-     ]
-    },
-    {
-     "nome": "Glaydson Campelo de Almeida Rodrigues",
-     "cap": "312",
-     "cargo": "Grande Secretário Estadual",
-     "foto": "img/liderancas/glaydson-campelo-de-almeida-rodrigues.jpg"
-    },
-    {
-     "nome": "Eduardo Lopes Adão",
-     "cap": "312",
-     "cargo": "Grande Secretário Estadual Adjunto",
-     "foto": "img/liderancas/eduardo-lopes-adao.jpg"
-    },
-    {
-     "nome": "Vilanei Lazaro Chaves",
-     "cargo": "Grande Tesoureiro Estadual",
-     "foto": "img/liderancas/vilanei-lazaro-chaves.jpg"
-    },
-    {
-     "nome": "João Lucas Guidio de Castilho",
-     "cargo": "Grande Tesoureiro Estadual Adjunto",
-     "foto": "img/liderancas/joao-lucas-guidio-de-castilho.jpg"
-    },
-    {
-     "nome": "Carlos Agusto Dias Lopes Portela",
-     "cargo": "Grande Orador Estadual"
-    },
-    {
-     "nome": "André Luis Fernandes Andrade",
-     "cap": "312",
-     "cargo": "Grande Orador Estadual Adjunto",
-     "foto": [
-      "536071d81a1f49f686a164f11d52eab4",
-      "c"
-     ]
-    }
-   ]
   }
  ],
  "oficiais": {
