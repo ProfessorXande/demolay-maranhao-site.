@@ -38,7 +38,7 @@
     '2020/2021|Enraizando Virtudes': 'gestao-enraizando-virtudes',
     '2019/2020|Viver DeMolay': 'gestao-viver-demolay-2019', '2018/2019|Sentimento DeMolay': 'gestao-sentimento-demolay',
     '2025/2026|Elevando Virtudes': 'gestao-elevando-virtudes',
-    '2026/2027|Pureza de Ideais': 'gestao-pureza-de-ideais',
+    '2026/2027|Pureza de Ideais': 'gestao-pureza-de-ideais', '2017/2018|Efetivando Líderes em um Maranhão de Virtudes': 'gestao-efetivando-lideres',
     '2021/2023|Sobre Virtudes': 'gestao-sobre-virtudes', '2019/2021|Ser DeMolay': 'gestao-ser-demolay',
   };
   const selo = (gestao, lema) => { const f = SELOS[gestao + '|' + lema]; return f ? `<img class="selo" src="${E}${f}.png" alt="Selo da gestão ${esc(lema)}" loading="lazy">` : ''; };

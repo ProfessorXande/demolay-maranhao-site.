@@ -1241,7 +1241,8 @@ window.DADOS = {
         "b"
        ]
       }
-     ]
+     ],
+     "lema": "Efetivando Líderes em um Maranhão de Virtudes"
     },
     {
      "ano": "2018/2019",
