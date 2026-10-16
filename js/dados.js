@@ -1769,60 +1769,167 @@ window.DADOS = {
    }
   ]
  },
- "oficiaisAnterior": {
-  "gestao": "2023/2025",
-  "lema": "Viver DeMolay",
-  "pessoas": [
-   {
-    "nome": "Marcos Galvão Pereira",
-    "cap": "312",
-    "cargo": "Oficial Executivo da 1ª Região",
-    "foto": [
-     "551819f9a68142adaaecb7913cb874d9",
-     "c"
-    ]
-   },
-   {
-    "nome": "Bruno Madson de Sousa Lima",
-    "cap": "870",
-    "cargo": "Oficial Executivo da 2ª Região",
-    "foto": "img/liderancas/bruno-madson-de-sousa-lima.jpg"
-   },
-   {
-    "nome": "Arlan Silvestre Franco Jansen",
-    "cap": "1188",
-    "cargo": "Oficial Executivo da 3ª Região",
-    "foto": [
-     "b5c8623d488b4c6885b87a2dbd47c387",
-     "c"
-    ]
-   },
-   {
-    "nome": "Luiz Alberto Lopes de Sousa",
-    "cap": "919",
-    "cargo": "Oficial Executivo da 4ª Região",
-    "foto": [
-     "23fcf0f9437d4f92b2a96f10d5ea957e",
-     "c"
-    ]
-   },
-   {
-    "nome": "Emerson Forte de Andrade",
-    "cap": "239",
-    "cargo": "Oficial Executivo da 5ª Região",
-    "foto": "img/liderancas/emerson-forte-de-andrade.jpg"
-   },
-   {
-    "nome": "Pablo Ricardo Ramalho Leite",
-    "cap": "1231",
-    "cargo": "Oficial Executivo da 6ª Região",
-    "foto": [
-     "4b3d8d4883084a248419acd824220e1c",
-     "c"
-    ]
-   }
-  ]
- },
+ "oficiaisAnterior": [
+  {
+   "gestao": "2023/2025",
+   "lema": "Viver DeMolay",
+   "pessoas": [
+    {
+     "nome": "Marcos Galvão Pereira",
+     "cap": "312",
+     "cargo": "Oficial Executivo da 1ª Região",
+     "foto": [
+      "551819f9a68142adaaecb7913cb874d9",
+      "c"
+     ]
+    },
+    {
+     "nome": "Bruno Madson de Sousa Lima",
+     "cap": "870",
+     "cargo": "Oficial Executivo da 2ª Região",
+     "foto": "img/liderancas/bruno-madson-de-sousa-lima.jpg"
+    },
+    {
+     "nome": "Arlan Silvestre Franco Jansen",
+     "cap": "1188",
+     "cargo": "Oficial Executivo da 3ª Região",
+     "foto": [
+      "b5c8623d488b4c6885b87a2dbd47c387",
+      "c"
+     ]
+    },
+    {
+     "nome": "Luiz Alberto Lopes de Sousa",
+     "cap": "919",
+     "cargo": "Oficial Executivo da 4ª Região",
+     "foto": [
+      "23fcf0f9437d4f92b2a96f10d5ea957e",
+      "c"
+     ]
+    },
+    {
+     "nome": "Emerson Forte de Andrade",
+     "cap": "239",
+     "cargo": "Oficial Executivo da 5ª Região",
+     "foto": "img/liderancas/emerson-forte-de-andrade.jpg"
+    },
+    {
+     "nome": "Pablo Ricardo Ramalho Leite",
+     "cap": "1231",
+     "cargo": "Oficial Executivo da 6ª Região",
+     "foto": [
+      "4b3d8d4883084a248419acd824220e1c",
+      "c"
+     ]
+    }
+   ]
+  },
+  {
+   "gestao": "2021/2023",
+   "lema": "Sobre Virtudes",
+   "pessoas": [
+    {
+     "nome": "Marcos Galvão Pereira",
+     "cap": "312",
+     "cargo": "Oficial Executivo da 1ª Região",
+     "foto": [
+      "551819f9a68142adaaecb7913cb874d9",
+      "c"
+     ]
+    },
+    {
+     "nome": "Enderson Pereira da Silva",
+     "cap": "870",
+     "cargo": "Oficial Executivo da 2ª Região",
+     "foto": "img/liderancas/enderson-pereira-da-silva.jpg"
+    },
+    {
+     "nome": "José Eustáquio Fonseca",
+     "cap": "920",
+     "cargo": "Oficial Executivo da 3ª Região"
+    },
+    {
+     "nome": "Luiz Alberto Lopes de Sousa",
+     "cap": "919",
+     "cargo": "Oficial Executivo da 4ª Região",
+     "foto": [
+      "23fcf0f9437d4f92b2a96f10d5ea957e",
+      "c"
+     ]
+    },
+    {
+     "nome": "Eduardo Macagnan",
+     "cap": "239",
+     "cargo": "Oficial Executivo da 5ª Região"
+    }
+   ]
+  },
+  {
+   "gestao": "2019/2021",
+   "lema": "Ser DeMolay",
+   "pessoas": [
+    {
+     "nome": "Valmir de Jesus Sousa França",
+     "cap": "144",
+     "cargo": "Oficial Executivo da 1ª Região"
+    },
+    {
+     "nome": "Pedro Thiago Ferreira Raposo",
+     "cap": "870",
+     "cargo": "Oficial Executivo da 2ª Região"
+    },
+    {
+     "nome": "Eliesio Campelo Lima Junior",
+     "cap": "841",
+     "cargo": "Oficial Executivo da 3ª Região"
+    },
+    {
+     "nome": "João Luiz da Silva",
+     "cap": "919",
+     "cargo": "Oficial Executivo da 4ª Região",
+     "foto": "img/liderancas/joao-luiz-da-silva.jpg"
+    },
+    {
+     "nome": "Fernandez Nunes Milhomem",
+     "cap": "534",
+     "cargo": "Oficial Executivo da 5ª Região"
+    }
+   ]
+  },
+  {
+   "gestao": "2017/2019",
+   "pessoas": [
+    {
+     "nome": "Djalma Pordeus Sarmento",
+     "cap": "623",
+     "cargo": "Oficial Executivo da 1ª Região"
+    },
+    {
+     "nome": "Pedro Thiago Ferreira Raposo",
+     "cap": "870",
+     "cargo": "Oficial Executivo da 2ª Região"
+    },
+    {
+     "nome": "Luiz Alberto Lopes de Sousa",
+     "cap": "919",
+     "cargo": "Oficial Executivo da 4ª Região",
+     "foto": [
+      "23fcf0f9437d4f92b2a96f10d5ea957e",
+      "c"
+     ]
+    },
+    {
+     "nome": "Vaner Mota Marinho",
+     "cap": "534",
+     "cargo": "Oficial Executivo da 5ª Região",
+     "foto": [
+      "7aef1875e8c44c7b9cdfde2fe509ae07",
+      "c"
+     ]
+    }
+   ]
+  }
+ ],
  "comissoes": {
   "gestao": "2025/2027",
   "lista": [

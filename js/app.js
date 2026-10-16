@@ -75,12 +75,17 @@
   const origemColegio = n => { const c = COLS[n]; return c ? `Colégio Alumni ${c[1]} nº ${c[0]} · ${c[2]}/MA` : `Colégio Alumni nº ${n}`; };
   const PINO = '<svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true"><path fill="currentColor" d="M6 0a6 6 0 0 0-6 6c0 4.4 6 8 6 8s6-3.6 6-8a6 6 0 0 0-6-6zm0 8.2A2.2 2.2 0 1 1 6 3.8a2.2 2.2 0 0 1 0 4.4z"/></svg>';
 
-  function foto(p) {
-    return `<div class="foto"><div class="foto__dentro"><b>${esc(iniciais(p.nome))}</b>${p.foto ? img(urlFoto(p.foto), 'Foto de ' + p.nome) : ''}</div></div>`;
+  // insígnia do cargo, ao lado da foto
+  const INSIG = [[/^Grande Mestre Estadual Adjunto/, 'gmea'], [/^Grande Mestre Estadual/, 'gme'], [/^Grande Secretário Estadual Adjunto/, 'gsea'], [/^Grande Secretário Estadual/, 'gse'],
+    [/^Grande Tesoureiro Estadual Adjunto/, 'gtea'], [/^Grande Tesoureiro Estadual/, 'gte'], [/^Grande Orador Estadual Adjunto/, 'goea'], [/^Grande Orador Estadual/, 'goe'],
+    [/Oficial Executivo/, 'oe'], [/^Mestre Conselheiro Estadual Adjunto/, 'mcea'], [/^Mestre Conselheiro Estadual/, 'mce'], [/^(MCR|Mestre Conselheiro Regional)/, 'mcr']];
+  const insignia = c => { if (!c) return ''; const m = INSIG.find(([r]) => r.test(c)); return m ? `<img class="insignia" src="img/insignias/${m[1]}.png" alt="" title="Insígnia: ${esc(c)}" loading="lazy">` : ''; };
+  function foto(p, cargo) {
+    return `<div class="foto"><div class="foto__dentro"><b>${esc(iniciais(p.nome))}</b>${p.foto ? img(urlFoto(p.foto), 'Foto de ' + p.nome) : ''}</div>${insignia(cargo)}</div>`;
   }
   function pessoa(p, cargo) {
     const c = cargo ?? p.cargo;
-    return `<article class="pessoa">${foto(p)}<div>
+    return `<article class="pessoa">${foto(p, c)}<div>
       <h3>${esc(p.nome)}</h3>
       ${c ? `<p class="cargo">${esc(c)}</p>` : ''}
       ${p.cap ? `<p class="origem">${PINO}<span>${esc(origem(p.cap))}</span></p>` : ''}
@@ -359,7 +364,7 @@
       <div class="botoes"><a class="btn btn--azul" href="#galeria-gme">Galeria dos Grandes Mestres</a><a class="btn btn--linha-azul" href="#oficiais">Oficiais Executivos</a></div>`, 'secao--cinza')}`;
   P.oficiais = () => `${faixa('Diretoria Executiva', 'Oficiais Executivos', 'Os Oficiais Executivos auxiliam o Grande Conselho na gestão de cada Oficialaria do Estado.', 'Diretoria Executiva')}
     ${secao(`${cabeca('Gestão ' + D.oficiais.gestao, 'Oficiais Executivos', '')}<div class="pessoas">${D.oficiais.pessoas.map(p => pessoa(p)).join('')}</div>`)}
-    ${secao(`${anterior('os Oficiais Executivos da gestão anterior (2023/2025)', `<div class="linha-tempo">${blocoEquipe(D.oficiaisAnterior)}</div>`)}`, 'secao--cinza')}`;
+    ${secao(`${anterior(`as gestões anteriores (${D.oficiaisAnterior.length})`, `<div class="linha-tempo">${D.oficiaisAnterior.map(g => blocoEquipe(g)).join('')}</div>`)}`, 'secao--cinza')}`;
   const blocoComissoes = L => `<div class="linha-tempo">${L.map(c => `<div class="gestao"><div>${foto({ nome: c.nome.replace(/^(Comissão|Coordenação) Estadual (de |da |)/, ''), foto: c.icone })}<h3 style="font-size:19px">${esc(c.nome)}</h3>${c.ato ? `<p class="gestao__lema" style="font-style:normal">${esc(c.ato)}</p>` : ''}</div><div class="dupla">${c.pessoas.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`;
   P.comissoes = () => `${faixa('Diretoria Executiva', 'Comissões Estaduais', `Gestão ${D.comissoes.gestao} · nomeadas pelo Grande Mestre Estadual.`, 'Diretoria Executiva')}
     ${secao(blocoComissoes(D.comissoes.lista))}
