@@ -2114,69 +2114,6 @@ window.DADOS = {
    ]
   },
   {
-   "gestao": "2021/2023",
-   "lema": "Sobre Virtudes",
-   "pessoas": [
-    {
-     "nome": "André Luis Fernandes Andrade",
-     "cap": "312",
-     "cargo": "Grande Mestre Estadual",
-     "foto": [
-      "536071d81a1f49f686a164f11d52eab4",
-      "c"
-     ]
-    },
-    {
-     "nome": "Marcus Rafael Araújo Miranda",
-     "cap": "312",
-     "cargo": "Grande Mestre Estadual Adjunto",
-     "foto": [
-      "370ac475bb8e421ab15e1d15b1b3cef1",
-      "c"
-     ]
-    },
-    {
-     "nome": "Luiz Carlos de Castro Alves Junior",
-     "cap": "312",
-     "cargo": "Grande Secretário Estadual",
-     "foto": [
-      "ea51813c912e485d9faedde23f2ab9c3",
-      "c"
-     ]
-    },
-    {
-     "nome": "Felipe Braga Barreto",
-     "cap": "818",
-     "cargo": "Grande Secretário Estadual Adjunto",
-     "foto": "img/liderancas/felipe-braga-barreto.jpg"
-    },
-    {
-     "nome": "Ronildo da Silva Braga Junior",
-     "cap": "623",
-     "cargo": "Grande Tesoureiro Estadual",
-     "foto": "img/liderancas/ronildo-da-silva-braga-junior.jpg"
-    },
-    {
-     "nome": "Silas Carvalho Noleto",
-     "cap": "534",
-     "cargo": "Grande Tesoureiro Estadual Adjunto",
-     "foto": "img/liderancas/silas-carvalho-noleto.jpg"
-    },
-    {
-     "nome": "Evandro Rodrigues dos Santos Junior",
-     "cap": "870",
-     "cargo": "Grande Orador Estadual",
-     "foto": "img/liderancas/evandro-rodrigues-dos-santos-junior.jpg"
-    },
-    {
-     "nome": "Weslley Fagundes Serra",
-     "cap": "239",
-     "cargo": "Grande Orador Estadual Adjunto",
-     "foto": "img/liderancas/weslley-fagundes-serra.jpg"
-    }
-   ]
-  },
-  {
    "gestao": "2019/2021",
    "lema": "Ser DeMolay",
    "pessoas": [
@@ -2209,69 +2146,6 @@ window.DADOS = {
      "cap": "534",
      "cargo": "Oficial Executivo da 5ª Região",
      "foto": "img/liderancas/fernandez-nunes-milhomem.jpg"
-    }
-   ]
-  },
-  {
-   "gestao": "2019/2021",
-   "lema": "Ser DeMolay",
-   "pessoas": [
-    {
-     "nome": "Marcos Luís Sousa Corrêa",
-     "cap": "623",
-     "cargo": "Grande Mestre Estadual",
-     "foto": [
-      "f5e33af4cfec4b7eafcd3feee90988b0",
-      "c"
-     ]
-    },
-    {
-     "nome": "André Luis Fernandes Andrade",
-     "cap": "312",
-     "cargo": "Grande Mestre Estadual Adjunto",
-     "foto": [
-      "536071d81a1f49f686a164f11d52eab4",
-      "c"
-     ]
-    },
-    {
-     "nome": "Evandro Rodrigues dos Santos Junior",
-     "cap": "870",
-     "cargo": "Grande Secretário Estadual",
-     "foto": "img/liderancas/evandro-rodrigues-dos-santos-junior.jpg"
-    },
-    {
-     "nome": "Frank Lucas Gomes do Nascimento",
-     "cap": "312",
-     "cargo": "Grande Secretário Estadual Adjunto",
-     "foto": "img/liderancas/frank-lucas-gomes-do-nascimento.jpg"
-    },
-    {
-     "nome": "Alex Vinicius Santos Baia",
-     "cap": "239",
-     "cargo": "Grande Tesoureiro Estadual",
-     "foto": "img/liderancas/alex-vinicius-santos-baia.jpg"
-    },
-    {
-     "nome": "Italo Henrique Silva Ferreira",
-     "cap": "1035",
-     "cargo": "Grande Tesoureiro Estadual Adjunto",
-     "foto": "img/liderancas/italo-henrique-silva-ferreira.jpg"
-    },
-    {
-     "nome": "Rodrigo Brandão Ferreira",
-     "cap": "312",
-     "cargo": "Grande Orador Estadual",
-     "foto": [
-      "ffe978d3ffa6479ba7e6571fab86016c",
-      "a"
-     ]
-    },
-    {
-     "nome": "Caio Vinicius Costa Coelho",
-     "cap": "919",
-     "cargo": "Grande Orador Estadual Adjunto",
-     "foto": "img/liderancas/caio-vinicius-costa-coelho.jpg"
     }
    ]
   },
