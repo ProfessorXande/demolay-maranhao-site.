@@ -360,7 +360,7 @@
   const blocoEquipe = (eq, titulo) => `<div class="gestao"><div><p class="gestao__ano">${esc(eq.gestao)}</p>${eq.lema ? `<p class="gestao__lema">“${esc(eq.lema)}”</p>` : ''}${selo(eq.gestao, eq.lema)}${titulo ? `<span class="tag">${titulo}</span>` : ''}</div><div class="dupla">${eq.pessoas.map(p => pessoa(p)).join('')}</div></div>`;
   P.diretoria = () => `${faixa('Diretoria Executiva', 'Líderes Estaduais — Adulto', `Grande Conselho Estadual · gestão ${D.diretoria.gestao} · “${D.diretoria.lema}”`, 'Diretoria Executiva')}
     ${secao(`<div class="pessoas">${D.diretoria.pessoas.map(p => pessoa(p)).join('')}</div>`)}
-    ${secao(`${anterior('a Diretoria Executiva da gestão anterior (2023/2025)', `<div class="linha-tempo">${blocoEquipe(D.diretoriaAnterior)}</div>`)}
+    ${secao(`${anterior(`as gestões anteriores (${D.diretoriaAnterior.length})`, `<div class="linha-tempo">${D.diretoriaAnterior.map(g => blocoEquipe(g)).join('')}</div>`)}
       <div class="botoes"><a class="btn btn--azul" href="#galeria-gme">Galeria dos Grandes Mestres</a><a class="btn btn--linha-azul" href="#oficiais">Oficiais Executivos</a></div>`, 'secao--cinza')}`;
   P.oficiais = () => `${faixa('Diretoria Executiva', 'Oficiais Executivos', 'Os Oficiais Executivos auxiliam o Grande Conselho na gestão de cada Oficialaria do Estado.', 'Diretoria Executiva')}
     ${secao(`${cabeca('Gestão ' + D.oficiais.gestao, 'Oficiais Executivos', '')}<div class="pessoas">${D.oficiais.pessoas.map(p => pessoa(p)).join('')}</div>`)}
