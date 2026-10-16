@@ -2155,7 +2155,8 @@ window.DADOS = {
     {
      "nome": "Djalma Pordeus Sarmento",
      "cap": "623",
-     "cargo": "Oficial Executivo da 1ª Região"
+     "cargo": "Oficial Executivo da 1ª Região",
+     "foto": "img/liderancas/djalma-pordeus-sarmento.jpg"
     },
     {
      "nome": "Pedro Thiago Ferreira Raposo",
