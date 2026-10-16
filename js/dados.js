@@ -2093,7 +2093,8 @@ window.DADOS = {
     {
      "nome": "José Eustáquio Fonseca",
      "cap": "920",
-     "cargo": "Oficial Executivo da 3ª Região"
+     "cargo": "Oficial Executivo da 3ª Região",
+     "foto": "img/liderancas/jose-eustaquio-fonseca.jpg"
     },
     {
      "nome": "Luiz Alberto Lopes de Sousa",
@@ -2107,7 +2108,8 @@ window.DADOS = {
     {
      "nome": "Eduardo Macagnan",
      "cap": "239",
-     "cargo": "Oficial Executivo da 5ª Região"
+     "cargo": "Oficial Executivo da 5ª Região",
+     "foto": "img/liderancas/eduardo-macagnan.jpg"
     }
    ]
   },
@@ -2181,17 +2183,20 @@ window.DADOS = {
     {
      "nome": "Valmir de Jesus Sousa França",
      "cap": "144",
-     "cargo": "Oficial Executivo da 1ª Região"
+     "cargo": "Oficial Executivo da 1ª Região",
+     "foto": "img/liderancas/valmir-de-jesus-sousa-franca.jpg"
     },
     {
      "nome": "Pedro Thiago Ferreira Raposo",
      "cap": "870",
-     "cargo": "Oficial Executivo da 2ª Região"
+     "cargo": "Oficial Executivo da 2ª Região",
+     "foto": "img/liderancas/pedro-thiago-ferreira-raposo.jpg"
     },
     {
      "nome": "Eliesio Campelo Lima Junior",
      "cap": "841",
-     "cargo": "Oficial Executivo da 3ª Região"
+     "cargo": "Oficial Executivo da 3ª Região",
+     "foto": "img/liderancas/eliesio-campelo-lima-junior.jpg"
     },
     {
      "nome": "João Luiz da Silva",
@@ -2202,7 +2207,8 @@ window.DADOS = {
     {
      "nome": "Fernandez Nunes Milhomem",
      "cap": "534",
-     "cargo": "Oficial Executivo da 5ª Região"
+     "cargo": "Oficial Executivo da 5ª Região",
+     "foto": "img/liderancas/fernandez-nunes-milhomem.jpg"
     }
    ]
   },
@@ -2280,7 +2286,8 @@ window.DADOS = {
     {
      "nome": "Pedro Thiago Ferreira Raposo",
      "cap": "870",
-     "cargo": "Oficial Executivo da 2ª Região"
+     "cargo": "Oficial Executivo da 2ª Região",
+     "foto": "img/liderancas/pedro-thiago-ferreira-raposo.jpg"
     },
     {
      "nome": "Luiz Alberto Lopes de Sousa",
