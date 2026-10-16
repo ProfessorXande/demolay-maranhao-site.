@@ -3026,7 +3026,8 @@ window.DADOS = {
    },
    "consultor": {
     "nome": "Isauro Gomes Pereira",
-    "cap": "647"
+    "cap": "647",
+    "foto": "img/liderancas/isauro-gomes-pereira.jpg"
    }
   },
   {
