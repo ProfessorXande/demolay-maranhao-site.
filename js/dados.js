@@ -2133,22 +2133,13 @@ window.DADOS = {
   "lista": [
    {
     "nome": "Comissão Estadual de Honrarias e Prêmios",
-    "ato": "Ato nº 004/2025-2027",
-    "icone": [
-     "a4996f3f55a04f1dbbd4b5a214734bb6",
-     "c"
-    ],
+    "ato": "Ato nº 015/2025-2027",
+    "icone": "img/comissoes/honrarias.jpg",
     "pessoas": [
-     {
-      "nome": "Alexandre Alves de Azevedo Filho",
-      "cap": "919",
-      "cargo": "Presidente",
-      "foto": "img/liderancas/alexandre-alves-de-azevedo-filho.jpg"
-     },
      {
       "nome": "Gabriel Francisco Araújo",
       "cap": "1231",
-      "cargo": "Membro",
+      "cargo": "Presidente",
       "foto": [
        "393b7e2de8e7494d92a9fd1edcdb1b6e",
        "c"
@@ -2162,13 +2153,22 @@ window.DADOS = {
        "8d8f4a8106a04b45bbc3f13a4735b418",
        "c"
       ]
+     },
+     {
+      "nome": "José Wilson Rodrigues da Costa Júnior",
+      "cap": "239",
+      "cargo": "Membro",
+      "foto": [
+       "26bd18239545497eabb5a99a35287758",
+       "c"
+      ]
      }
     ]
    },
    {
     "nome": "Coordenação Estadual da Ordem da Cavalaria",
     "ato": "Ato nº 005/2025-2027",
-    "icone": "img/emblemas/coordenacao-cavalaria.png",
+    "icone": "img/comissoes/cavalaria.jpg",
     "pessoas": [
      {
       "nome": "Werllan Nascimento da Silva",
@@ -2199,10 +2199,7 @@ window.DADOS = {
    {
     "nome": "Comissão Estadual de Apelações",
     "ato": "Ato nº 006/2025-2027",
-    "icone": [
-     "dcaabdb6714047209e08c5308a353866",
-     "c"
-    ],
+    "icone": "img/comissoes/apelacoes.jpg",
     "pessoas": [
      {
       "nome": "Paulo Ytallo Alves da Silva",
@@ -2230,12 +2227,36 @@ window.DADOS = {
     ]
    },
    {
+    "nome": "Comissão Estadual de Ética e Disciplina",
+    "ato": "Ato nº 016/2025-2027",
+    "icone": "img/comissoes/etica.jpg",
+    "pessoas": [
+     {
+      "nome": "Paulo Ytallo Alves da Silva",
+      "cap": "870",
+      "cargo": "Presidente",
+      "foto": [
+       "eff7d2ee13c94e4c98aa1052266556fb",
+       "c"
+      ]
+     },
+     {
+      "nome": "Caio Vinicius Costa Coelho",
+      "cap": "919",
+      "cargo": "Membro",
+      "foto": "img/liderancas/caio-vinicius-costa-coelho.jpg"
+     },
+     {
+      "nome": "Paulo Vitor de Lima Bilio",
+      "cap": "870",
+      "cargo": "Membro"
+     }
+    ]
+   },
+   {
     "nome": "Comissão Estadual de Eventos",
     "ato": "Ato nº 007/2025-2027",
-    "icone": [
-     "ddc2d39725504a459eda33380a41ef92",
-     "c"
-    ],
+    "icone": "img/comissoes/eventos.jpg",
     "pessoas": [
      {
       "nome": "Hudson Miranda Sousa",
@@ -2326,10 +2347,7 @@ window.DADOS = {
   "lista": [
    {
     "nome": "Comissão Estadual Eleitoral e de Legislação",
-    "icone": [
-     "dcaabdb6714047209e08c5308a353866",
-     "c"
-    ],
+    "icone": "img/comissoes/eleitoral.jpg",
     "pessoas": [
      {
       "nome": "Evandro Rodrigues dos Santos Junior",
@@ -2371,10 +2389,7 @@ window.DADOS = {
    },
    {
     "nome": "Comissão Estadual da Ordem da Cavalaria",
-    "icone": [
-     "8a23cc665c714d3aab2af347a696204d",
-     "c"
-    ],
+    "icone": "img/comissoes/cavalaria.jpg",
     "pessoas": [
      {
       "nome": "Alexandre Alves de Azevedo Filho",
@@ -2407,10 +2422,7 @@ window.DADOS = {
    },
    {
     "nome": "Comissão Estadual de Eventos",
-    "icone": [
-     "ddc2d39725504a459eda33380a41ef92",
-     "c"
-    ],
+    "icone": "img/comissoes/eventos.jpg",
     "pessoas": [
      {
       "nome": "Evandro Rodrigues dos Santos Junior",
@@ -2434,10 +2446,7 @@ window.DADOS = {
    },
    {
     "nome": "Comissão Estadual de Honrarias e Prêmios",
-    "icone": [
-     "a4996f3f55a04f1dbbd4b5a214734bb6",
-     "c"
-    ],
+    "icone": "img/comissoes/honrarias.jpg",
     "pessoas": [
      {
       "nome": "Kleverson Gomes Freitas",
