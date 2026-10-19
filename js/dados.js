@@ -1029,7 +1029,8 @@ window.DADOS = {
       {
        "nome": "Eduardo Sued Maciel Lima",
        "cap": "647",
-       "cargo": "Mestre Conselheiro Estadual Adjunto"
+       "cargo": "Mestre Conselheiro Estadual Adjunto",
+       "foto": "img/liderancas/eduardo-sued-maciel-lima.jpg"
       }
      ]
     },
@@ -1519,13 +1520,13 @@ window.DADOS = {
      "pessoas": [
       {
        "nome": "Paulo Miguel Lima da Silva",
-       "cap": "534",
+       "cap": "1212",
        "cargo": "Mestre Conselheiro Estadual",
        "foto": "img/liderancas/paulo-miguel-lima-da-silva.jpg"
       },
       {
        "nome": "Marcos Felipe Gomes Cardoso",
-       "cap": "1212",
+       "cap": "534",
        "cargo": "Mestre Conselheiro Estadual Adjunto",
        "foto": "img/liderancas/marcos-felipe-gomes-cardoso.jpg"
       }
@@ -2222,7 +2223,8 @@ window.DADOS = {
      {
       "nome": "Eduardo Sued Maciel Lima",
       "cap": "647",
-      "cargo": "Membro"
+      "cargo": "Membro",
+      "foto": "img/liderancas/eduardo-sued-maciel-lima.jpg"
      }
     ]
    },
@@ -2581,7 +2583,7 @@ window.DADOS = {
     },
     {
      "nome": "Marcos Felipe Gomes Cardoso",
-     "cap": "1212",
+     "cap": "534",
      "cargo": "MCR da 5ª Oficialaria",
      "foto": "img/liderancas/marcos-felipe-gomes-cardoso.jpg"
     }
