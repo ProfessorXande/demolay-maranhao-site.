@@ -2249,7 +2249,8 @@ window.DADOS = {
      {
       "nome": "Paulo Vitor de Lima Bilio",
       "cap": "870",
-      "cargo": "Membro"
+      "cargo": "Membro",
+      "foto": "img/liderancas/paulo-vitor-de-lima-bilio.jpg"
      }
     ]
    },
