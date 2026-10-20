@@ -216,8 +216,8 @@
       <p>A Ordem da Cavalaria é um direito de todo DeMolay ativo entre 16 e 20 anos que esteja regular em seu Capítulo e que conheça de memória os questionários e juramentos dos Graus Iniciático e DeMolay.</p>
       <h2>Curiosidade</h2>
       <p>Os primeiros Cavaleiros eram DeMolays de 18 a 21 anos com grande posição em seus Capítulos. O primeiro Priorado nasceu no Capítulo Mãe, em Kansas City (EUA). Sua carta é de 27 de outubro de 1947, mas a primeira Investidura aconteceu em 10 de janeiro de 1948, no Ivanhoe Masonic Temple, presidida por Everett L. Davis, o primeiro Ilustre Comendador Cavaleiro. As esporas usadas naquele dia estão expostas no Frank S. Land Memorial.</p>
-      <h2>Priorados no Maranhão</h2>
-      ${listaUnid(D.priorados.filter(o => o.ativo || o.situacao === 'Irregular'))}
+      <h2>Priorados ativos e regulares</h2>
+      ${listaUnid(D.priorados.filter(o => o.ativo))}
       <div class="botoes"><a class="btn btn--azul" href="#honrarias-cavalaria">Honrarias da Cavalaria</a></div>
     </div><aside class="lateral">${img(IMG.cavalaria, 'Insígnia da Ordem da Cavalaria')}<p>Insígnia da Ordem da Cavalaria</p></aside></div>`)}`;
 
@@ -226,7 +226,7 @@
       <p>A Ordem dos Escudeiros é uma organização juvenil para garotos com idade entre sete e onze anos completos, patrocinada pela Ordem DeMolay, que busca engajar as crianças nas atividades da DeMolay para um futuro ingresso.</p>
       <h2>As virtudes dos Escudeiros</h2>
       <ul><li>Verdade</li><li>Justiça</li><li>Sabedoria</li></ul>
-      <h2>Castelos no Maranhão</h2>
+      <h2>Castelos ativos e regulares</h2>
       ${listaUnid(D.castelos.filter(o => o.ativo))}
     </div><aside class="lateral">${img(IMG.escudeiros, 'Emblema da Ordem dos Escudeiros')}<p>Ordem dos Escudeiros</p></aside></div>`)}`;
 
@@ -245,7 +245,7 @@
     ${secao(`${cabeca('Mapa', 'Nossas organizações no mapa', 'Todas as organizações DeMolay do Maranhão. Clique em um ponto para ver o nome, o endereço e o patrocínio.')}
       <div id="mapa" class="mapa" role="region" aria-label="Mapa das organizações DeMolay no Maranhão"><p class="vazio">Carregando o mapa…</p></div>
       <p class="legenda">Cada ponto é uma organização. Pontos apagados são organizações inativas. Use as caixas no canto do mapa para mostrar ou esconder cada tipo.</p>`)}
-    ${secao(`${cabeca('Capítulos DeMolay', 'Capítulos em atividade', 'Agrupados pela Oficialaria Executiva de cada região do Estado.')}
+    ${secao(`${cabeca('Capítulos DeMolay', 'Capítulos ativos e regulares', 'Agrupados pela Oficialaria Executiva de cada região do Estado.')}
       <div class="linha-tempo">${ordem.map(r => `<div class="gestao"><div><p class="gestao__ano" style="font-size:22px">${esc(r.split(' - ')[0].replace('/Região', ''))}</p><p class="gestao__lema" style="font-style:normal">${esc(r.split(' - ')[1] || '')}</p></div>${listaUnid(regioes[r])}</div>`).join('')}</div>`)}
     ${secao(`${cabeca('Nossa história', 'Outros Capítulos do Maranhão', 'Capítulos que também fazem parte da história da Ordem no Estado.')}${listaUnid(outros)}`, 'secao--cinza')}
     ${secao(`<div style="display:grid;gap:56px">

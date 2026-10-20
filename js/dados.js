@@ -292,17 +292,6 @@ window.DADOS = {
    "endereco": "Rua 44, 23, Conjunto Bequimão"
   },
   {
-   "n": "152",
-   "nome": "Príncipe das Lagoas",
-   "cidade": "São João dos Patos",
-   "regiao": "",
-   "fundacao": "2019",
-   "situacao": "Regular",
-   "patrocinio": "",
-   "ativo": true,
-   "endereco": "Rodovia Ma-034, Conjunto do Ipem, 114, Olaria"
-  },
-  {
    "n": "74",
    "nome": "Príncipes da Fronteira",
    "cidade": "Estreito",
@@ -334,6 +323,17 @@ window.DADOS = {
    "patrocinio": "",
    "ativo": false,
    "endereco": ""
+  },
+  {
+   "n": "152",
+   "nome": "Príncipe das Lagoas",
+   "cidade": "São João dos Patos",
+   "regiao": "",
+   "fundacao": "2019",
+   "situacao": "Inativo",
+   "patrocinio": "",
+   "ativo": false,
+   "endereco": "Rodovia Ma-034, Conjunto do Ipem, 114, Olaria"
   }
  ],
  "priorados": [
