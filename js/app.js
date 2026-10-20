@@ -418,7 +418,10 @@
     const anos = D.destaques.slice().reverse();
     const lado = (p, t) => `<div class="pessoa">${foto(p)}<div><small>${t}</small><h3>${esc(p.nome)}</h3>${p.cap ? `<p class="origem">${PINO}<span>${esc(origem(p.cap))}</span></p>` : ''}</div></div>`;
     return `${faixa('Premiação estadual', 'DeMolay do Ano e Consultor do Ano', 'Uma premiação muito digna: a cada ano, só um DeMolay e só um Consultor de todo o Maranhão recebem o título.', 'Galeria de Honra')}
-      ${secao(`<div class="premios">${anos.map((a, i) => `<div class="premio ${i === 0 ? 'premio--atual' : ''}"><p class="premio__ano">${a.ano}</p>${lado(a.demolay, 'DeMolay do Ano')}${lado(a.consultor, 'Consultor do Ano')}</div>`).join('')}</div>`)}`;
+      ${secao(`<div class="premios-topo">
+        <div class="premio-info">${img(E + 'premio-demolay-do-ano.png', 'Insígnia do prêmio DeMolay do Ano')}<div><p class="olho">Prêmio</p><h3>DeMolay do Ano</h3><p>Insígnia do prêmio entregue, a cada ano, a um único DeMolay de todo o Maranhão.</p></div></div>
+        <div class="premio-info">${img(E + 'guilda-avental-de-couro.png', 'Insígnia da Guilda do Avental de Couro')}<div><p class="olho">Prêmio</p><h3>Consultor do Ano</h3><p>Insígnia da Guilda do Avental de Couro, entregue, a cada ano, a um único Consultor de todo o Maranhão.</p></div></div>
+      </div><div class="premios">${anos.map((a, i) => `<div class="premio ${i === 0 ? 'premio--atual' : ''}"><p class="premio__ano">${a.ano}</p>${lado(a.demolay, 'DeMolay do Ano')}${lado(a.consultor, 'Consultor do Ano')}</div>`).join('')}</div>`)}`;
   };
   const cartaoRevista = r => `<a class="revista" href="revistas/litteris-et-virtutibus-edicao-${r[0]}.pdf" target="_blank" rel="noopener">
       <span class="revista__capa">${img('revistas/capas/edicao-' + r[0] + '.jpg', 'Capa da ' + r[0] + 'ª edição')}</span>
