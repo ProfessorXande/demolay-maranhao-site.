@@ -367,8 +367,7 @@
     ${secao(`${anterior(`as gestões anteriores (${D.oficiaisAnterior.length})`, `<div class="linha-tempo">${D.oficiaisAnterior.map(g => blocoEquipe(g)).join('')}</div>`)}`, 'secao--cinza')}`;
   const blocoComissoes = L => `<div class="linha-tempo">${L.map(c => `<div class="gestao"><div>${foto({ nome: c.nome.replace(/^(Comissão|Coordenação) Estadual (de |da |)/, ''), foto: c.icone })}<h3 style="font-size:19px">${esc(c.nome)}</h3>${c.ato ? `<p class="gestao__lema" style="font-style:normal">${esc(c.ato)}</p>` : ''}</div><div class="dupla">${c.pessoas.map(p => pessoa(p)).join('')}</div></div>`).join('')}</div>`;
   P.comissoes = () => `${faixa('Diretoria Executiva', 'Comissões Estaduais', `Gestão ${D.comissoes.gestao} · nomeadas pelo Grande Mestre Estadual.`, 'Diretoria Executiva')}
-    ${secao(blocoComissoes(D.comissoes.lista))}
-    ${secao(`${anterior('as Comissões Estaduais da gestão anterior (' + D.comissoesAnterior.gestao + ')', blocoComissoes(D.comissoesAnterior.lista))}`, 'secao--cinza')}`;
+    ${secao(blocoComissoes(D.comissoes.lista))}`;
 
   /* Honrarias */
   function tabela(id, colunas, linhas, vazio = 'Ninguém encontrado com esse nome.', ph = 'Buscar pelo nome ou capítulo') {
