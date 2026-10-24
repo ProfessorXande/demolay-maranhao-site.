@@ -52,6 +52,7 @@
     ['6', 'Dezembro de 2021', '', 19],
     ['7', 'Agosto de 2022', '', 29],
     ['8', 'Dezembro de 2022', '', 12],
+    ['9', '24 de outubro de 2026', 'Os novos imortais e as vozes dos concursos de 2023 e 2025', 32],
   ];
   const RECORTE = { c: [35, 28, 110], a: [47, 52, 128], b: [47, 235, 128] }; // recorte só da pessoa, sem o anel das artes antigas
   function urlFoto(f) {
@@ -428,7 +429,7 @@
       <span class="revista__ler">Ler a revista · ${r[3]} páginas</span></a>`;
   P.revistas = () => `${faixa('AMDL', 'Revista Litteris et Virtutibus', 'A revista literária da Academia Maranhense DeMolay de Letras. Todas as edições publicadas, da primeira à mais recente.', 'Galeria de Honra')}
     ${secao(`<div class="revistas">${REVISTAS.map(cartaoRevista).join('')}</div>
-      <p class="nota">As revistas abrem em PDF numa nova aba, onde também podem ser baixadas. As edições usam o emblema antigo da Academia.</p>`)}`;
+      <p class="nota">As revistas abrem em PDF numa nova aba, onde também podem ser baixadas. Da 1ª à 8ª edição, as revistas usam o emblema antigo da Academia; a 9ª estreia o novo emblema.</p>`)}`;
   P.academia = () => `${faixa('AMDL', 'Academia Maranhense DeMolay de Letras', `${D.amdl.length} cadeiras, cada uma com seu patrono e seu ocupante.`, 'Galeria de Honra')}
     ${secao(`<div class="amdl-topo">${img(IMG.amdl, 'Emblema da Academia Maranhense DeMolay de Letras')}<div><p class="olho">Verba volant, scripta manent</p><h2 class="titulo">Registrar a história da Ordem DeMolay maranhense</h2><p class="lead">A Academia reúne quem escreve sobre a vida, os fatos e as memórias da Ordem no Maranhão, e publicou a revista Litteris et Virtutibus.</p><div class="botoes"><a class="btn btn--azul" href="#revistas">Ler as revistas</a></div></div></div>`)}
     ${secao(`<div class="cadeiras">${D.amdl.map(c => `<article class="cadeira"><p class="cadeira__n">Cadeira nº ${String(c.cadeira).padStart(2, '0')}</p>${foto(c)}<h3 style="font-size:18px">${esc(c.nome)}</h3><p class="cargo">${c.cadeira <= 40 ? 'Membro fundador' : 'Membro'}</p>${c.cap ? `<p class="origem">${PINO}<span>${esc(origem(c.cap))}</span></p>` : ''}<p class="patrono">Patrono<b>${esc(c.patrono)}</b></p></article>`).join('')}</div>`)}`;
