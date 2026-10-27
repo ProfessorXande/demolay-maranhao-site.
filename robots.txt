@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://demolayma.org.br/sitemap.xml
