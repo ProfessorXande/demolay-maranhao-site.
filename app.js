@@ -52,6 +52,7 @@
     ['6', 'Dezembro de 2021', '', 19],
     ['7', 'Agosto de 2022', '', 29],
     ['8', 'Dezembro de 2022', '', 12],
+    ['9', '24 de outubro de 2026', 'Os novos imortais e as vozes dos concursos de 2023 e 2025', 32],
   ];
   const RECORTE = { c: [35, 28, 110], a: [47, 52, 128], b: [47, 235, 128] }; // recorte só da pessoa, sem o anel das artes antigas
   function urlFoto(f) {
@@ -105,6 +106,7 @@
   /* ---------- menu ---------- */
   const MENU = [
     ['inicio', 'Início'],
+    ['noticias', 'Notícias'],
     ['A Ordem', [['ordem', 'A Ordem DeMolay'], ['cavalaria', 'A Ordem da Cavalaria'], ['escudeiros', 'A Ordem dos Escudeiros'], ['historia', 'Nossa história no Maranhão']]],
     ['onde-estamos', 'Onde estamos'],
     ['Gabinete Estadual', [['gabinete', 'Líderes Estaduais — Juvenil'], ['regionais', 'Mestres Conselheiros Regionais'], '|Galerias', ['galeria-mce', 'Mestres Conselheiros Estaduais e Adjuntos']]],
@@ -142,6 +144,37 @@
   const P = {};
   const anterior = (titulo, conteudo) => `<details class="anterior"><summary><span>Ver ${titulo}</span></summary><div class="anterior__corpo">${conteudo}</div></details>`;
 
+
+  /* ---------- notícias ---------- */
+  const MESES = ['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+  const dataLonga = d => { const [a, m, dd] = d.split('-').map(Number); return `${dd} de ${MESES[m - 1]} de ${a}`; };
+  const noticias = () => (window.NOTICIAS || []).slice().sort((a, b) => b.data.localeCompare(a.data));
+  const cartaoNoticia = n => `<a class="noticia-cartao" href="#noticia-${n.id}"><span class="noticia-cartao__foto">${img(n.capa, '')}</span><span class="noticia-cartao__corpo"><small>${dataLonga(n.data)}${n.local ? ' · ' + esc(n.local) : ''}</small><h3>${esc(n.titulo)}</h3><p>${esc(n.resumo)}</p><span class="mais">Ler a notícia →</span></span></a>`;
+  P.noticias = () => {
+    const L = noticias();
+    return `${faixa('Notícias', 'Notícias do DeMolay Maranhão', 'Iniciações, eventos, visitas e acontecimentos da Ordem DeMolay em todo o Estado.')}
+    ${secao(L.length ? `<div class="noticias">${L.map(cartaoNoticia).join('')}</div>` : '<p class="vazio">Nenhuma notícia publicada ainda.</p>')}`;
+  };
+  P.noticia = id => {
+    const n = noticias().find(x => x.id === id);
+    if (!n) return P.naoachou();
+    const outras = noticias().filter(x => x.id !== id).slice(0, 3);
+    return `<section class="materia"><div class="miolo materia__miolo">
+      <a class="materia__voltar" href="#noticias">← Todas as notícias</a>
+      <p class="olho">${dataLonga(n.data)}${n.local ? ' · ' + esc(n.local) : ''}</p>
+      <h1>${esc(n.titulo)}</h1>
+      <p class="materia__resumo">${esc(n.resumo)}</p>
+      ${n.fotos && n.fotos[0] ? `<figure class="materia__foto">${img(n.fotos[0][0], n.fotos[0][1])}<figcaption>${esc(n.fotos[0][1])}</figcaption></figure>` : ''}
+      <div class="materia__texto">${n.texto.map(t => `<p>${esc(t)}</p>`).join('')}</div>
+      ${n.fotos && n.fotos.length > 1 ? `<div class="materia__galeria">${n.fotos.slice(1).map(f => `<figure>${img(f[0], f[1])}<figcaption>${esc(f[1])}</figcaption></figure>`).join('')}</div>` : ''}
+    </div></section>
+    ${outras.length ? secao(`${cabeca('Notícias', 'Outras notícias', '')}<div class="noticias">${outras.map(cartaoNoticia).join('')}</div>`, 'secao--cinza') : ''}`;
+  };
+  const blocoNoticiasInicio = () => {
+    const L = noticias().slice(0, 3);
+    return L.length ? secao(`${cabeca('Notícias', 'Últimas notícias', '')}<div class="noticias">${L.map(cartaoNoticia).join('')}</div>
+      <div class="botoes" style="justify-content:center;margin-top:32px"><a class="btn btn--azul" href="#noticias">Ver todas as notícias</a></div>`, 'secao--cinza') : '';
+  };
   P.inicio = () => {
     const dmAtual = D.destaques[D.destaques.length - 1];
     return `
@@ -161,6 +194,7 @@
       <div class="numero"><strong>${N.cidadesAtivas}</strong><span>Cidades com Capítulo ativo</span></div>
       <div class="numero"><strong>${(Math.floor(N.cadastrados / 100) * 100).toLocaleString('pt-BR')}+</strong><span>Membros já cadastrados</span></div>
       <div class="numero"><strong>1991</strong><span>Presente no Estado desde</span></div></div>`)}
+    ${blocoNoticiasInicio()}
     ${secao(`${cabeca('O caminho na Ordem', 'Há um lugar para cada fase', 'A Ordem acompanha o jovem por anos: começa antes da adolescência e segue depois dela. Cada etapa tem seus ritos e suas responsabilidades.')}
       <div class="caminho">
         <div class="fase"><div class="fase__n">1</div><small>7 a 11 anos</small><h3>Ordem dos Escudeiros</h3><p>Os primeiros passos, com as virtudes da verdade, da justiça e da sabedoria.</p><a href="#escudeiros">Conhecer →</a></div>
@@ -428,7 +462,7 @@
       <span class="revista__ler">Ler a revista · ${r[3]} páginas</span></a>`;
   P.revistas = () => `${faixa('AMDL', 'Revista Litteris et Virtutibus', 'A revista literária da Academia Maranhense DeMolay de Letras. Todas as edições publicadas, da primeira à mais recente.', 'Galeria de Honra')}
     ${secao(`<div class="revistas">${REVISTAS.map(cartaoRevista).join('')}</div>
-      <p class="nota">As revistas abrem em PDF numa nova aba, onde também podem ser baixadas. As edições usam o emblema antigo da Academia.</p>`)}`;
+      <p class="nota">As revistas abrem em PDF numa nova aba, onde também podem ser baixadas. Da 1ª à 8ª edição, as revistas usam o emblema antigo da Academia; a 9ª estreia o novo emblema.</p>`)}`;
   P.academia = () => `${faixa('AMDL', 'Academia Maranhense DeMolay de Letras', `${D.amdl.length} cadeiras, cada uma com seu patrono e seu ocupante.`, 'Galeria de Honra')}
     ${secao(`<div class="amdl-topo">${img(IMG.amdl, 'Emblema da Academia Maranhense DeMolay de Letras')}<div><p class="olho">Verba volant, scripta manent</p><h2 class="titulo">Registrar a história da Ordem DeMolay maranhense</h2><p class="lead">A Academia reúne quem escreve sobre a vida, os fatos e as memórias da Ordem no Maranhão, e publicou a revista Litteris et Virtutibus.</p><div class="botoes"><a class="btn btn--azul" href="#revistas">Ler as revistas</a></div></div></div>`)}
     ${secao(`<div class="cadeiras">${D.amdl.map(c => `<article class="cadeira"><p class="cadeira__n">Cadeira nº ${String(c.cadeira).padStart(2, '0')}</p>${foto(c)}<h3 style="font-size:18px">${esc(c.nome)}</h3><p class="cargo">${c.cadeira <= 40 ? 'Membro fundador' : 'Membro'}</p>${c.cap ? `<p class="origem">${PINO}<span>${esc(origem(c.cap))}</span></p>` : ''}<p class="patrono">Patrono<b>${esc(c.patrono)}</b></p></article>`).join('')}</div>`)}`;
@@ -443,9 +477,10 @@
   /* ---------- roteador ---------- */
   function rota() {
     const r = (location.hash || '#inicio').slice(1).replace(/^\//, '') || 'inicio';
-    const f = P[r] || P.naoachou;
+    const eNoticia = r.startsWith('noticia-');
+    const f = eNoticia ? () => P.noticia(r.slice(8)) : (P[r] || P.naoachou);
     $app.innerHTML = `<div class="aparece">${f()}</div>`;
-    marcaMenu(r);
+    marcaMenu(eNoticia ? 'noticias' : r);
     ligaBusca();
     montaMapa();
     window.scrollTo(0, 0);
