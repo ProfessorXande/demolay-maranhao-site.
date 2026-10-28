@@ -2,6 +2,29 @@
    As 3 mais recentes aparecem na página inicial; todas ficam na página Notícias. */
 window.NOTICIAS = [
   {
+    id: 'congresso-tocantins-2026-10',
+    data: '2026-10-28',
+    titulo: 'Grande Conselho do Maranhão marca presença no XXV Congresso Estadual da Ordem DeMolay do Tocantins',
+    resumo: 'O Grande Mestre Estadual Cromwell de Oliveira Filho, o Mestre Conselheiro Estadual Clarindo Kainã Batista Ferreira e o Mestre Conselheiro Estadual Adjunto Francisco de Souza Feitoza representaram o Maranhão no XXV CEOD-TO, ao lado de lideranças de todo o país.',
+    local: 'Palmas/TO',
+    capa: 'img/noticias/2026-10-28-congresso-tocantins-1.jpg',
+    texto: [
+      'O Grande Conselho da Ordem DeMolay para o Estado do Maranhão esteve presente no XXV Congresso Estadual da Ordem DeMolay do Tocantins (XXV CEOD-TO), realizado em Palmas/TO.',
+      'A delegação maranhense foi liderada pelo Grande Mestre Estadual Cromwell de Oliveira Filho, acompanhado do Mestre Conselheiro Estadual Clarindo Kainã Batista Ferreira e do Mestre Conselheiro Estadual Adjunto Francisco de Souza Feitoza.',
+      'O Congresso reuniu importantes autoridades da Ordem DeMolay e da Maçonaria brasileira, entre elas o Grande Mestre Nacional Diego José e o Grande Mestre Nacional Adjunto Rodrigo Lins, o Mestre Conselheiro Nacional, o Grande Mestre Estadual de Roraima, o Mestre Conselheiro Estadual do Pará, o Grão-Mestre da Grande Loja do Tocantins, o Grão-Mestre do GOB e o Secretário Nacional do Supremo Conselho, Rodrigo Motta.',
+      'A participação do Maranhão em eventos como este fortalece os laços entre as jurisdições, aproxima nossas lideranças das boas práticas de outros Estados e reafirma o compromisso do Grande Conselho com uma Ordem DeMolay cada vez mais unida em todo o Brasil.',
+      'O Grande Conselho do Maranhão parabeniza o Grande Conselho do Tocantins pela realização do Congresso.',
+    ],
+    fotos: [
+      ['img/noticias/2026-10-28-congresso-tocantins-1.jpg', ''],
+      ['img/noticias/2026-10-28-congresso-tocantins-3.jpg', ''],
+      ['img/noticias/2026-10-28-congresso-tocantins-4.jpg', ''],
+      ['img/noticias/2026-10-28-congresso-tocantins-5.jpg', ''],
+      ['img/noticias/2026-10-28-congresso-tocantins-6.jpg', ''],
+      ['img/noticias/2026-10-28-congresso-tocantins-2.jpg', ''],
+    ],
+  },
+  {
     id: 'juventude-fraterna-iniciacao-2026-10',
     data: '2026-10-24',
     titulo: 'Capítulo Juventude Fraterna nº 312 realiza Cerimônia de Iniciação de dois novos membros',

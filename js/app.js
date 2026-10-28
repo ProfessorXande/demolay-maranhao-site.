@@ -164,9 +164,9 @@
       <p class="olho">${dataLonga(n.data)}${n.local ? ' · ' + esc(n.local) : ''}</p>
       <h1>${esc(n.titulo)}</h1>
       <p class="materia__resumo">${esc(n.resumo)}</p>
-      ${n.fotos && n.fotos[0] ? `<figure class="materia__foto">${img(n.fotos[0][0], n.fotos[0][1])}<figcaption>${esc(n.fotos[0][1])}</figcaption></figure>` : ''}
+      ${n.fotos && n.fotos[0] ? `<figure class="materia__foto">${img(n.fotos[0][0], n.fotos[0][1] || n.titulo)}${n.fotos[0][1] ? `<figcaption>${esc(n.fotos[0][1])}</figcaption>` : ''}</figure>` : ''}
       <div class="materia__texto">${n.texto.map(t => `<p>${esc(t)}</p>`).join('')}</div>
-      ${n.fotos && n.fotos.length > 1 ? `<div class="materia__galeria">${n.fotos.slice(1).map(f => `<figure>${img(f[0], f[1])}<figcaption>${esc(f[1])}</figcaption></figure>`).join('')}</div>` : ''}
+      ${n.fotos && n.fotos.length > 1 ? `<div class="materia__galeria">${n.fotos.slice(1).map(f => `<figure>${img(f[0], f[1] || n.titulo)}${f[1] ? `<figcaption>${esc(f[1])}</figcaption>` : ''}</figure>`).join('')}</div>` : ''}
     </div></section>
     ${outras.length ? secao(`${cabeca('Notícias', 'Outras notícias', '')}<div class="noticias">${outras.map(cartaoNoticia).join('')}</div>`, 'secao--cinza') : ''}`;
   };

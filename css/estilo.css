@@ -424,3 +424,8 @@ td .cid { display: block; font-size: 13px; color: var(--suave); }
 .materia__galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin-top: 24px; }
 .materia__galeria img { max-height: 520px; object-fit: cover; }
 .materia__foto img { max-height: 620px; object-fit: cover; object-position: center 45%; }
+/* galeria das notícias: fotos do mesmo tamanho; a última, se sobrar sozinha, ocupa a linha inteira */
+.materia__galeria figure { margin: 0; }
+.materia__galeria:has(figure:nth-child(4)) img { width: 100%; aspect-ratio: 4 / 5; max-height: none; object-position: center 30%; }
+.materia__galeria:has(figure:nth-child(4)) figure:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.materia__galeria:has(figure:nth-child(4)) figure:last-child:nth-child(odd) img { aspect-ratio: auto; }
