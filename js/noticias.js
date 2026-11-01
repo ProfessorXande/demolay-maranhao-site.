@@ -2,6 +2,40 @@
    As 3 mais recentes aparecem na página inicial; todas ficam na página Notícias. */
 window.NOTICIAS = [
   {
+    id: 'vale-do-mearim-870-iniciacao-2026-10',
+    data: '2026-10-31',
+    titulo: 'Capítulo Cavaleiros do Vale do Mearim nº 870 inicia sete novos membros e celebra 12 anos de instalação',
+    resumo: 'Em Pedreiras, o Capítulo Cavaleiros do Vale do Mearim nº 870 realizou a Iniciação de sete jovens e comemorou seus 12 anos de instalação, com a presença do Grande Mestre Estadual e de diversas autoridades da Ordem.',
+    local: 'Pedreiras/MA',
+    capa: 'img/noticias/2026-10-31-pedreiras-870.jpg',
+    texto: [
+      'No dia 31 de outubro de 2026, o Capítulo Cavaleiros do Vale do Mearim nº 870, de Pedreiras, realizou a Iniciação de sete novos membros e, na mesma ocasião, comemorou o aniversário de 12 anos de sua instalação.',
+      'A cerimônia contou com a presença do Grande Mestre Estadual Cromwell de Oliveira Filho e do Grande Mestre Estadual Adjunto Evandro Rodrigues dos Santos Junior. Também estiveram presentes o Oficial Executivo da 2ª Região, Frankson Mendes Carneiro Filho, o Mestre Conselheiro Regional da 2ª Oficialaria, Francisco Jovita Carneiro Neto, e o Coordenador Estadual da Ordem da Cavalaria, Werllan Nascimento da Silva.',
+      'Sete novos membros numa só noite, no aniversário do Capítulo, mostram a força do trabalho feito em Pedreiras ao longo desses 12 anos. O Capítulo Cavaleiros do Vale do Mearim nº 870 segue firme como uma das referências da Ordem DeMolay no Vale do Mearim.',
+      'Aos sete novos irmãos, as boas-vindas do Grande Conselho e do Gabinete Estadual. Ao Capítulo Cavaleiros do Vale do Mearim nº 870, parabéns pelos 12 anos.',
+    ],
+    fotos: [
+      ['img/noticias/2026-10-31-pedreiras-870.jpg', ''],
+    ],
+  },
+  {
+    id: 'vagner-benedito-239-iniciacao-2026-10',
+    data: '2026-10-31',
+    titulo: 'Capítulo Vagner Benedito Ramalho Filho nº 239 realiza Cerimônia de Iniciação de três novos membros',
+    resumo: 'Em Imperatriz, o Capítulo Vagner Benedito Ramalho Filho nº 239 recebeu três novos irmãos, com a presença do Grande Orador Estadual, do Oficial Executivo e do Mestre Conselheiro Regional da 5ª Região.',
+    local: 'Imperatriz/MA',
+    capa: 'img/noticias/2026-10-31-imperatriz-239.jpg',
+    texto: [
+      'No dia 31 de outubro de 2026, o Capítulo Vagner Benedito Ramalho Filho nº 239, de Imperatriz, realizou a Cerimônia de Iniciação de três novos membros.',
+      'Estiveram presentes o Grande Orador Estadual, Weslley Fagundes Serra, o Oficial Executivo da 5ª Região, Emerson Forte de Andrade, e o Mestre Conselheiro Regional da 5ª Oficialaria, Bruno Novaes Carneiro de Albuquerque.',
+      'Fundado em 1994, o Capítulo Vagner Benedito Ramalho Filho nº 239 é um dos mais antigos do Maranhão e segue renovando suas fileiras e formando novas lideranças no sul do Estado.',
+      'Aos três novos irmãos, as boas-vindas do Grande Conselho e do Gabinete Estadual.',
+    ],
+    fotos: [
+      ['img/noticias/2026-10-31-imperatriz-239.jpg', ''],
+    ],
+  },
+  {
     id: 'congresso-tocantins-2026-10',
     data: '2026-10-28',
     titulo: 'Grande Conselho do Maranhão marca presença no XXV Congresso Estadual da Ordem DeMolay do Tocantins',
