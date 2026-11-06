@@ -429,3 +429,7 @@ td .cid { display: block; font-size: 13px; color: var(--suave); }
 .materia__galeria:has(figure:nth-child(4)) img { width: 100%; aspect-ratio: 4 / 5; max-height: none; object-position: center 30%; }
 .materia__galeria:has(figure:nth-child(4)) figure:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .materia__galeria:has(figure:nth-child(4)) figure:last-child:nth-child(odd) img { aspect-ratio: auto; }
+/* fotos antigas com fundo branco: mesmo fundo das fotos novas */
+.foto__dentro { isolation: isolate; }
+.foto__fundo { position: absolute; inset: 0; background: linear-gradient(180deg, #eef2f9, #cbd6e9); }
+.foto__dentro img.foto__antiga { background: transparent; mix-blend-mode: multiply; }

@@ -82,7 +82,12 @@
     [/Oficial Executivo/, 'oe'], [/^Mestre Conselheiro Estadual Adjunto/, 'mcea'], [/^Mestre Conselheiro Estadual/, 'mce'], [/^(MCR|Mestre Conselheiro Regional)/, 'mcr']];
   const insignia = c => { if (!c) return ''; const m = INSIG.find(([r]) => r.test(c)); return m ? `<img class="insignia" src="img/insignias/${m[1]}.png" alt="" title="Insígnia: ${esc(c)}" loading="lazy">` : ''; };
   function foto(p, cargo) {
-    return `<div class="foto"><div class="foto__dentro"><b>${esc(iniciais(p.nome))}</b>${p.foto ? img(urlFoto(p.foto), 'Foto de ' + p.nome) : ''}</div>${insignia(cargo)}</div>`;
+    // fotos antigas (do Wix) têm fundo branco: o branco vira o mesmo fundo azul-acinzentado das fotos novas
+    const antiga = p.foto && typeof p.foto !== 'string';
+    const imagem = !p.foto ? '' : antiga
+      ? `<span class="foto__fundo"></span><img src="${esc(urlFoto(p.foto))}" alt="${esc('Foto de ' + p.nome)}" class="foto__antiga" loading="lazy" onerror="this.previousElementSibling.remove();this.remove()">`
+      : img(urlFoto(p.foto), 'Foto de ' + p.nome);
+    return `<div class="foto"><div class="foto__dentro"><b>${esc(iniciais(p.nome))}</b>${imagem}</div>${insignia(cargo)}</div>`;
   }
   function pessoa(p, cargo) {
     const c = cargo ?? p.cargo;
