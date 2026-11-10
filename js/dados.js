@@ -1650,10 +1650,7 @@ window.DADOS = {
     "nome": "Arlan Silvestre Franco Jansen",
     "cap": "1188",
     "cargo": "Grande Orador Estadual Adjunto",
-    "foto": [
-     "b5c8623d488b4c6885b87a2dbd47c387",
-     "c"
-    ]
+    "foto": "img/liderancas/arlan-silvestre-franco-jansen.jpg"
    }
   ]
  },
@@ -1984,10 +1981,7 @@ window.DADOS = {
      "nome": "Arlan Silvestre Franco Jansen",
      "cap": "1188",
      "cargo": "Oficial Executivo da 3ª Região",
-     "foto": [
-      "b5c8623d488b4c6885b87a2dbd47c387",
-      "c"
-     ]
+     "foto": "img/liderancas/arlan-silvestre-franco-jansen.jpg"
     },
     {
      "nome": "Luiz Alberto Lopes de Sousa",
@@ -3162,10 +3156,7 @@ window.DADOS = {
    "consultor": {
     "nome": "Arlan Silvestre Franco Jansen",
     "cap": "1188",
-    "foto": [
-     "b5c8623d488b4c6885b87a2dbd47c387",
-     "c"
-    ]
+    "foto": "img/liderancas/arlan-silvestre-franco-jansen.jpg"
    }
   },
   {
