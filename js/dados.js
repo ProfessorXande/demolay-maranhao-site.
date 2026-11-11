@@ -1942,10 +1942,7 @@ window.DADOS = {
     "nome": "Pablo Ricardo Ramalho Leite",
     "cap": "1231",
     "cargo": "Oficial Executivo da 6ª Região (GOB-MA)",
-    "foto": [
-     "4b3d8d4883084a248419acd824220e1c",
-     "c"
-    ],
+    "foto": "img/liderancas/pablo-ricardo-ramalho-leite.jpg",
     "obs": "Loja José Ribamar Guimarães de Sousa nº 2.656 · São Luís"
    },
    {
@@ -2002,10 +1999,7 @@ window.DADOS = {
      "nome": "Pablo Ricardo Ramalho Leite",
      "cap": "1231",
      "cargo": "Oficial Executivo da 6ª Região",
-     "foto": [
-      "4b3d8d4883084a248419acd824220e1c",
-      "c"
-     ]
+     "foto": "img/liderancas/pablo-ricardo-ramalho-leite.jpg"
     }
    ]
   },

@@ -190,7 +190,7 @@
         <p class="selo-texto">Grande Conselho Estadual nº 17</p>
         <h1>Ordem DeMolay <em>Maranhão</em></h1>
         <p>A Ordem DeMolay é uma organização para jovens de 12 a 21 anos, patrocinada pela Maçonaria desde 1919, que forma bons filhos, bons cidadãos e líderes. No Maranhão, desde 1991, de São Luís ao sertão.</p>
-        <div class="botoes"><a class="btn btn--ouro" href="https://ocaminhocomecaaqui.com.br/" target="_blank" rel="noopener">Quero fazer parte</a><a class="btn btn--linha" href="#ordem">Conheça a Ordem</a></div>
+        <div class="botoes"><a class="btn btn--ouro" href="https://www.demolay.org.br/jovens/" target="_blank" rel="noopener">Quero fazer parte</a><a class="btn btn--linha" href="#ordem">Conheça a Ordem</a></div>
       </div>
       <div class="hero__onda"></div>
     </section>
@@ -229,7 +229,7 @@
         ${cartao('#legiao', `${D.honrarias.legiao.length} legionários`, 'Legião de Honra', 'Reconhecimento a Seniores DeMolay e amigos da Ordem.', undefined, IMG.legiao)}
       </div>`, 'secao--cinza')}
     ${secao(`${cabeca('O caminho começa aqui', 'Pronto para dar o próximo passo?', 'Procure o Capítulo DeMolay mais perto de você e junte-se a nós.', true)}
-      <div class="botoes"><a class="btn btn--ouro" href="https://ocaminhocomecaaqui.com.br/" target="_blank" rel="noopener">Quero fazer parte</a><a class="btn btn--linha" href="#onde-estamos">Onde estamos</a></div>`, 'secao--escura')}
+      <div class="botoes"><a class="btn btn--ouro" href="https://www.demolay.org.br/jovens/" target="_blank" rel="noopener">Quero fazer parte</a><a class="btn btn--linha" href="#onde-estamos">Onde estamos</a></div>`, 'secao--escura')}
     ${secao(`${cabeca('Parceiros e apoiadores', 'Quem caminha com a Ordem DeMolay', '', true)}
       <div class="parceiros"><span title="Supremo Conselho DeMolay Brasil">${img(IMG.scdb, 'Supremo Conselho DeMolay Brasil')}</span>${IMG.parceiros.map(([n, id]) => `<span title="${esc(n)}">${img(WIX + id + '~mv2.png/v1/fit/w_300,h_300,al_c/p.png', n)}</span>`).join('')}</div>`)}`;
   };
@@ -244,7 +244,7 @@
       <h2>O que o jovem aprende</h2>
       <ul><li>Falar em público</li><li>Procedimentos parlamentares</li><li>Hierarquia e disciplina</li><li>Respeito às regras</li><li>A importância de auxiliar a comunidade</li><li>Responsabilidade</li></ul>
       <p><strong>Procure o Capítulo DeMolay mais próximo e junte-se a nós!</strong></p>
-      <div class="botoes"><a class="btn btn--azul" href="#onde-estamos">Onde estamos</a><a class="btn btn--linha-azul" href="https://ocaminhocomecaaqui.com.br/" target="_blank" rel="noopener">Quero fazer parte</a></div>
+      <div class="botoes"><a class="btn btn--azul" href="#onde-estamos">Onde estamos</a><a class="btn btn--linha-azul" href="https://www.demolay.org.br/jovens/" target="_blank" rel="noopener">Quero fazer parte</a></div>
     </div><aside class="lateral">${img(IMG.ordem, 'Emblema da Ordem DeMolay')}<p>Ordem DeMolay · desde 1919</p></aside></div>`)}`;
 
   P.cavalaria = () => `${faixa('Ordem da Cavalaria', 'O que é a Ordem da Cavalaria', 'Nobres Cavaleiros da Ordem Sagrada dos Soldados Companheiros de Jacques DeMolay.', 'A Ordem')}
@@ -500,7 +500,7 @@
         <div class="redes"><a href="https://www.instagram.com/demolaymaranhao/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
         <a href="https://www.facebook.com/demolaymaranhao" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></svg></a></div></div>
       <div><h4>Navegação</h4><ul><li><a href="#ordem">A Ordem DeMolay</a></li><li><a href="#onde-estamos">Onde estamos</a></li><li><a href="#gabinete">Gabinete Estadual</a></li><li><a href="#diretoria">Diretoria Executiva</a></li><li><a href="#destaques">DeMolay e Consultor do Ano</a></li><li><a href="#merito">Mérito DeMolay Maranhão</a></li><li><a href="#academia">Academia de Letras</a></li></ul></div>
-      <div><h4>Links rápidos</h4><ul><li><a href="https://sis.demolaybrasil.org.br/new/" target="_blank" rel="noopener">SISDM</a></li><li><a href="https://www.demolayshop.com.br/" target="_blank" rel="noopener">DeMolay Shop</a></li><li><a href="https://ocaminhocomecaaqui.com.br/" target="_blank" rel="noopener">Seja um DeMolay</a></li><li><a href="https://www.dmly.com.br/login" target="_blank" rel="noopener">DMLY</a></li></ul></div>
+      <div><h4>Links rápidos</h4><ul><li><a href="https://sis.demolaybrasil.org.br/new/" target="_blank" rel="noopener">SISDM</a></li><li><a href="https://www.demolayshop.com.br/" target="_blank" rel="noopener">DeMolay Shop</a></li><li><a href="https://www.demolay.org.br/jovens/" target="_blank" rel="noopener">Seja um DeMolay</a></li><li><a href="https://www.dmly.com.br/login" target="_blank" rel="noopener">DMLY</a></li></ul></div>
     </div><div class="base"><span>© ${new Date().getFullYear()} DeMolay Maranhão · Ordem DeMolay desde 1919</span><span>Gestão ${vig.periodo}</span></div></div>`;
   }
 
