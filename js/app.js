@@ -85,9 +85,9 @@
     // fotos antigas (do Wix) têm fundo branco: o branco vira o mesmo fundo azul-acinzentado das fotos novas
     const antiga = p.foto && typeof p.foto !== 'string';
     const imagem = !p.foto ? '' : antiga
-      ? `<span class="foto__fundo"></span><img src="${esc(urlFoto(p.foto))}" alt="${esc('Foto de ' + p.nome)}" class="foto__antiga" loading="lazy" onerror="this.previousElementSibling.remove();this.remove()">`
+      ? `<span class="foto__fundo" style="position:absolute;inset:0;background:linear-gradient(180deg,#eef2f9,#cbd6e9)"></span><img src="${esc(urlFoto(p.foto))}" alt="${esc('Foto de ' + p.nome)}" class="foto__antiga" style="background:transparent;mix-blend-mode:multiply" loading="lazy" onerror="this.previousElementSibling.remove();this.remove()">`
       : img(urlFoto(p.foto), 'Foto de ' + p.nome);
-    return `<div class="foto"><div class="foto__dentro"><b>${esc(iniciais(p.nome))}</b>${imagem}</div>${insignia(cargo)}</div>`;
+    return `<div class="foto"><div class="foto__dentro" style="isolation:isolate"><b>${esc(iniciais(p.nome))}</b>${imagem}</div>${insignia(cargo)}</div>`;
   }
   function pessoa(p, cargo) {
     const c = cargo ?? p.cargo;
@@ -169,9 +169,9 @@
       <p class="olho">${dataLonga(n.data)}${n.local ? ' · ' + esc(n.local) : ''}</p>
       <h1>${esc(n.titulo)}</h1>
       <p class="materia__resumo">${esc(n.resumo)}</p>
-      ${n.fotos && n.fotos[0] ? `<figure class="materia__foto">${img(n.fotos[0][0], n.fotos[0][1] || n.titulo)}${n.fotos[0][1] ? `<figcaption>${esc(n.fotos[0][1])}</figcaption>` : ''}</figure>` : ''}
+      ${n.fotos && n.fotos[0] ? `<figure class="materia__foto">${img(n.fotos[0][0], n.fotos[0][1])}<figcaption>${esc(n.fotos[0][1])}</figcaption></figure>` : ''}
       <div class="materia__texto">${n.texto.map(t => `<p>${esc(t)}</p>`).join('')}</div>
-      ${n.fotos && n.fotos.length > 1 ? `<div class="materia__galeria">${n.fotos.slice(1).map(f => `<figure>${img(f[0], f[1] || n.titulo)}${f[1] ? `<figcaption>${esc(f[1])}</figcaption>` : ''}</figure>`).join('')}</div>` : ''}
+      ${n.fotos && n.fotos.length > 1 ? `<div class="materia__galeria">${n.fotos.slice(1).map(f => `<figure>${img(f[0], f[1])}<figcaption>${esc(f[1])}</figcaption></figure>`).join('')}</div>` : ''}
     </div></section>
     ${outras.length ? secao(`${cabeca('Notícias', 'Outras notícias', '')}<div class="noticias">${outras.map(cartaoNoticia).join('')}</div>`, 'secao--cinza') : ''}`;
   };
@@ -449,7 +449,7 @@
     const H = D.honrarias;
     return `${faixa('Honraria estadual', 'Mérito DeMolay Maranhão', 'A honraria que só a Ordem DeMolay maranhense pode conceder, entregue a quem prestou serviços de destaque à Ordem no Estado.', 'Galeria de Honra')}
       ${secao(`<div class="texto" style="grid-template-columns:minmax(0,1fr) 240px"><div style="min-width:0">${tabela('merito', ['Nome', 'Capítulo', 'ID', 'Concessão'], H.merito.map(linhaHonra))}</div>
-        <aside class="lateral">${img(IMG.emblema, 'Emblema do Grande Conselho do Maranhão')}<p><strong>${H.merito.length}</strong> agraciados do Maranhão</p><p>Concedido na gestão do Grande Mestre Estadual Marcus Rafael Araújo Miranda.</p></aside></div>`)}
+        <aside class="lateral">${img(IMG.emblema, 'Emblema do Grande Conselho do Maranhão')}<p><strong>${H.merito.length}</strong> agraciados do Maranhão</p><p>Concedido na gestão do Grande Mestre Estadual Marcus Rafael Araújo Miranda.</p><p style="margin-top:14px">Honraria regulamentada pelo Decreto nº 004/2025-2027.</p><div class="botoes" style="justify-content:center;margin-top:10px"><a class="btn btn--azul" href="documentos/decreto-004-2025-2027-merito-demolay-maranhao.pdf" target="_blank" rel="noopener">Ver o decreto</a></div></aside></div>`)}
       ${secao(`${cabeca('De outras jurisdições', 'Agraciados de fora do Maranhão', '')}${tabela('meritoFora', ['Nome', 'Cargo à época', 'ID', 'Concessão'], H.meritoFora.map(r => `<tr><td><b>${esc(r[0])}</b></td><td>${esc(r[2])}</td><td class="num">${esc(r[1])}</td><td class="num">${esc(r[3])}</td></tr>`))}`, 'secao--cinza')}`;
   };
   P.destaques = () => {
