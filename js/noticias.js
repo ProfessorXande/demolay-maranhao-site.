@@ -2,6 +2,22 @@
    As 3 mais recentes aparecem na página inicial; todas ficam na página Notícias. */
 window.NOTICIAS = [
   {
+    id: 'porto-franco-534-mocao-2026-11',
+    data: '2026-11-16',
+    titulo: 'Capítulo Waldemar Gomes Pereira nº 534 recebe Moção de Aplausos da Câmara Municipal de Porto Franco',
+    resumo: 'A Câmara Municipal de Porto Franco concedeu ao Capítulo Waldemar Gomes Pereira nº 534 a Moção de Aplausos e Reconhecimento nº 002/2026, em homenagem aos mais de 20 anos de serviços prestados à juventude do município.',
+    local: 'Porto Franco/MA',
+    capa: 'img/noticias/2026-11-16-porto-franco-534-mocao.jpg',
+    texto: [
+      'A Câmara Municipal de Porto Franco concedeu ao Capítulo Waldemar Gomes Pereira nº 534 a Moção de Aplausos e Reconhecimento nº 002/2026, por solicitação do Vereador Francisco Farias Lopes (Cafinfim). A homenagem reconhece os relevantes serviços sociais, filantrópicos e educacionais prestados pelo Capítulo na formação cidadã dos jovens do município.',
+      'A moção reconhece uma história construída por muitas mãos. São mais de 20 anos de dedicação de irmãos, tios, tias e de todos que contribuíram para o Capítulo Waldemar Gomes Pereira nº 534, formando jovens e fazendo a diferença na comunidade de Porto Franco.',
+      'O Grande Conselho parabeniza o Capítulo Waldemar Gomes Pereira nº 534 por essa conquista, que pertence a cada um que fez e faz parte dessa caminhada, e agradece à Câmara Municipal de Porto Franco por valorizar o trabalho da Ordem DeMolay.',
+    ],
+    fotos: [
+      ['img/noticias/2026-11-16-porto-franco-534-mocao.jpg', ''],
+    ],
+  },
+  {
     id: 'vale-do-mearim-870-iniciacao-2026-10',
     data: '2026-10-31',
     titulo: 'Capítulo Cavaleiros do Vale do Mearim nº 870 inicia sete novos membros e celebra 12 anos de instalação',
